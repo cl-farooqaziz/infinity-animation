@@ -35,7 +35,7 @@ const Hero = ({ content }) => {
                                     hover="hover:bg-prime hover:border-[#f5090b]"
                                     link="javascript:$zopim.livechat.window.show();" />
                             </div>
-                            <Image src={trustPlatforms} className="mt-10 md:mt-20" alt="trustPlatforms" />
+                            <Image src={trustPlatforms} className="mt-10 md:mt-20" alt="Infinity Animation" />
                         </div>
                     </div>
                 </div>

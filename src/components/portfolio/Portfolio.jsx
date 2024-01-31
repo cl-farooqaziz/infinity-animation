@@ -42,10 +42,10 @@ const Portfolio = ({ content }) => {
                                         <div key={index}>
                                             {Array.isArray(item) ? (
                                                 item.map((innerImage, innerIndex) => (
-                                                    <Image key={innerIndex} src={innerImage} className={`my-4 ${styles.shadow}`} alt='Portfolio' />
+                                                    <Image key={innerIndex} src={innerImage} className={`my-4 ${styles.shadow}`} alt='Infinity Animation' />
                                                 ))
                                             ) : (
-                                                <Image src={item} className={styles.shadow} alt='Portfolio' />
+                                                <Image src={item} className={styles.shadow} alt='Infinity Animation' />
                                             )}
                                         </div>
                                     ))}

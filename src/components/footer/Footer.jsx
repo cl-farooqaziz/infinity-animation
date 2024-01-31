@@ -114,7 +114,7 @@ const Footer = () => {
                     <div className="flex gap-x-5 pb-8 border-b-[1px] border-[#707070] flex-wrap lg:flex-nowrap justify-between gap-y-5 lg:gap-y-0">
                         <div className="basis-full sm:basis-[48%] lg:basis-[30%]">
                             <Link href="/">
-                                <Image src={logo} className="w-[50%]" alt="logo" />
+                                <Image src={logo} className="w-[50%]" alt="Infinity Animation" />
                             </Link>
                             <p className="text-sm xl:text-base font-normal font-sans text-justify text-white mt-3 pr-5">Our talented animators will work closely with you to understand your narrative. Whether it's a product demonstration, explainer video, or promotional campaign, our team will work closely with you. With expert attention to detail and a passion for creativity, our services are tailored just for you. Plus, we guarantee that your satisfaction is our top priority.</p>
                         </div>
@@ -158,7 +158,7 @@ const Footer = () => {
                                         contactLinks.map((e, i) => {
                                             return (
                                                 <li key={i} className="flex items-center gap-2 mb-3 last:mb-0">
-                                                    <Image src={e.icon} className="w-[20px]" alt={e.icon} />
+                                                    <Image src={e.icon} className="w-[20px]" alt="Infinity Animation" />
                                                     <Link href={e.link} className="text-sm xl:text-base text-white font-sans font-normal hover:opacity-50">
                                                         {e.text}
                                                     </Link>
@@ -175,7 +175,7 @@ const Footer = () => {
                                             return (
                                                 <li key={i} className="bg-[#22212D] hover:bg-second w-[45px] h-[45px] rounded-[5px] flex items-center justify-center p-1 hover:bg-second">
                                                     <Link href={e.link}>
-                                                        <Image src={e.icon} className="w-[20px]" alt={e.icon} />
+                                                        <Image src={e.icon} className="w-[20px]" alt="Infinity Animation" />
                                                     </Link>
                                                 </li>
                                             );

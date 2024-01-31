@@ -37,8 +37,8 @@ const Testimonial = ({ content }) => {
                             {testiContent.map((testimonial, index) => (
                                 <div key={index}>
                                     <div className="flex flex-col items-center">
-                                        <Image src={testimonial.profile} className="w-[10%] mb-3" alt='Concept Icon' />
-                                        <Image src={testimonial.stars} className="w-[16%] mb-3" alt='Concept Icon' />
+                                        <Image src={testimonial.profile} className="w-[10%] mb-3" alt='Infinity Animation' />
+                                        <Image src={testimonial.stars} className="w-[16%] mb-3" alt='Infinity Animation' />
                                         <h3 className="text-[24px] font-semibold font-sans leading-tight mb-3">
                                             {testimonial.name}
                                         </h3>

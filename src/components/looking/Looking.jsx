@@ -11,7 +11,7 @@ const Looking = ({ content }) => {
                 <div className="container">
                     <div className='flex flex-col-reverse lg:flex-row items-center justify-around'>
                         <div className="w-full lg:w-[500px]">
-                            <Image src={flodImg} className="mx-auto" alt="trustPlatforms" />
+                            <Image src={flodImg} className="mx-auto" alt="Infinity Animation" />
                         </div>
                         <div className='w-full lg:w-[800px]'>
                             <h1 className="text-[40px] md:text-[60px] font-semibold font-sans leading-tight mb-5">

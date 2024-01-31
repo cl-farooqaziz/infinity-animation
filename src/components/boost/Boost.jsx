@@ -21,7 +21,7 @@ const Boost = ({ content }) => {
                                 {boostContent.map((item, index) => (
                                     <div key={index} className="relative">
                                         <div className="absolute left-[-10%] w-[1px] h-full bg-white text-white"></div>
-                                        <Image src={item.icon} className="w-[18%] h-[22%] mb-3" alt='Concept Icon' />
+                                        <Image src={item.icon} className="w-[18%] h-[22%] mb-3" alt='Infinity Animation' />
                                         <h3 className="text-[18px] xl:text-[20px] font-sans font-bold tracking-wide mb-2">{item.heading}</h3>
                                         <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line">{item.text}</p>
                                     </div>

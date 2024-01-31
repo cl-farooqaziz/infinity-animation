@@ -117,7 +117,7 @@ const Header = () => {
                 <div className="container">
                     <div className="flex items-center justify-between h-24">
                         <Link href="/">
-                            <Image src={logo} className="w-[50%]" alt="logo" />
+                            <Image src={logo} className="w-[50%]" alt="Infinity Animation" />
                         </Link>
                         <div className="hidden lg:flex ml-auto h-full items-center gap-10">
                             {navList}
