@@ -17,10 +17,10 @@ const Contact = () => {
                     <div className='flex items-center justify-around'>
                         <div className='w-full text-center'>
                             <h1 className="text-[40px] md:text-[60px] font-semibold font-sans leading-tight my-2">
-                                Connect With Us
+                                Let’s Establish Contact
                             </h1>
                             <p className="w-[80%] mx-auto text-[16px] font-normal font-sans leading-snug tracking-wider text-center mb-5">
-                                Let’s engage, share ideas, and explore together
+                                Let’s Share. Let’s Discuss. Let’s Create Magic.
                             </p>
                         </div>
                     </div>

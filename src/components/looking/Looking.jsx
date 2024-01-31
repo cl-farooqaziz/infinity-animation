@@ -14,7 +14,7 @@ const Looking = ({ content }) => {
                             <Image src={flodImg} className="mx-auto" alt="Infinity Animation" />
                         </div>
                         <div className='w-full lg:w-[800px]'>
-                            <h1 className="text-[40px] md:text-[60px] font-semibold font-sans leading-tight mb-5">
+                            <h1 className="text-[40px] md:text-[50px] font-semibold font-sans leading-tight mb-5">
                                 {title}
                             </h1>
                             {paraArray.map((para, index) => (

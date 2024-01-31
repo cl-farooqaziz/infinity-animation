@@ -28,7 +28,7 @@ const Concept = ({ content }) => {
                                 </div>
                                 <div>
                                     <h3 className="text-[24px] xl:text-[30px] font-sans font-normal tracking-wide mb-2">Concept</h3>
-                                    <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3">We first brainstorm and refine your ideas into a solid concept, ensuring a strong narrative foundation.</p>
+                                    <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3">No work of art or wonder can ever be brought to life without a concrete concept. </p>
                                 </div>
                             </div>
                             <div className="p-4">
@@ -40,7 +40,7 @@ const Concept = ({ content }) => {
                                 </div>
                                 <div>
                                     <h3 className="text-[24px] xl:text-[30px] font-sans font-normal tracking-wide mb-2">Storyboarding</h3>
-                                    <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3">Next, we create storyboards that visually map out your video, displaying the sequence of animation events.</p>
+                                    <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3">Every frame of the story or idea is as essential as every piece of the puzzle.</p>
                                 </div>
                             </div>
                             <div className="p-4">
@@ -52,7 +52,7 @@ const Concept = ({ content }) => {
                                 </div>
                                 <div>
                                     <h3 className="text-[24px] xl:text-[30px] font-sans font-normal tracking-wide mb-2">Creation</h3>
-                                    <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3">Using the storyboard as our guide, our animators bring your story to life with engaging visuals.</p>
+                                    <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3">What good is an artistic idea or a magical story if it does not visually exist?</p>
                                 </div>
                             </div>
                             <div className="p-4">
@@ -64,7 +64,7 @@ const Concept = ({ content }) => {
                                 </div>
                                 <div>
                                     <h3 className="text-[24px] xl:text-[30px] font-sans font-normal tracking-wide mb-2">Delivery</h3>
-                                    <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3">Lastly, we perfect and polish the animation through editing and deliver you the best result on time.</p>
+                                    <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3">And what good are the promises that cannot be kept, right? We don’t do that here!</p>
                                 </div>
                             </div>
                         </div>

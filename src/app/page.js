@@ -31,17 +31,17 @@ import icon2 from "media/icons/stars.png"
 export default function Home() {
     //=====Banner Fold=====//
     const hero = {
-        title: (<> Let Our <span className='text-primary-100'>Animations</span><br /> Share Your Story </>),
-        para: "Creativity knows no bounds at Infinity Animations, where we specialize in delivering exclusive Infinity Animations services to our customers. Our team of skilled animators and storytellers work tirelessly to bring ideas to life. With an eye for detail and a passion for innovation, we strive to exceed expectations and deliver animations that resonate with viewers on an emotional level.",
+        title: (<> We <span className='text-primary-100'>Animate</span><br /> Your Stories and Ideas  </>),
+        para: "In a world where dreams paint the sky, animation is the bridge between vivid imaginations and palpable realities. Each frame, a splash of creativity, brings to life stories untold, emotions unexpressed. At Infinity Animations, colors dance, characters breathe, and every stroke of the artist's pen ignites a universe, turning the canvas of fantasy into a symphony of visual wonder.",
         btnBg: "bg-prime",
     };
     //=====Looking Fold=====//
     const paraArray = [
-        "Look no further. Infinity Animations is a pioneering video animation company that uses creative video content to bring brands to life and assist them in their growth. From explainers to corporate videos, we deliver all types of video content for brands.",
-        "Use videos as a potent tool for propelling your brands ahead with Infinity Animations."
+        "Everybody deserves a taste of art. Infinity Animations, a kingdom of endless creativity, boasts a vibrant team of certified animators. Their expertise textures stories into visual marvels, enthralling viewers globally. Renowned for affordability, they democratize animation, making mesmeric art accessible to all. ",
+        "It's a place where skill meets passion, and dreams transform into digital reality."
     ];
     const looking = {
-        title: (<> Looking For A Professional Video Animation Company? </>),
+        title: (<> Searching for Certified Animators and Affordable Services? </>),
         para: { paraArray },
         flodImg: LookingFlodImg
     };
@@ -49,64 +49,64 @@ export default function Home() {
     const accordionData = [
         {
             question: '2D Animations',
-            answer: "Our commitment to pushing boundaries and exploring new creative frontiers enables us to constantly evolve and adapt our approach to best serve your brand's unique identity. Our team strives for creative animation.",
+            answer: "2D animation, a timeless dance of lines and colors, sparks nostalgia and wonder. With every frame precisely crafted, it interlaces enchanting tales that capture the essence of pure artistry.",
             StoryLineFold: StoryLineFold,
         },
         {
             question: '3D Animations',
-            answer: "Our commitment to pushing boundaries and exploring new creative frontiers enables us to constantly evolve and adapt our approach to best serve your brand's unique identity. Our team strives for creative animation.",
+            answer: "3D animation, a world of infinite possibilities, sculpts dreams into reality. With lifelike characters and immersive worlds, it transports us to new dimensions where imagination knows no bounds.",
             StoryLineFold: StoryLineFold
         },
         {
             question: 'Whiteboard',
-            answer: "Our commitment to pushing boundaries and exploring new creative frontiers enables us to constantly evolve and adapt our approach to best serve your brand's unique identity. Our team strives for creative animation.",
+            answer: "Whiteboard animation, a fascinating blend of simplicity and storytelling, unravels ideas with an artistic touch. Black ink dances on a white canvas, breathing life into concepts and turning knowledge into art.",
             StoryLineFold: StoryLineFold
         },
         {
             question: 'Motion Graphics',
-            answer: "Our commitment to pushing boundaries and exploring new creative frontiers enables us to constantly evolve and adapt our approach to best serve your brand's unique identity. Our team strives for creative animation.",
+            answer: "Motion graphics, the symphony of movement, and design orchestrate visuals into a hypnotic dance. With fluidity and precision, it transforms data and concepts into dynamic narratives that enthrall and inform.",
             StoryLineFold: StoryLineFold
         },
         {
             question: 'Video Editing',
-            answer: "Our commitment to pushing boundaries and exploring new creative frontiers enables us to constantly evolve and adapt our approach to best serve your brand's unique identity. Our team strives for creative animation.",
+            answer: "Video editing, the alchemy of storytelling, assembles moments into a cinematic masterpiece. With every cut, merge, and effect, its crafts emotions, taking viewers on an unforgettable journey through the lens of creativity.",
             StoryLineFold: StoryLineFold
         },
         {
             question: 'Logo Animations',
-            answer: "Our commitment to pushing boundaries and exploring new creative frontiers enables us to constantly evolve and adapt our approach to best serve your brand's unique identity. Our team strives for creative animation.",
+            answer: "Logo animations, the heartbeat of brand identity, breathe vitality into symbols. With finesse and innovation, they turn logos into dynamic stories, leaving indelible impressions in the digital world.",
             StoryLineFold: StoryLineFold
         },
         {
             question: 'Architectural Visualization',
-            answer: "Our commitment to pushing boundaries and exploring new creative frontiers enables us to constantly evolve and adapt our approach to best serve your brand's unique identity. Our team strives for creative animation.",
+            answer: "Architectural visualization, the art of turning blueprints into dreams, unveils future spaces in vivid detail. With lighting and texture, it grants a glimpse of what could be, inspiring awe and vision.",
             StoryLineFold: StoryLineFold
         },
         {
             question: 'CGI-VFX',
-            answer: "Our commitment to pushing boundaries and exploring new creative frontiers enables us to constantly evolve and adapt our approach to best serve your brand's unique identity. Our team strives for creative animation.",
+            answer: "CGI-VFX, the magic of the digital dominion, paints fantasies onto screens. With breathtaking realism, it melds reality and imagination, crafting visual spectacles that transport us to empires beyond our wildest dreams.",
             StoryLineFold: StoryLineFold
         },
         {
             question: 'Infographics',
-            answer: "Our commitment to pushing boundaries and exploring new creative frontiers enables us to constantly evolve and adapt our approach to best serve your brand's unique identity. Our team strives for creative animation.",
+            answer: "Infographics, the visual storytellers of data, turn statistics into engaging tales. With colors and graphics, they simplify complexity, empowering audiences to grasp information effortlessly, and making knowledge a work of art.",
             StoryLineFold: StoryLineFold
         },
         {
             question: 'Hybrid & Cel',
-            answer: "Our commitment to pushing boundaries and exploring new creative frontiers enables us to constantly evolve and adapt our approach to best serve your brand's unique identity. Our team strives for creative animation.",
+            answer: "Hybrid & Cel animation, a fusion of classic and modern, evokes nostalgia and innovation. With hand-drawn charm and digital precision, they breathe life into characters, bridging generations with entrancing tales.",
             StoryLineFold: StoryLineFold
         },
     ];
     const storyLine = {
-        subtitle: (<> Experience The Power Of Visual </>),
-        title: (<> Storytelling With Our Innovative Video Animation </>),
-        para: "Our commitment to pushing boundaries and exploring new creative frontiers enables us to constantly evolve and adapt our approach to best serve your brand's unique identity. Our team strives for creative animation.",
+        subtitle: (<> The Potency of Visual Imagery </>),
+        title: (<> Experience the Innovative Video Animation Exhibits </>),
+        para: "Art and animation breathe life into imagination, painting emotions and stories that words alone cannot convey. They inspire, evoke, and connect us to the beauty of boundless creativity.",
         accordionData: accordionData
     };
     //=====Portfilio Fold=====//
     const tabInfo = [
-        { label: "2D Animation", index: 0 },
+        { label: "2D Animations", index: 0 },
         { label: "3D Animation", index: 1 },
         { label: "Whiteboard", index: 2 },
         { label: "Explainer Videos", index: 3 },
@@ -120,8 +120,8 @@ export default function Home() {
         [polio1, [polio2, polio3], polio4],
     ];
     const portfolio = {
-        title: (<> Our Portfolio of Creative Video Animations </>),
-        para: (<> We take pride in crafting stunning 2D animation videos, whiteboard animations, 3D animations, <br /> typographic animations, and more for our valued clientele. </>),
+        title: (<> Our Vault of Creative Animation Ventures</>),
+        para: (<> Unlock the door to our vault of creative animation ventures, where imagination thrives and stories come to life in mesmeric motion. </>),
         tabContents: tabContents,
         tabInfo: tabInfo
     };
@@ -134,22 +134,22 @@ export default function Home() {
         {
             icon: boosticon1,
             heading: "Strategic Distribution",
-            text: "We provide expertise in strategic video distribution, ensuring your animations reach the right audience at the right time across various platforms, maximizing exposure and engagement for optimal results.",
+            text: "At Infinity Animations, we are your strategic partners in video distribution, guiding your animations to their perfect audience, across diverse platforms, amplifying reach and engagement for unparalleled success.",
         },
         {
             icon: boosticon2,
             heading: "Custom Curation",
-            text: "Our team creates visually stunning animations tailored to your unique vision, ensuring your content stands out with a professional look that grabs attention and makes a lasting impression on your audience.",
+            text: "Our team crafts appealing animations that breathe life into your vision, ensuring your content shines with a polished allure, charming audiences, and etching a lasting and enduring impact.",
         },
         {
             icon: boosticon3,
             heading: "Improve Brand Awareness",
-            text: "We enhance brand visibility through compelling storytelling and striking visuals, building an emotional connection with viewers that fosters brand loyalty and sets you apart in the competitive market.",
+            text: "We boost brand prominence with enchanting narratives and fascinating imagery, nurturing emotional bonds with viewers that promote brand devotion, differentiating you in the fiercely and mundane competitive market.",
         },
     ];
     const boost = {
-        title: (<> Boost Engagement And Sales <br /> With Our Animated Videos </>),
-        para: (<> If you're not completely thrilled with the final product, we'll make it right at no extra cost! <br /> Let's collaborate on turning your story into an extraordinary visual masterpiece today. </>),
+        title: (<> Artistic and Unreal Animations <br /> Catapult Engagements and Sales </>),
+        para: (<> We understand that you have a business to run. And what good is a business without engagements <br /> and sales, yes? Well, we will sort that out for you. </>),
         btnBg: "bg-prime",
         boostContent: boostContent,
         flodImg: BoostFlodImg
@@ -159,28 +159,49 @@ export default function Home() {
         {
             profile: icon1,
             stars: icon2,
-            name: 'Michael Gardner',
-            message: 'Infinity Animations created a stunning promotional video for my startup. The attention to detail and animation definitely made a positive impact on our online presence and has set us apart from competitors.',
+            name: 'Vanessa Carpenter',
+            message: 'Infinity Animations turned our ideas into pure magic! Their creativity knows no bounds, and the results totally blew us away!',
             company: 'ABC company',
         },
         {
             profile: icon1,
             stars: icon2,
-            name: 'Sarah',
-            message: 'Infinity Animations created a stunning promotional video for my startup. The attention to detail and animation definitely made a positive impact on our online presence and has set us apart from competitors.',
+            name: 'Bradley Lynch',
+            message: 'Working with Infinity Animations was a pleasure. Their team is not only professional but also incredibly talented. The animations they created for our brand added that extra spark we were looking for.',
             company: 'ABC company',
         },
         {
             profile: icon1,
             stars: icon2,
-            name: 'John',
-            message: 'Infinity Animations created a stunning promotional video for my startup. The attention to detail and animation definitely made a positive impact on our online presence and has set us apart from competitors.',
+            name: 'Sophia Zimmerman',
+            message: "I can't express how impressed we were with Infinity Animations. They took our complex data and turned it into beautiful, engaging infographics. Their attention to detail and commitment to our project were truly outstanding.",
+            company: 'ABC company',
+        },
+        {
+            profile: icon1,
+            stars: icon2,
+            name: 'Tara Figueroa',
+            message: "Infinity Animations made our logo come alive in a way we couldn't have imagined. It added a dynamic touch to our branding that we love.",
+            company: 'ABC company',
+        },
+        {
+            profile: icon1,
+            stars: icon2,
+            name: 'Priscilla Pearson',
+            message: "The architectural visualizations crafted by Infinity Animations are simply breathtaking. They have a unique talent for bringing architectural concepts to life, and we couldn't be happier.",
+            company: 'ABC company',
+        },
+        {
+            profile: icon1,
+            stars: icon2,
+            name: 'Randolph Simpson',
+            message: "Infinity Animations worked wonders with CGI-VFX for our product. Their work took our marketing efforts to a whole new level and made us stand out in the market.",
             company: 'ABC company',
         },
     ];
     const testimonial = {
-        title: (<> The Ultimate Collection Of <br /> Our Incredible Customer Experiences </>),
-        para: (<> Achieved 1000+ Impactful Results That Speak Volumes </>),
+        title: (<> Let’s Read What Our Clients Have to Say </>),
+        para: (<> If you can’t trust us, try trusting them.</>),
         btnBg: "bg-prime",
         testiContent: testiContent
     };

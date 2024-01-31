@@ -7,8 +7,8 @@ import "./global.css";
 // Meta Data
 export const metadata = {
   // Title & Descriptions
-  title: "Infinity Animation - Home",
-  description: "Infinity Animation",
+  title: "The Entrancing Portal of Animation | Infinity Animations",
+  description: "Infinity Animations, prioritizing art, illuminates the dark and mundane world of animation, offering affordable services through their certified animators.",
 }
 
 export default function RootLayout({ children }) {
