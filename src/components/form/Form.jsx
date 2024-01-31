@@ -32,19 +32,19 @@ const Form = () => {
         <>
             <form action="#" className="space-y-8">
                 <div>
-                    <label for="subject" className="block mb-2 font-sans tracking-wide text-[16px] font-normal">Full Name*</label>
+                    <label htmlFor="subject" className="block mb-2 font-sans tracking-wide text-[16px] font-normal">Full Name*</label>
                     <input type="text" id="subject" className="block p-3 w-full font-sans tracking-wide text-sm text-gray-900 border-0 border-b-2 focus:outline-none focus:border-primary-100 bg-transparent" placeholder="Type Full Name" required />
                 </div>
                 <div>
-                    <label for="subject" className="block mb-2 font-sans tracking-wide text-[16px] font-normal">Phone*</label>
+                    <label htmlFor="subject" className="block mb-2 font-sans tracking-wide text-[16px] font-normal">Phone*</label>
                     <input type="tel" id="subject" className="block p-3 w-full font-sans tracking-wide text-sm text-gray-900 border-0 border-b-2 focus:outline-none focus:border-primary-100 bg-transparent" placeholder="(000) 000-0000" required />
                 </div>
                 <div>
-                    <label for="email" className="block mb-2 font-sans tracking-wide text-[16px] font-normal">Email Address*</label>
+                    <label htmlFor="email" className="block mb-2 font-sans tracking-wide text-[16px] font-normal">Email Address*</label>
                     <input type="email" id="email" className="block p-3 w-full font-sans tracking-wide text-sm text-gray-900 border-0 border-b-2 focus:outline-none focus:border-primary-100 bg-transparent" placeholder="Type Email" required />
                 </div>
                 <div className="sm:col-span-2">
-                    <label for="message" className="block mb-2 font-sans tracking-wide text-[16px] font-normal text-gray-900 dark:text-gray-400">Details*</label>
+                    <label htmlFor="message" className="block mb-2 font-sans tracking-wide text-[16px] font-normal text-gray-900 dark:text-gray-400">Details*</label>
                     <textarea id="message" rows="2" className="block p-3 w-full font-sans tracking-wide text-sm text-gray-900 border-0 border-b-2 focus:outline-none focus:border-primary-100 bg-transparent resize-none" placeholder="Type Full Details"></textarea>
                 </div>
                 <div className="flex items-center justify-between">

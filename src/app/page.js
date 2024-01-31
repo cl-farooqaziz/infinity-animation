@@ -28,7 +28,7 @@ import boosticon3 from "media/icons/boost-icon3.png"
 import icon1 from "media/images/client.png"
 import icon2 from "media/icons/stars.png"
 
-export default function Home() {
+export default function Page() {
     //=====Banner Fold=====//
     const hero = {
         title: (<> Let Our <span className='text-primary-100'>Animations</span><br /> Share Your Story </>),

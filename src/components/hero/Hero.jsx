@@ -1,5 +1,6 @@
 "use client"
 import Image from "next/image";
+import { usePathname } from 'next/navigation';
 // Import Components
 import CTA from "@/components/cta/CTA";
 // Import Images
@@ -7,9 +8,21 @@ import trustPlatforms from "media/icons/trust.png";
 
 const Hero = ({ content }) => {
     const { title, para, btnBg, btnColor, btnBorder, btnHover, } = content;
+    // Set Bg-Image
+    const router = usePathname();
+    let backgroundImage;
+    switch (router) {
+        case "/":
+            backgroundImage = 'lg:bg-[url("../../public/home/banner-img.png")]'
+        case '/motion-graphics':
+            backgroundImage = 'bg-cover lg:bg-[url("../../public/motion-graphics/banner-bg.png")]'
+            break;
+        default:
+            break;
+    }
     return (
         <>
-            <section className={`w-full h-[100vh] flex items-center lg:items-end justify-start pb-5 bg-none lg:bg-[url("../../public/home/banner-img.png")] bg-no-repeat bg-[length:100%_70%] bg-bottom`}>
+            <section className={`w-full h-[100vh] flex items-center lg:items-end justify-start pb-5 bg-none bg-no-repeat bg-[length:100%_70%] bg-bottom ${backgroundImage}`}>
                 <div className="container">
                     <div className='flex'>
                         <div className='w-[600px]'>
