@@ -16,3 +16,37 @@ body {
   overflow-x: hidden;
   background-color: #000;
 }
+
+.bg-prime {
+  background: linear-gradient(
+    90deg,
+    rgba(245, 9, 11, 1) 0%,
+    rgba(255, 45, 75, 1) 100%
+  );
+}
+
+.bg-second {
+  background: linear-gradient(
+    0deg,
+    rgba(245, 9, 11, 1) 0%,
+    rgba(255, 45, 75, 1) 100%
+  );
+}
+
+.testiSlider .slick-prev {
+  left: -255px;
+  top: 35%;
+}
+
+.testiSlider .slick-prev:before {
+  content: url(../../public/icons/arrow-left.png);
+}
+
+.testiSlider .slick-next {
+  right: -155px;
+  top: 35%;
+}
+
+.testiSlider .slick-next:before {
+  content: url(../../public/icons/arrow-right.png);
+}

@@ -6,23 +6,30 @@ export default {
   ],
   theme: {
     extend: {
-      screens: {
-        "xs": { "max": "576px" },
-        "sm": "576px",
-        "md": "768px",
-        "lg": "992px",
-        "xl": "1200px",
-        "2xl": "1400px",
-      },
       container: {
         center: true,
-        padding: "0.5rem",
+        padding: '1rem',
+        screens: {
+          sm: '640px',
+          md: '768px',
+          lg: '1200px',
+          xl: '1360px',
+          "2xl": '1500px'
+        }
+      },
+      screens: {
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1300px',
+        '2xl': '1500px',
       },
       fontFamily: {
-        "sans": ["Oswald", "sans-serif"]
+        sans: ["var(--font-primary)"]
       },
       colors: {
-        "primary": { 100: "#ff2d4b" },
+        "primary": { 100: "#f5090b" },
+        "secondary": { 100: "#ff2d4b" },
       }
     },
   },
