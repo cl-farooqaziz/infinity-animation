@@ -11,15 +11,44 @@ const Hero = ({ content }) => {
     // Set Bg-Image
     const router = usePathname();
     let backgroundImage;
+    let margin;
     switch (router) {
         case "/":
             backgroundImage = 'bg-[length:100%_70%] bg-bottom lg:items-end lg:bg-[url("../../public/home/banner-img.png")]'
+            margin = 'mt-0'
             break;
         case '/motion-graphics':
-            backgroundImage = 'bg-center bg-cover lg:bg-[url("../../public/motion-graphics/banner-bg.png")]'
+            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/motion-graphics/banner-bg.png")]'
             break;
         case '/video-editing':
-            backgroundImage = 'bg-center bg-cover lg:bg-[url("../../public/video-editing/banner-bg.png")]'
+            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/video-editing/banner-bg.png")]'
+            break;
+        case '/2d-animation':
+            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/2d-animation/banner-bg.png")]'
+            break;
+        case '/3d-animation':
+            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/3d-animation/banner-bg.png")]'
+            break;
+        case '/whiteboard-animation':
+            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/whiteboard/banner-bg.png")]'
+            break;
+        case '/infographics-design':
+            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/infographics/banner-bg.png")]'
+            break;
+        case '/hybrid-&-cel-animations':
+            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/hybrid-cel/banner-bg.png")]'
+            break;
+        case '/process':
+            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/process/banner-bg.png")]'
+            break;
+        case '/pricing':
+            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/pricing/banner-bg.png")]'
+            break;
+        case '/blog':
+            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/blogs/banner-bg.png")]'
+            break;
+        case '/contact':
+            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/contact/banner-bg.png")]'
             break;
         default:
             break;
@@ -30,7 +59,7 @@ const Hero = ({ content }) => {
                 <div className="container">
                     <div className='flex'>
                         <div className='w-[600px]'>
-                            <h1 className="text-[40px] md:text-[60px] font-semibold font-sans leading-none mb-5">
+                            <h1 className={`text-[40px] md:text-[60px] font-semibold font-sans leading-none mb-5 mt-32 ${margin}`}>
                                 {title}
                             </h1>
                             <p className="text-[16px] font-normal font-sans leading-snug tracking-wider text-justify mb-5">

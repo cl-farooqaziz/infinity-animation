@@ -43,6 +43,7 @@ export default function Page() {
     //=====Looking Fold=====//
     const paraArray = [
         "Pre-production, production, and post-production are three critical phases of making a video. While it may not seem apparent, since most of it happens behind the scenes, video editors blend sounds and images to present films that turn into excellent marketing tools for companies worldwide. The correct approach to video editing can attract newer audiences, get prospects to convert, and retain existing customers for a brand.",
+        
         "A great majority of consumers agree that a brand’s video makes it easier for them to decide whether or not to buy a particular product or service. Sign up to Cloud Animations, a leading video editing agency that guarantees easy transitions, smooth flow, perfect cuts, and seamless sound editing when combining different portions of the film. We ensure that your message doesn’t get lost in transition."
     ];
     const looking = {
