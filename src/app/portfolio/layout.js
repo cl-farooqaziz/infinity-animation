@@ -1,7 +1,7 @@
 // Meta Data
 export const metadata = {
     // Title & Descriptions
-    title: "Infinity Animation - Video Editing",
+    title: "Infinity Animation - Portfolio",
     description: "Infinity Animation",
 }
 
