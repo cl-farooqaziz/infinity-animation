@@ -72,3 +72,18 @@ body {
 .testiSlider .slick-next:before {
   content: url(../../public/icons/arrow-right.png);
 }
+
+
+/* Media Query Start */
+
+@media only screen and (max-width: 991px) {
+  .servicesConcept .slick-next {
+    right: 50px;
+  }
+
+  .servicesConcept .slick-prev {
+    top: 106%;
+  }
+}
+
+/* Media Query End */
