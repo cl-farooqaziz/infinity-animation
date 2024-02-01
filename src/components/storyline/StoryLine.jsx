@@ -15,7 +15,7 @@ const StoryLine = ({ content }) => {
     const handleClick = (index) => {
         setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
     };
-    // Set Bg-Image
+    // Set styling
     const router = usePathname();
     let main;
     let headings;

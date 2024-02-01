@@ -17,6 +17,33 @@ const Hero = ({ content }) => {
             backgroundImage = 'bg-[length:100%_70%] bg-bottom lg:items-end lg:bg-[url("../../public/home/banner-img.png")]'
             margin = 'mt-0'
             break;
+        case '/why-us':
+            backgroundImage = 'bg-[length:100%_100%] bg-bottom lg:bg-[url("../../public/why-us/banner-bg.png")]'
+            break;
+        case '/portfolio':
+            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/portfolio/banner-bg.png")]'
+            break;
+        case '/process':
+            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/process/banner-bg.png")]'
+            break;
+        case '/pricing':
+            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/pricing/banner-bg.png")]'
+            break;
+        case '/blog':
+            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/blogs/banner-bg.png")]'
+            break;
+        case '/contact-us':
+            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/contact/banner-bg.png")]'
+            break;
+        case '/logo-animation':
+            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/logo-animation/banner-bg.png")]'
+            break;
+        case '/architectural-services':
+            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/architectural-services/banner-bg.png")]'
+            break;
+        case '/cgi-and-vfx':
+            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/cgi-and-vfx/banner-bg.png")]'
+            break;
         case '/motion-graphics':
             backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/motion-graphics/banner-bg.png")]'
             break;
@@ -37,18 +64,6 @@ const Hero = ({ content }) => {
             break;
         case '/hybrid-&-cel-animations':
             backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/hybrid-cel/banner-bg.png")]'
-            break;
-        case '/process':
-            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/process/banner-bg.png")]'
-            break;
-        case '/pricing':
-            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/pricing/banner-bg.png")]'
-            break;
-        case '/blog':
-            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/blogs/banner-bg.png")]'
-            break;
-        case '/contact':
-            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/contact/banner-bg.png")]'
             break;
         default:
             break;
