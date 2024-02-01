@@ -1,8 +1,8 @@
 // Import Fonts
 import { primary } from "./configs/fonts";
 // Import Components
-import Header from "@/components/header/header";
-import Footer from "@/components/footer/footer";
+import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
 // Import Css
 import "./global.css";
 // Meta Data
