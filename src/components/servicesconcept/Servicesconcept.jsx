@@ -24,6 +24,26 @@ const Servicesconcept = ({ content }) => {
         speed: 3000,
         slidesToShow: 3,
         slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     };
 
     return (
@@ -31,17 +51,17 @@ const Servicesconcept = ({ content }) => {
             <section className='xl:pt-36 pb-16 relative'>
                 <Image src={foldBg} alt='bg' className='absolute top-[-200px] right-0 w-full' />
                 <div className="container">
-                    <div className="grid grid-cols-12">
-                        <div className="col-span-4">
+                    <div className="grid grid-cols-12 gap-y-7 md:gap-y-0">
+                        <div className="col-span-12 md:col-span-4">
                             <div className='relative -ml-6'>
-                                <Image src={Servicesconcept} alt='ServiceConcept' quality={85} className='w-10/12' />
-                                <div className='absolute bottom-[-100%] left-[6%]'>
+                                <Image src={Servicesconcept} alt='ServiceConcept' quality={85} className='lg:w-10/12' />
+                                <div className='absolute bottom-[-80%] lg:bottom-[-100%] left-[12%] lg:left-[6%]'>
                                     <Image src={ConceptParticle} alt='ConceptParticle' quality={85} className='w-full' />
                                 </div>
                             </div>
                         </div>
-                        <div className="col-span-8 relative">
-                            <h2 className='text-white text-[50px] font-sans font-bold'>{title}</h2>
+                        <div className="col-span-12 md:col-span-8 relative">
+                            <h2 className='text-white text-[30px] md:text-[50px] font-sans font-bold'>{title}</h2>
                             <p className='text-white font-sans font-light text-[16px] lg:w-11/12'>{para}</p>
 
                             <Slider {...testiSlider} className="servicesConcept mt-12">
@@ -62,7 +82,7 @@ const Servicesconcept = ({ content }) => {
                                     </div>
                                 ))}
                             </Slider>
-                            <hr className='border-[#707070] border mt-[40px] w-[75%] 2xl:w-[81%] ml-[11%] 2xl:ml-[6%]' />
+                            <hr className='border-[#707070] border mt-[40px] w-[68%] md:w-[75%] 2xl:w-[81%] ml-[16%] md:ml-[13%] lg:ml-[9%] 2xl:ml-[6%]' />
                         </div>
                     </div>
                 </div>
