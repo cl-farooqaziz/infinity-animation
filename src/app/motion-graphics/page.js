@@ -140,7 +140,8 @@ export default function Page() {
     //=====Want Fold=====//
     const want = {
         title: "Want to Talk ?",
-        wantDesc: "Are you ready to take the animation route? Call us now!"
+        wantDesc: "Are you ready to take the animation route? Call us now!",
+        bgPrime: true,
     }
     //=====Testimonial Fold=====//
     const testiContent = [
