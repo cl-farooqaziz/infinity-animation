@@ -35,7 +35,7 @@ body {
 
 .servicesConcept .slick-prev {
   left: -22px;
-  top: 100%;
+  top: 103%;
 }
 
 .servicesConcept .slick-prev:before {
@@ -48,7 +48,7 @@ body {
 
 .servicesConcept .slick-next {
   right: 115px;
-  top: 99%;
+  top: 105%;
   bottom: inherit;
 }
 

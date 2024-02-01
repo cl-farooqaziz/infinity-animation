@@ -24,6 +24,15 @@ import boosticon3 from "media/icons/boost-icon6.png"
 //==== Testimonial Images
 import icon1 from "media/images/client.png"
 import icon2 from "media/icons/stars.png"
+// ==== Service Concept Images
+import ServiceConcept from 'media/images/concept-img.png'
+import ConceptParticle from "media/images/concept-bef.png"
+import conceptIcon1 from "media/icons/concept-icon1.png"
+import conceptIcon2 from "media/icons/concept-icon2.png"
+import conceptIcon3 from "media/icons/concept-icon3.png"
+import conceptIcon4 from "media/icons/concept-icon4.png"
+import FoldBg from 'media/images/fold-bg.png'
+
 
 export default function Page() {
     //=====Banner Fold=====//
@@ -89,11 +98,50 @@ export default function Page() {
         flodImg: BoostFlodImg
     };
     //=====Service Concept Fold=====//
+    const conceptContent = [
+        {
+            ImageOne: conceptIcon1,
+            sliderNumber: 1,
+            slideTitle: "Concept",
+            sliderDesc: "We first brainstorm and refine your ideas into a solid concept, ensuring a strong narrative foundation."
+        },
+        {
+            ImageOne: conceptIcon2,
+            sliderNumber: 2,
+            slideTitle: "Storyboarding",
+            sliderDesc: "Next, we create storyboards that visually map out your video, displaying the sequence of animation events."
+        },
+        {
+            ImageOne: conceptIcon3,
+            sliderNumber: 3,
+            slideTitle: "Creation",
+            sliderDesc: "Using the storyboard as our guide, our animators bring your story to life with engaging visuals."
+        },
+        {
+            ImageOne: conceptIcon4,
+            sliderNumber: 4,
+            slideTitle: "Concept",
+            sliderDesc: "We first brainstorm and refine your ideas into a solid concept, ensuring a strong narrative foundation."
+        },
+    ]
+
     const concept = {
+        title: "How We Animate",
+        para: "As an industry-leading video animation company, we have a firm belief that innovation, when combined with dedication, helps the brand stand out through exceptional video production.",
+        Servicesconcept: ServiceConcept,
+        ConceptParticle: ConceptParticle,
+        conceptContent: conceptContent,
+        foldBg: FoldBg,
         btnBg: "bg-prime",
     };
     //=====Pricing Fold=====//
+
     //=====Want Fold=====//
+    const want = {
+        title: "Want to Talk ?",
+        wantDesc: "Are you ready to take the animation route? Call us now!"
+    }
+
     //=====Testimonial Fold=====//
     const testiContent = [
         {
@@ -132,13 +180,11 @@ export default function Page() {
             <Looking content={looking} />
             <Portfolio content={portfolio} />
             <Boost content={boost} />
-            <Servicesconcept />
+            <Servicesconcept content={concept} />
             {/* pricing */}
-            <Want content={hero} />
+            <Want content={want} />
             <Testimonial content={testimonial} />
             <Contact />
         </>
     )
 }
-
-

@@ -2,14 +2,14 @@ import React from 'react'
 import CTA from '../cta/CTA'
 
 const Want = ({ content }) => {
-    const { btnBg, btnColor, btnBorder, btnHover, } = content;
+    const { title, wantDesc, btnBg, btnColor, btnBorder, btnHover, } = content;
 
     return (
         <>
             <section className="bg-[url('../../public/images/talk-bg.png')] bg-no-repeat bg-[length:100%] h-screen relative">
                 <div className="absolute right-[7.3%] top-[13%] xl:top-[15%] 2xl:top-[25%] w-[40%] mx-auto">
-                    <h2 className='text-white text-[50px] font-bold font-sans text-center'>Want to Talk ?</h2>
-                    <p className='text-white text-[16px] font-normal font-sans text-center'>Are you ready to take the animation route? Call us now!</p>
+                    <h2 className='text-white text-[50px] font-bold font-sans text-center'>{title}</h2>
+                    <p className='text-white text-[16px] font-normal font-sans text-center'>{wantDesc}</p>
                     <div className="flex gap-4 justify-center pt-6">
                         <CTA
                             text="Get Started"
