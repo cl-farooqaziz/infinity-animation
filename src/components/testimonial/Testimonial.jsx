@@ -12,7 +12,7 @@ const Testimonial = ({ content }) => {
         dots: false,
         arrows: true,
         infinite: false,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 5000,
         speed: 3000,
         slidesToShow: 1,

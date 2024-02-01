@@ -5,7 +5,7 @@ import Looking from '@/components/looking/Looking';
 import Portfolio from '@/components/portfolio/Portfolio';
 import Boost from '@/components/boost/Boost';
 import Servicesconcept from '@/components/servicesconcept/Servicesconcept';
-
+import Pricing from "@/components/pricing/Pricing";
 import Want from '@/components/want/Want';
 import Testimonial from '@/components/testimonial/Testimonial';
 import Contact from '@/components/contact/Contact';
@@ -21,18 +21,17 @@ import BoostFlodImg from "media/images/boost-img.png";
 import boosticon1 from "media/icons/boost-icon4.png"
 import boosticon2 from "media/icons/boost-icon5.png"
 import boosticon3 from "media/icons/boost-icon6.png"
-//==== Testimonial Images
-import icon1 from "media/images/client.png"
-import icon2 from "media/icons/stars.png"
 // ==== Service Concept Images
 import ServiceConcept from 'media/images/concept-img.png'
 import ConceptParticle from "media/images/concept-bef.png"
+import FoldBg from 'media/images/fold-bg.png'
 import conceptIcon1 from "media/icons/concept-icon1.png"
 import conceptIcon2 from "media/icons/concept-icon2.png"
 import conceptIcon3 from "media/icons/concept-icon3.png"
 import conceptIcon4 from "media/icons/concept-icon4.png"
-import FoldBg from 'media/images/fold-bg.png'
-
+//==== Testimonial Images
+import icon1 from "media/images/client.png"
+import icon2 from "media/icons/stars.png"
 
 export default function Page() {
     //=====Banner Fold=====//
@@ -124,7 +123,6 @@ export default function Page() {
             sliderDesc: "We first brainstorm and refine your ideas into a solid concept, ensuring a strong narrative foundation."
         },
     ]
-
     const concept = {
         title: "How We Animate",
         para: "As an industry-leading video animation company, we have a firm belief that innovation, when combined with dedication, helps the brand stand out through exceptional video production.",
@@ -135,13 +133,15 @@ export default function Page() {
         btnBg: "bg-prime",
     };
     //=====Pricing Fold=====//
-
+    const pricing = {
+        title: (<> Pricing Plans </>),
+        para: (<> Bringing you the best, in a price that is better than the rest </>),
+    };
     //=====Want Fold=====//
     const want = {
         title: "Want to Talk ?",
         wantDesc: "Are you ready to take the animation route? Call us now!"
     }
-
     //=====Testimonial Fold=====//
     const testiContent = [
         {
@@ -181,7 +181,7 @@ export default function Page() {
             <Portfolio content={portfolio} />
             <Boost content={boost} />
             <Servicesconcept content={concept} />
-            {/* pricing */}
+            <Pricing content={pricing} />
             <Want content={want} />
             <Testimonial content={testimonial} />
             <Contact />

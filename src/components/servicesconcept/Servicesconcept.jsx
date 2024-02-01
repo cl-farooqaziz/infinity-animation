@@ -1,25 +1,19 @@
 "use client"
-
 import React from 'react'
 import Image from 'next/image'
-
 // Import Slick Slider
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-
 const Servicesconcept = ({ content }) => {
-
     const { title, para, conceptContent, Servicesconcept, ConceptParticle, foldBg } = content;
-
-
     // Slider Setting
     const testiSlider = {
         dots: false,
         arrows: true,
         infinite: false,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 5000,
         speed: 3000,
         slidesToShow: 3,
@@ -49,7 +43,7 @@ const Servicesconcept = ({ content }) => {
     return (
         <>
             <section className='xl:pt-36 pb-16 relative'>
-                <Image src={foldBg} alt='bg' className='absolute top-[-200px] right-0 w-full' />
+                <Image src={foldBg} alt='bg' className='absolute top-[-125px] right-0 w-full' />
                 <div className="container">
                     <div className="grid grid-cols-12 gap-y-7 md:gap-y-0">
                         <div className="col-span-12 md:col-span-4">
@@ -86,7 +80,7 @@ const Servicesconcept = ({ content }) => {
                         </div>
                     </div>
                 </div>
-            </section >
+            </section>
         </>
     )
 }
