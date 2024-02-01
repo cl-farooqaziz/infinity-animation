@@ -9,7 +9,7 @@ const Boost = ({ content }) => {
         <>
             <section className={`w-full flex pt-32 pb-16`}>
                 <div className="container">
-                    <div className='flex flex-col-reverse lg:flex-row items-start justify-between'>
+                    <div className='flex flex-col-reverse lg:flex-row items-center justify-between'>
                         <div className='w-full lg:w-[1000px]'>
                             <h1 className="text-[40px] md:text-[60px] font-semibold font-sans leading-tight mb-3">
                                 {title}

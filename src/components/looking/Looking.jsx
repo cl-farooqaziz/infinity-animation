@@ -1,19 +1,35 @@
 "use client"
 import Image from "next/image";
+import { usePathname } from 'next/navigation';
+
 // Import Components
 import CTA from "@/components/cta/CTA";
 
 const Looking = ({ content }) => {
     const { title, para: { paraArray }, btnBg, btnColor, btnBorder, btnHover, flodImg } = content;
+
+    const router = usePathname();
+
+    let lookinImage;
+    let lookingSecCol;
+    switch (router) {
+        case '/why-us':
+            lookinImage = 'lg:min-w-[1000px] mr-auto'
+            lookingSecCol = 'absolute right-[54px] top-[18%]'
+            break;
+        default:
+            break;
+    }
+
     return (
         <>
-            <section className={`w-full flex items-center justify-start py-16 bg-none lg:bg-[url("../../public/images/fold-bg.png")] bg-no-repeat bg-center bg-cover`}>
+            <section className={`w-full flex items-center justify-start py-16 bg-none lg:bg-[url("../../public/images/fold-bg.png")] bg-no-repeat bg-center bg-cover relative`}>
                 <div className="container">
                     <div className='flex flex-col-reverse lg:flex-row items-center justify-around'>
-                        <div className="w-full lg:w-[500px]">
+                        <div className={`w-full lg:w-[500px] ${lookinImage}`}>
                             <Image src={flodImg} className="mx-auto" alt="Infinity Animation" />
                         </div>
-                        <div className='w-full lg:w-[800px]'>
+                        <div className={`w-full lg:w-[800px] ${lookingSecCol}`}>
                             <h1 className="text-[40px] md:text-[50px] font-semibold font-sans leading-tight mb-5">
                                 {title}
                             </h1>
