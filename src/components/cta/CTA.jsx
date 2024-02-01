@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 // Import Images
-import getIcon from "media/icons/btn-arr.png";
+import getIcon from "media/icons/arrow-w.png";
 import liveChatIcon from "media/icons/chat.png";
 
 const CTA = ({ text, icon1, icon2, color, link, border, hover, rounded }) => {
