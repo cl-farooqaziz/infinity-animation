@@ -1,9 +1,10 @@
 // Import Fonts
 import { primary } from "./configs/fonts";
-
+// Import Components
+import Header from "@/components/header/header";
+import Footer from "@/components/footer/footer";
 // Import Css
 import "./global.css";
-
 // Meta Data
 export const metadata = {
   // Title & Descriptions
@@ -15,7 +16,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${primary.variable}`}>
-        {children}
+        <Header />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

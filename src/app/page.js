@@ -1,5 +1,4 @@
 // Import Page Components
-import Header from '@/components/header/Header';
 import Hero from "@/components/hero/Hero";
 import Review from "@/components/review/Review";
 import Looking from '@/components/looking/Looking';
@@ -9,7 +8,6 @@ import Concept from '@/components/concept/Concept';
 import Boost from '@/components/boost/Boost';
 import Testimonial from '@/components/testimonial/Testimonial';
 import Contact from '@/components/contact/Contact';
-import Footer from '@/components/footer/footer';
 // Import Images
 import LookingFlodImg from "media/home/looking-img.png";
 //==== StoryLine Images
@@ -209,7 +207,6 @@ export default function Page() {
 
     return (
         <>
-            <Header />
             <Hero content={hero} />
             <Review />
             <Looking content={looking} />
@@ -219,7 +216,6 @@ export default function Page() {
             <Boost content={boost} />
             <Testimonial content={testimonial} />
             <Contact />
-            <Footer />
         </>
     )
 }

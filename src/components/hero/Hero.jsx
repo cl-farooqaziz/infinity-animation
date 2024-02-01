@@ -13,16 +13,20 @@ const Hero = ({ content }) => {
     let backgroundImage;
     switch (router) {
         case "/":
-            backgroundImage = 'lg:bg-[url("../../public/home/banner-img.png")]'
+            backgroundImage = 'bg-[length:100%_70%] bg-bottom lg:items-end lg:bg-[url("../../public/home/banner-img.png")]'
+            break;
         case '/motion-graphics':
-            backgroundImage = 'bg-cover lg:bg-[url("../../public/motion-graphics/banner-bg.png")]'
+            backgroundImage = 'bg-center bg-cover lg:bg-[url("../../public/motion-graphics/banner-bg.png")]'
+            break;
+        case '/video-editing':
+            backgroundImage = 'bg-center bg-cover lg:bg-[url("../../public/video-editing/banner-bg.png")]'
             break;
         default:
             break;
     }
     return (
         <>
-            <section className={`w-full h-[100vh] flex items-center lg:items-end justify-start pb-5 bg-none bg-no-repeat bg-[length:100%_70%] bg-bottom ${backgroundImage}`}>
+            <section className={`w-full h-[100vh] flex items-center justify-start pb-5 bg-none bg-no-repeat ${backgroundImage}`}>
                 <div className="container">
                     <div className='flex'>
                         <div className='w-[600px]'>
