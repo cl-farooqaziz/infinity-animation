@@ -1,14 +1,14 @@
 // Import Page Components
-import Header from '@/components/header/Header';
 import Hero from "@/components/hero/Hero";
 import Review from "@/components/review/Review";
 import Looking from '@/components/looking/Looking';
 import Portfolio from '@/components/portfolio/Portfolio';
-import Concept from '@/components/concept/Concept';
 import Boost from '@/components/boost/Boost';
+import Servicesconcept from '@/components/servicesconcept/Servicesconcept';
+
+import Want from '@/components/want/Want';
 import Testimonial from '@/components/testimonial/Testimonial';
 import Contact from '@/components/contact/Contact';
-import Footer from '@/components/footer/footer';
 // Import Images
 import LookingFlodImg from "media/motion-graphics/looking-img.png";
 //==== Portfolio Images
@@ -124,22 +124,19 @@ export default function Page() {
         btnBg: "bg-prime",
         testiContent: testiContent
     };
-    //=====Connect Fold=====//
 
     return (
         <>
-            <Header />
             <Hero content={hero} />
             <Review />
             <Looking content={looking} />
             <Portfolio content={portfolio} />
             <Boost content={boost} />
-            {/* Service Concept */}
+            <Servicesconcept />
             {/* pricing */}
-            {/* want */}
+            <Want content={hero} />
             <Testimonial content={testimonial} />
             <Contact />
-            <Footer />
         </>
     )
 }
