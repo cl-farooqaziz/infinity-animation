@@ -1,8 +1,10 @@
+"use client"
 import React from 'react'
+// Import Components
 import CTA from '../cta/CTA'
 
 const Want = ({ content }) => {
-    const { title, wantDesc, btnBg, bgPrime, btnColor, btnBorder, btnHover, } = content;
+    const { title, wantDesc, btnBg, btnColor, btnBorder, btnHover, } = content;
 
     return (
         <>
