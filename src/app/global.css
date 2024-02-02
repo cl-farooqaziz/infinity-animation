@@ -18,15 +18,27 @@ body {
 }
 
 .bg-prime {
-  background: linear-gradient(90deg,
-      rgba(245, 9, 11, 1) 0%,
-      rgba(255, 45, 75, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(245, 9, 11, 1) 0%,
+    rgba(255, 45, 75, 1) 100%
+  );
 }
 
 .bg-second {
-  background: linear-gradient(0deg,
-      rgba(245, 9, 11, 1) 0%,
-      rgba(255, 45, 75, 1) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(245, 9, 11, 1) 0%,
+    rgba(255, 45, 75, 1) 100%
+  );
+}
+
+.bg-third {
+  background: linear-gradient(
+    0deg,
+    rgba(245, 9, 11, 1) 0%,
+    rgba(255, 45, 75, 1) 40%
+  );
 }
 
 /* service slider start */
@@ -69,7 +81,6 @@ body {
 .testiSlider .slick-next:before {
   content: url(../../public/icons/arrow-right.png);
 }
-
 
 /* Media Query Start */
 
