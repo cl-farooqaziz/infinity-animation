@@ -10,6 +10,8 @@ import LookingFlodImg from "media/why-us/history-img.png";
 //==== Testimonial Images
 import icon1 from "media/images/client.png"
 import icon2 from "media/icons/stars.png"
+import Features from "@/components/features/Features";
+import Partners from "@/components/partners/Partners";
 
 export default function Page() {
     //=====Banner Fold=====//
@@ -67,6 +69,8 @@ export default function Page() {
             <Hero content={hero} />
             <Review />
             <Looking content={looking} />
+            <Features />
+            <Partners />
             <Want content={want} />
             <Testimonial content={testimonial} />
             <Contact />

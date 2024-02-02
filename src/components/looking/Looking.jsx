@@ -15,7 +15,7 @@ const Looking = ({ content }) => {
     switch (router) {
         case '/why-us':
             lookinImage = 'lg:min-w-[1000px] mr-auto'
-            lookingSecCol = 'absolute right-[54px] top-[18%]'
+            lookingSecCol = 'md:absolute right-[54px] top-[18%]'
             break;
         default:
             break;
