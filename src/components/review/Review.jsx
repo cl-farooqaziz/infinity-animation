@@ -6,7 +6,7 @@ import trustPlatforms from "media/icons/partners.png";
 const Review = () => {
     return (
         <>
-            <section className="flex items-center justify-center py-16">
+            <section className="flex items-center justify-center pt-5 pb-16">
                 <Image src={trustPlatforms} className="w-[80%]" alt="Infinity Animation" />
             </section>
         </>

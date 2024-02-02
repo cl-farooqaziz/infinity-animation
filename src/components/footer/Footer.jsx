@@ -20,7 +20,7 @@ const Footer = () => {
         },
         {
             text: "Why Us",
-            link: "/about-us"
+            link: "/why-us"
         },
         {
             text: "Video Animation",
@@ -28,7 +28,7 @@ const Footer = () => {
         },
         {
             text: "Portfolio",
-            link: "/"
+            link: "/portfolio"
         },
         {
             text: "Pricing",
@@ -36,7 +36,7 @@ const Footer = () => {
         },
         {
             text: "Contact Us",
-            link: "/contact"
+            link: "/contact-us"
         },
     ];
     const servicesLinks = [

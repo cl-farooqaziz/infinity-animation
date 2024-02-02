@@ -17,7 +17,7 @@ const Header = () => {
                 <Link href="/" className="font-sans text-lg font-normal leading-10">Home</Link>
             </li>
             <li className="lg:h-full lg:flex lg:items-center">
-                <Link href="/about-us" className="font-sans text-lg font-normal leading-10">Why Us</Link>
+                <Link href="/why-us" className="font-sans text-lg font-normal leading-10">Why Us</Link>
             </li>
             <li className="lg:h-full lg:flex lg:items-center group relative">
                 <button href="/" className="font-sans text-lg font-normal leading-10 flex items-center gap-3">
@@ -95,16 +95,16 @@ const Header = () => {
                 </div> */}
             </li>
             <li className="lg:h-full lg:flex lg:items-center">
-                <Link href="/pricing" className="font-sans text-lg font-normal leading-10">Portfolio</Link>
+                <Link href="/portfolio" className="font-sans text-lg font-normal leading-10">Portfolio</Link>
             </li>
             <li className="lg:h-full lg:flex lg:items-center">
-                <Link href="/pricing" className="font-sans text-lg font-normal leading-10">Process</Link>
+                <Link href="/process" className="font-sans text-lg font-normal leading-10">Process</Link>
             </li>
             <li className="lg:h-full lg:flex lg:items-center">
                 <Link href="/pricing" className="font-sans text-lg font-normal leading-10">Pricing</Link>
             </li>
             <li className="lg:h-full lg:flex lg:items-center">
-                <Link href="/pricing" className="font-sans text-lg font-normal leading-10">Blog</Link>
+                <Link href="/blog" className="font-sans text-lg font-normal leading-10">Blog</Link>
             </li>
             <li className="lg:h-full lg:flex lg:items-center">
                 <Link href="/contact-us" className="font-sans text-lg font-normal leading-10">Contact Us</Link>

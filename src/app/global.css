@@ -29,9 +29,7 @@ body {
       rgba(255, 45, 75, 1) 100%);
 }
 
-
-
-/* testi slider start */
+/* service slider start */
 
 .servicesConcept .slick-prev {
   left: -22px;
@@ -53,7 +51,6 @@ body {
 }
 
 /* testi slider start */
-
 
 .testiSlider .slick-prev {
   left: -255px;

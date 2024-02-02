@@ -1,13 +1,24 @@
 "use client"
 import Image from "next/image";
+import { usePathname } from 'next/navigation';
 // Import Components
 import CTA from "@/components/cta/CTA";
 
 const Boost = ({ content }) => {
     const { title, para, btnBg, btnColor, btnBorder, btnHover, flodImg, boostContent } = content;
+    // Set styling
+    const router = usePathname();
+    let padding;
+    switch (router) {
+        case "/":
+            padding='pt-32'
+            break;
+        default:
+            break;
+    }
     return (
         <>
-            <section className={`w-full flex pt-32 pb-16`}>
+            <section className={`w-full flex py-16`}>
                 <div className="container">
                     <div className='flex flex-col-reverse lg:flex-row items-center justify-between'>
                         <div className='w-full lg:w-[1000px]'>

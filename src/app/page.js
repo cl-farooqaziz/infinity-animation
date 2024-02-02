@@ -8,10 +8,11 @@ import Concept from '@/components/concept/Concept';
 import Boost from '@/components/boost/Boost';
 import Testimonial from '@/components/testimonial/Testimonial';
 import Contact from '@/components/contact/Contact';
-// Import Images
+//==== Looking Images
 import LookingFlodImg from "media/home/looking-img.png";
 //==== StoryLine Images
-import StoryLineFold from "media/home/storyline1.png";
+import StoryLine1 from "media/home/storyline1.png";
+import StoryLine2 from "media/home/storyline2.png";
 //==== Portfolio Images
 import polio1 from "media/home/portfolio1.png"
 import polio2 from "media/home/portfolio2.png"
@@ -36,6 +37,7 @@ export default function Page() {
     //=====Looking Fold=====//
     const paraArray = [
         "Everybody deserves a taste of art. Infinity Animations, a kingdom of endless creativity, boasts a vibrant team of certified animators. Their expertise textures stories into visual marvels, enthralling viewers globally. Renowned for affordability, they democratize animation, making mesmeric art accessible to all. ",
+        
         "It's a place where skill meets passion, and dreams transform into digital reality."
     ];
     const looking = {
@@ -48,52 +50,52 @@ export default function Page() {
         {
             question: '2D Animations',
             answer: "2D animation, a timeless dance of lines and colors, sparks nostalgia and wonder. With every frame precisely crafted, it interlaces enchanting tales that capture the essence of pure artistry.",
-            StoryLineFold: StoryLineFold,
+            StoryLineImg: StoryLine1,
         },
         {
             question: '3D Animations',
             answer: "3D animation, a world of infinite possibilities, sculpts dreams into reality. With lifelike characters and immersive worlds, it transports us to new dimensions where imagination knows no bounds.",
-            StoryLineFold: StoryLineFold
+            StoryLineImg: StoryLine2
         },
         {
             question: 'Whiteboard',
             answer: "Whiteboard animation, a fascinating blend of simplicity and storytelling, unravels ideas with an artistic touch. Black ink dances on a white canvas, breathing life into concepts and turning knowledge into art.",
-            StoryLineFold: StoryLineFold
+            StoryLineImg: StoryLine1
         },
         {
             question: 'Motion Graphics',
             answer: "Motion graphics, the symphony of movement, and design orchestrate visuals into a hypnotic dance. With fluidity and precision, it transforms data and concepts into dynamic narratives that enthrall and inform.",
-            StoryLineFold: StoryLineFold
+            StoryLineImg: StoryLine2
         },
         {
             question: 'Video Editing',
             answer: "Video editing, the alchemy of storytelling, assembles moments into a cinematic masterpiece. With every cut, merge, and effect, its crafts emotions, taking viewers on an unforgettable journey through the lens of creativity.",
-            StoryLineFold: StoryLineFold
+            StoryLineImg: StoryLine1
         },
         {
             question: 'Logo Animations',
             answer: "Logo animations, the heartbeat of brand identity, breathe vitality into symbols. With finesse and innovation, they turn logos into dynamic stories, leaving indelible impressions in the digital world.",
-            StoryLineFold: StoryLineFold
+            StoryLineImg: StoryLine2
         },
         {
             question: 'Architectural Visualization',
             answer: "Architectural visualization, the art of turning blueprints into dreams, unveils future spaces in vivid detail. With lighting and texture, it grants a glimpse of what could be, inspiring awe and vision.",
-            StoryLineFold: StoryLineFold
+            StoryLineImg: StoryLine1
         },
         {
             question: 'CGI-VFX',
             answer: "CGI-VFX, the magic of the digital dominion, paints fantasies onto screens. With breathtaking realism, it melds reality and imagination, crafting visual spectacles that transport us to empires beyond our wildest dreams.",
-            StoryLineFold: StoryLineFold
+            StoryLineImg: StoryLine2
         },
         {
             question: 'Infographics',
             answer: "Infographics, the visual storytellers of data, turn statistics into engaging tales. With colors and graphics, they simplify complexity, empowering audiences to grasp information effortlessly, and making knowledge a work of art.",
-            StoryLineFold: StoryLineFold
+            StoryLineImg: StoryLine1
         },
         {
             question: 'Hybrid & Cel',
             answer: "Hybrid & Cel animation, a fusion of classic and modern, evokes nostalgia and innovation. With hand-drawn charm and digital precision, they breathe life into characters, bridging generations with entrancing tales.",
-            StoryLineFold: StoryLineFold
+            StoryLineImg: StoryLine2
         },
     ];
     const storyLine = {
