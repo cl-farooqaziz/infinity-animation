@@ -18,27 +18,21 @@ body {
 }
 
 .bg-prime {
-  background: linear-gradient(
-    90deg,
-    rgba(245, 9, 11, 1) 0%,
-    rgba(255, 45, 75, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(245, 9, 11, 1) 0%,
+      rgba(255, 45, 75, 1) 100%);
 }
 
 .bg-second {
-  background: linear-gradient(
-    0deg,
-    rgba(245, 9, 11, 1) 0%,
-    rgba(255, 45, 75, 1) 100%
-  );
+  background: linear-gradient(0deg,
+      rgba(245, 9, 11, 1) 0%,
+      rgba(255, 45, 75, 1) 100%);
 }
 
 .bg-third {
-  background: linear-gradient(
-    0deg,
-    rgba(245, 9, 11, 1) 0%,
-    rgba(255, 45, 75, 1) 40%
-  );
+  background: linear-gradient(0deg,
+      rgba(245, 9, 11, 1) 0%,
+      rgba(255, 45, 75, 1) 40%);
 }
 
 /* service slider start */
@@ -82,7 +76,60 @@ body {
   content: url(../../public/icons/arrow-right.png);
 }
 
+
+/* Blogs Slider start */
+
+.blogsSlider .slick-prev {
+  left: 0;
+  top: inherit;
+  bottom: -39px;
+}
+
+.blogsSlider .slick-prev:before {
+  content: url(../../public/icons/red-arrow-l.png);
+}
+
+.blogsSlider .slick-next {
+  right: 43px;
+  bottom: -39px;
+  top: inherit;
+}
+
+.blogsSlider .slick-next:before {
+  content: url(../../public/icons/red-arrow-r.png);
+}
+
+/* Blogs Slider End */
+
 /* Media Query Start */
+
+@media only screen and (max-width: 1920px) {
+  .blogsSlider .slick-dots {
+    position: absolute;
+    bottom: -42px;
+    display: block;
+    width: 9%;
+    padding: 0;
+    text-align: right;
+    z-index: 9999;
+    margin-right: auto;
+    right: 71px;
+    background: #000;
+    font-family: sans-serif;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .blogsSlider .slick-dots {
+    width: 9%;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .blogsSlider .slick-dots {
+    width: 11%;
+  }
+}
 
 @media only screen and (max-width: 991px) {
   .servicesConcept .slick-next {
@@ -91,6 +138,39 @@ body {
 
   .servicesConcept .slick-prev {
     top: 106%;
+  }
+
+  .blogsSlider .slick-dots {
+    width: 22%;
+  }
+
+  .testiSlider .slick-prev {
+    left: -200px;
+  }
+
+  .testiSlider .slick-next {
+    right: -125px;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+
+  .wantbg {
+    background: linear-gradient(0deg,
+        rgba(245, 9, 11, 1) 0%,
+        rgba(255, 45, 75, 1) 40%);
+  }
+
+  .blogsSlider .slick-next {
+    right: 27px;
+  }
+
+  .blogsSlider .slick-prev {
+    left: -13px;
+  }
+
+  .blogsSlider .slick-dots {
+    display: none;
   }
 }
 

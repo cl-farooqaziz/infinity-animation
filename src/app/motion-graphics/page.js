@@ -43,7 +43,7 @@ export default function Page() {
     //=====Looking Fold=====//
     const paraArray = [
         "The simplest explanation for motion graphics is an animation that incorporates text. A motion graphics animated video offers a brilliant way for brands to communicate with their viewers and add depth to their stories. They’re perceived as far more attractive than simple ads or text formats and require half the time and money needed for complex animations. For example, motion graphic animations are great for displaying products to customers in a fun, entertaining, and engaging way that may potentially increase sales.",
-        
+
         "Hire a motion graphic artist or designer from Cloud Animations to deliver your brand message. The motion graphic design can be displayed interchangeably amongst a variety of formats and may also be shared on social media and other digital mediums to extend the reach of the content further.Use videos as a potent tool for propelling your brands ahead with Infinity Animations."
     ];
     const looking = {
@@ -68,7 +68,7 @@ export default function Page() {
     ];
     const portfolio = {
         title: (<> Our Portfolio of Creative Video Animations </>),
-        para: (<> We take pride in crafting stunning 2D animation videos, whiteboard animations, 3D animations, <br /> typographic animations, and more for our valued clientele. </>),
+        para: (<> We take pride in crafting stunning 2D animation videos, whiteboard animations, 3D animations, <br className="lg:block hidden" /> typographic animations, and more for our valued clientele. </>),
         tabContents: tabContents,
         tabInfo: tabInfo
     };

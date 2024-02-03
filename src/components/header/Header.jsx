@@ -12,7 +12,7 @@ const Header = () => {
     const [openNav, setOpenNav] = useState(false);
     const [openSubMenu, setOpenSubMenu] = useState(false);
     const navList = (
-        <ul className="lg:flex lg:items-center gap-10 lg:h-full rounded-2xl bg-black lg:bg-transparent lg:rounded-none py-5 lg:py-0 px-5 lg:px-0">
+        <ul className="lg:flex lg:items-center gap-5 xl:gap-10 lg:h-full rounded-2xl bg-black lg:bg-transparent lg:rounded-none py-5 lg:py-0 px-5 lg:px-0">
             <li className="lg:h-full lg:flex lg:items-center">
                 <Link href="/" className="font-sans text-lg font-normal leading-10">Home</Link>
             </li>
@@ -166,11 +166,13 @@ const Header = () => {
                         </IconButton>
                     </div>
                 </div>
-                <Collapse open={openNav} className="block xl:hidden">
-                    <div className="container mx-auto">
-                        {navList}
-                    </div>
-                </Collapse>
+                {openNav && (
+                    <Collapse open={openNav} className="block xl:hidden">
+                        <div className="container mx-auto">
+                            {navList}
+                        </div>
+                    </Collapse>
+                )}
             </Navbar>
         </header>
     );

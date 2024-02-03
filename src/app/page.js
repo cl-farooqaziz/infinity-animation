@@ -37,7 +37,7 @@ export default function Page() {
     //=====Looking Fold=====//
     const paraArray = [
         "Everybody deserves a taste of art. Infinity Animations, a kingdom of endless creativity, boasts a vibrant team of certified animators. Their expertise textures stories into visual marvels, enthralling viewers globally. Renowned for affordability, they democratize animation, making mesmeric art accessible to all. ",
-        
+
         "It's a place where skill meets passion, and dreams transform into digital reality."
     ];
     const looking = {
@@ -148,7 +148,7 @@ export default function Page() {
         },
     ];
     const boost = {
-        title: (<> Artistic and Unreal Animations <br /> Catapult Engagements and Sales </>),
+        title: (<> Artistic and Unreal Animations <br className="xl:block hidden" /> Catapult Engagements and Sales </>),
         para: (<> We understand that you have a business to run. And what good is a business without engagements <br /> and sales, yes? Well, we will sort that out for you. </>),
         btnBg: "bg-prime",
         boostContent: boostContent,

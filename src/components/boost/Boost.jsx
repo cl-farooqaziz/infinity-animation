@@ -11,18 +11,18 @@ const Boost = ({ content }) => {
     let padding;
     switch (router) {
         case "/":
-            padding='pt-32'
+            padding = 'pt-32'
             break;
         default:
             break;
     }
     return (
         <>
-            <section className={`w-full flex py-16`}>
+            <section className={`w-full flex py-8 md:py-16`}>
                 <div className="container">
-                    <div className='flex flex-col-reverse lg:flex-row items-center justify-between'>
+                    <div className='flex flex-col-reverse lg:flex-row gap-y-8 items-center justify-between'>
                         <div className='w-full lg:w-[1000px]'>
-                            <h1 className="text-[40px] md:text-[60px] font-semibold font-sans leading-tight mb-3">
+                            <h1 className="text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight mb-3">
                                 {title}
                             </h1>
                             <p className="text-[16px] font-normal font-sans leading-snug tracking-wider text-justify mb-5">
@@ -55,7 +55,7 @@ const Boost = ({ content }) => {
                                     link="javascript:$zopim.livechat.window.show();" />
                             </div>
                         </div>
-                        <div className="w-full lg:w-[500px]">
+                        <div className="w-full sm:w-[400px] lg:w-[500px]">
                             <Image src={flodImg} className="mx-auto" alt="Infinity Animation" />
                         </div>
                     </div>

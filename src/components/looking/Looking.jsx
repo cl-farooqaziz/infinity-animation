@@ -23,14 +23,14 @@ const Looking = ({ content }) => {
 
     return (
         <>
-            <section className={`w-full flex items-center justify-start py-16 bg-none lg:bg-[url("../../public/images/fold-bg.png")] bg-no-repeat bg-center bg-cover relative`}>
+            <section className={`w-full flex items-center justify-start py-8 sm:py-16 bg-none lg:bg-[url("../../public/images/fold-bg.png")] bg-no-repeat bg-center bg-cover relative`}>
                 <div className="container">
-                    <div className='flex flex-col-reverse lg:flex-row items-center justify-around'>
+                    <div className='flex flex-col-reverse lg:flex-row items-center justify-around gap-y-7'>
                         <div className={`w-full lg:w-[500px] ${lookinImage}`}>
-                            <Image src={flodImg} className="mx-auto" alt="Infinity Animation" />
+                            <Image src={flodImg} className="w-9/12 lg:w-full mx-auto" alt="Infinity Animation" />
                         </div>
                         <div className={`w-full lg:w-[800px] ${lookingSecCol}`}>
-                            <h1 className="text-[40px] md:text-[50px] font-semibold font-sans leading-tight mb-5">
+                            <h1 className="text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight mb-5">
                                 {title}
                             </h1>
                             {paraArray.map((para, index) => (

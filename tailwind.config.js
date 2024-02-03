@@ -23,6 +23,7 @@ export default {
         'lg': '1024px',
         'xl': '1300px',
         '2xl': '1500px',
+        '3xl': '1900px',
       },
       fontFamily: {
         sans: ["var(--font-primary)"]

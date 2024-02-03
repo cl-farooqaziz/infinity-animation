@@ -109,7 +109,7 @@ const Footer = () => {
 
     return (
         <footer>
-            <div className="pt-20">
+            <div className="pt-10 md:pt-20">
                 <div className="container">
                     <div className="flex gap-x-5 pb-8 border-b-[1px] border-[#707070] flex-wrap lg:flex-nowrap justify-between gap-y-5 lg:gap-y-0">
                         <div className="basis-full sm:basis-[48%] lg:basis-[30%]">
@@ -169,7 +169,7 @@ const Footer = () => {
                                 </ul>
                             </div>
                             <div>
-                                <ul className="flex items-center gap-4">
+                                <ul className="flex items-center gap-4 mt-4 md:mt-0">
                                     {
                                         socialLinks.map((e, i) => {
                                             return (
@@ -185,7 +185,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex gap-x-5 py-5 flex-wrap sm:flex-nowrap gap-y-5 sm:gap-y-0 items-center border-b-[1px] border-[#707070]">
+                    <div className="flex gap-x-5 py-5 flex-wrap sm:flex-nowrap gap-y-2 sm:gap-y-0 items-center border-b-[1px] border-[#707070]">
                         <div className="basis-full sm:basis-1/2">
                             <p className="text-sm font-sans text-white leading-6 text-center sm:text-left">
                                 © Infinity Animations 2023. All Rights Reserved

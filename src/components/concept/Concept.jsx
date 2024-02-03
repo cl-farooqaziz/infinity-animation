@@ -15,11 +15,11 @@ const Concept = ({ content }) => {
         <>
             <section className={`w-full h-full flex items-center justify-star bg-none lg:bg-[url("../../public/home/concept-bg.png")] bg-no-repeat bg-center bg-[length:100%_100%]`}>
                 <div className="container">
-                    <div className='lg:w-[550px] xl:w-[650px] ml-auto mt-48 py-20 xl:py-12'>
+                    <div className='lg:w-[550px] xl:w-[650px] ml-auto mt-0 lg:mt-48 py-8 md:py-20 xl:py-12'>
                         <div className="grid grid-cols-2 gap-12 relative">
                             <div className="absolute left-[50%] w-[1px] h-full bg-white text-white"></div>
                             <div className="absolute top-[50%] w-full h-[1px] bg-white text-white"></div>
-                            <div className="p-4">
+                            <div className="sm:p-4">
                                 <div className="flex flex-wrap items-start justify-between mb-3">
                                     <Image src={icon1} className="w-[20%] xl:w-auto" alt='Infinity Animation' />
                                     <div className="border-[1.5px] xl:border-2 rounded-full p-0.5 xl:p-1 w-[30px] h-[30px] xl:w-[40px] xl:h-[40px] flex items-center justify-center">
@@ -31,7 +31,7 @@ const Concept = ({ content }) => {
                                     <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3">No work of art or wonder can ever be brought to life without a concrete concept. </p>
                                 </div>
                             </div>
-                            <div className="p-4">
+                            <div className="sm:p-4">
                                 <div className="flex flex-wrap items-start justify-between mb-3">
                                     <Image src={icon2} className="w-[20%] xl:w-auto" alt='Infinity Animation' />
                                     <div className="border-[1.5px] xl:border-2 rounded-full p-0.5 xl:p-1 w-[30px] h-[30px] xl:w-[40px] xl:h-[40px] flex items-center justify-center">
@@ -43,7 +43,7 @@ const Concept = ({ content }) => {
                                     <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3">Every frame of the story or idea is as essential as every piece of the puzzle.</p>
                                 </div>
                             </div>
-                            <div className="p-4">
+                            <div className="sm:p-4">
                                 <div className="flex flex-wrap items-start justify-between mb-3">
                                     <Image src={icon3} className="w-[20%] xl:w-auto" alt='Infinity Animation' />
                                     <div className="border-[1.5px] xl:border-2 rounded-full p-0.5 xl:p-1 w-[30px] h-[30px] xl:w-[40px] xl:h-[40px] flex items-center justify-center">
@@ -55,7 +55,7 @@ const Concept = ({ content }) => {
                                     <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3">What good is an artistic idea or a magical story if it does not visually exist?</p>
                                 </div>
                             </div>
-                            <div className="p-4">
+                            <div className="sm:p-4">
                                 <div className="flex flex-wrap items-start justify-between mb-3">
                                     <Image src={icon4} className="w-[20%] xl:w-auto" alt='Infinity Animation' />
                                     <div className="border-[1.5px] xl:border-2 rounded-full p-0.5 xl:p-1 w-[30px] h-[30px] xl:w-[40px] xl:h-[40px] flex items-center justify-center">
@@ -69,7 +69,7 @@ const Concept = ({ content }) => {
                             </div>
                         </div>
 
-                        <div className="flex gap-6 mt-4 p-4">
+                        <div className="flex flex-wrap justify-center gap-6 mt-7 sm:mt-4 sm:p-4">
                             <CTA
                                 text="Get Started"
                                 icon1={true}
