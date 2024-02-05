@@ -15,7 +15,7 @@ const Concept = ({ content }) => {
         <>
             <section className={`w-full h-full flex items-center justify-star bg-none lg:bg-[url("../../public/home/concept-bg.png")] bg-no-repeat bg-center bg-[length:100%_100%]`}>
                 <div className="container">
-                    <div className='lg:w-[550px] xl:w-[650px] ml-auto mt-0 lg:mt-48 py-8 md:py-20 xl:py-12'>
+                    <div className='lg:w-[550px] xl:w-[650px] ml-auto mt-0 lg:mt-48 py-8 md:py-16 lg:py-20'>
                         <div className="grid grid-cols-2 gap-12 relative">
                             <div className="absolute left-[50%] w-[1px] h-full bg-white text-white"></div>
                             <div className="absolute top-[50%] w-full h-[1px] bg-white text-white"></div>
@@ -73,17 +73,17 @@ const Concept = ({ content }) => {
                             <CTA
                                 text="Get Started"
                                 icon1={true}
-                                color={`${btnBg ?? "bg-prime"} text-white`}
-                                border={`border-2 ${btnBorder ?? "border-[#f5090b]"}`}
-                                hover={`hover:text-white ${btnHover ?? "hover:bg-transparent"} hover:border-[#ffffff]`}
-                                link="#" />
+                                href="#"
+                                css="text-white hover:bg-transparent border-[#f5090b] hover:border-[#ffffff]"
+                                bg="bg-prime"
+                            />
                             <CTA
                                 text="Live Chat"
                                 icon2={true}
-                                color={`${btnColor ?? "text-white"} bg-transparent`}
-                                border={`border-2 ${btnBorder ?? "border-[#ffffff]"}`}
-                                hover="hover:bg-prime hover:border-[#f5090b]"
-                                link="javascript:$zopim.livechat.window.show();" />
+                                href="javascript:$zopim.livechat.window.show();"
+                                css="text-white hover:bg-prime border-[#ffffff] hover:border-[#f5090b]"
+                                bg="bg-transparent"
+                            />
                         </div>
                     </div>
                 </div>

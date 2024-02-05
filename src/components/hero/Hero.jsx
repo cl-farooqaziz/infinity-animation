@@ -70,11 +70,11 @@ const Hero = ({ content }) => {
     }
     return (
         <>
-            <section className={`w-full h-[100vh] sm:h-[70vh] lg:h-[78vh] xl:h-[100vh] flex items-center justify-start sm:pb-5 bg-none bg-no-repeat ${backgroundImage}`}>
+            <section className={`w-full h-[100vh] flex items-center justify-start sm:pb-5 bg-none bg-no-repeat ${backgroundImage}`}>
                 <div className="container">
                     <div className='flex'>
                         <div className='w-[600px]'>
-                            <h1 className={`text-[40px] md:text-[50px] xl:text-[60px] font-semibold font-sans leading-none mb-5 mt-32 2xl:mt-0 ${margin}`}>
+                            <h1 className={`text-[40px] md:text-[50px] xl:text-[60px] font-semibold font-sans leading-none mb-5 mt-32 ${margin}`}>
                                 {title}
                             </h1>
                             <p className="text-[16px] font-normal font-sans leading-snug tracking-wider text-justify mb-5">
@@ -84,17 +84,17 @@ const Hero = ({ content }) => {
                                 <CTA
                                     text="Get Started"
                                     icon1={true}
-                                    color={`${btnBg ?? "bg-prime"} text-white`}
-                                    border={`border-2 ${btnBorder ?? "border-[#f5090b]"}`}
-                                    hover={`hover:text-white ${btnHover ?? "hover:bg-transparent"} hover:border-[#ffffff]`}
-                                    link="#" />
+                                    href="#"
+                                    css="text-white hover:bg-transparent border-[#f5090b] hover:border-[#ffffff]"
+                                    bg="bg-prime"
+                                />
                                 <CTA
                                     text="Live Chat"
                                     icon2={true}
-                                    color={`${btnColor ?? "text-white"} bg-transparent`}
-                                    border={`border-2 ${btnBorder ?? "border-[#ffffff]"}`}
-                                    hover="hover:bg-prime hover:border-[#f5090b]"
-                                    link="javascript:$zopim.livechat.window.show();" />
+                                    href="javascript:$zopim.livechat.window.show();"
+                                    css="text-white hover:bg-prime border-[#ffffff] hover:border-[#f5090b]"
+                                    bg="bg-transparent"
+                                />
                             </div>
                             <Image src={trustPlatforms} className="mt-10 md:mt-20" alt="Infinity Animation" />
                         </div>

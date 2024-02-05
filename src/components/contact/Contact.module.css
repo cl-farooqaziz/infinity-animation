@@ -31,7 +31,7 @@
 
 @media only screen and (max-width: 1920px) {
   .imgBefore::before {
-    right: -19%;
+    right: -17%;
   }
 
   .imgBefore::after {
@@ -39,13 +39,23 @@
   }
 }
 
-@media only screen and (max-width: 1620px) {
+@media only screen and (max-width: 1799px) {
   .imgBefore::before {
-    right: -1%;
+    right: -2%;
   }
 
   .imgBefore::after {
-    right: -1%;
+    right: -5%;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .imgBefore::before {
+    right: 8%;
+  }
+
+  .imgBefore::after {
+    right: 5%;
   }
 }
 

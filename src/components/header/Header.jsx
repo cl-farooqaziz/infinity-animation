@@ -115,7 +115,7 @@ const Header = () => {
         <header>
             <Navbar className="max-w-none px-0 py-0 absolute top-0 left-0 z-[9999] rounded-none bg-transparent shadow-none backdrop-saturate-100 backdrop-blur-none border-none">
                 <div className="container">
-                    <div className="flex items-center justify-between h-24">
+                    <div className="flex items-center justify-between h-24 pr-3">
                         <Link href="/">
                             <Image src={logo} className="w-[50%]" alt="Infinity Animation" />
                         </Link>
@@ -124,10 +124,10 @@ const Header = () => {
                             <CTA
                                 text="Get Started"
                                 icon1={true}
-                                color={`bg-prime text-white`}
-                                border={`border-2 border-[#f5090b]`}
-                                hover={`hover:text-white hover:bg-transparent hover:border-[#ffffff]`}
-                                link="#" />
+                                href="#"
+                                css="text-white hover:bg-transparent border-[0px]"
+                                bg="bg-prime"
+                            />
                         </div>
                         <IconButton
                             variant="text"

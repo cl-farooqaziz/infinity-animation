@@ -109,7 +109,7 @@ const Footer = () => {
 
     return (
         <footer>
-            <div className="pt-10 md:pt-20">
+            <div className="pt-10 md:pt-16">
                 <div className="container">
                     <div className="flex gap-x-5 pb-8 border-b-[1px] border-[#707070] flex-wrap lg:flex-nowrap justify-between gap-y-5 lg:gap-y-0">
                         <div className="basis-full sm:basis-[48%] lg:basis-[30%]">
@@ -158,7 +158,7 @@ const Footer = () => {
                                         contactLinks.map((e, i) => {
                                             return (
                                                 <li key={i} className="flex items-center gap-2 mb-3 last:mb-0">
-                                                    <Image src={e.icon} className="w-[20px]" alt="Infinity Animation" />
+                                                    <Image src={e.icon} className="w-[15px]" alt="Infinity Animation" />
                                                     <Link href={e.link} className="text-sm xl:text-base text-white font-sans font-normal hover:opacity-50">
                                                         {e.text}
                                                     </Link>

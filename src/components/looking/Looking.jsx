@@ -23,7 +23,7 @@ const Looking = ({ content }) => {
 
     return (
         <>
-            <section className={`w-full flex items-center justify-start py-8 sm:py-16 bg-none lg:bg-[url("../../public/images/fold-bg.png")] bg-no-repeat bg-center bg-cover relative`}>
+            <section className={`w-full flex items-center justify-start py-6 md:py-8 lg:py-16 bg-none lg:bg-[url("../../public/images/fold-bg.png")] bg-no-repeat bg-center bg-cover relative`}>
                 <div className="container">
                     <div className='flex flex-col-reverse lg:flex-row items-center justify-around gap-y-7'>
                         <div className={`w-full lg:w-[500px] ${lookinImage}`}>
@@ -42,17 +42,17 @@ const Looking = ({ content }) => {
                                 <CTA
                                     text="Get Started"
                                     icon1={true}
-                                    color={`${btnBg ?? "bg-prime"} text-white`}
-                                    border={`border-2 ${btnBorder ?? "border-[#f5090b]"}`}
-                                    hover={`hover:text-white ${btnHover ?? "hover:bg-transparent"} hover:border-[#ffffff]`}
-                                    link="#" />
+                                    href="#"
+                                    css="text-white hover:bg-transparent border-[#f5090b] hover:border-[#ffffff]"
+                                    bg="bg-prime"
+                                />
                                 <CTA
                                     text="Live Chat"
                                     icon2={true}
-                                    color={`${btnColor ?? "text-white"} bg-transparent`}
-                                    border={`border-2 ${btnBorder ?? "border-[#ffffff]"}`}
-                                    hover="hover:bg-prime hover:border-[#f5090b]"
-                                    link="javascript:$zopim.livechat.window.show();" />
+                                    href="javascript:$zopim.livechat.window.show();"
+                                    css="text-white hover:bg-prime border-[#ffffff] hover:border-[#f5090b]"
+                                    bg="bg-transparent"
+                                />
                             </div>
                         </div>
                     </div>

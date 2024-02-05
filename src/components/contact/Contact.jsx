@@ -11,7 +11,7 @@ import styles from "./Contact.module.css"
 const Contact = () => {
     return (
         <>
-            <section className={`w-full h-full mt-8 md:mt-16 mb-10 flex items-center justify-star relative`}>
+            <section className={`w-full h-full mt-8 md:mt-12 lg:mt-16 mb-10 flex items-center justify-star relative`}>
                 <Image src={contactBg} className="absolute w-full top-[-12%] left-[-12%] sm:block hidden" alt="Infinity Animation" />
                 <div className="container">
                     <div className='flex items-center justify-around'>
@@ -29,7 +29,7 @@ const Contact = () => {
                             <Form />
                         </div>
                         <div className={`${styles.imgBefore} relative lg:block hidden`}>
-                            <Image src={contactImg} className="absolute right-[-3.5%] 2xl:right-[-8%] 3xl:right-[-29.5%] top-0" alt="Infinity Animation" />
+                            <Image src={contactImg} className="absolute right-[-3.5%] 2xl:right-[-15%] 3xl:right-[-29.5%] top-[-18.5%]" alt="Infinity Animation" />
                         </div>
                     </div>
                 </div>
