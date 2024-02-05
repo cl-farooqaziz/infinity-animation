@@ -42,7 +42,7 @@ const Servicesconcept = ({ content }) => {
 
     return (
         <>
-            <section className='xl:pt-36 pb-16 relative'>
+            <section className='xl:pt-36 lg:pb-16 md:pb-12 pb-8 relative'>
                 <Image src={foldBg} alt='bg' className='absolute top-[-125px] right-0 w-full' />
                 <div className="container">
                     <div className="grid grid-cols-12 gap-y-7 md:gap-y-0">

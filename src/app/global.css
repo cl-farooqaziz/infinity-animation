@@ -145,11 +145,11 @@ body {
   }
 
   .testiSlider .slick-prev {
-    left: -200px;
+    left: -127px;
   }
 
   .testiSlider .slick-next {
-    right: -125px;
+    right: -55px;
   }
 }
 
@@ -170,6 +170,22 @@ body {
   }
 
   .blogsSlider .slick-dots {
+    display: none;
+  }
+
+  .testiSlider .slick-prev {
+    left: -42px;
+    top: inherit;
+    bottom: -64px;
+  }
+
+  .testiSlider .slick-next {
+    right: 20px;
+    top: inherit;
+    bottom: -64px;
+  }
+
+  br {
     display: none;
   }
 }

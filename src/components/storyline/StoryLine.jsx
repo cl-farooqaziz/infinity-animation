@@ -37,7 +37,7 @@ const StoryLine = ({ content }) => {
     }
     return (
         <>
-            <section className={`w-full flex items-center justify-start py-8 sm:py-16 ${main}`}>
+            <section className={`w-full flex items-center justify-start py-6 md:py-12 lg:py-16 ${main}`}>
                 <div className="container">
                     <div className={`flex items-center justify-around ${headings}`}>
                         <div className='w-full text-center'>
