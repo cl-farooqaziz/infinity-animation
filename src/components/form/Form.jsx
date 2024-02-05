@@ -47,7 +47,7 @@ const Form = () => {
                     <label htmlFor="message" className="block sm:mb-2 font-sans tracking-wide text-[16px] font-normal text-gray-900 dark:text-gray-400">Details*</label>
                     <textarea id="message" rows="2" className="block p-3 w-full font-sans tracking-wide text-sm text-gray-900 border-0 border-b-2 focus:outline-none focus:border-primary-100 bg-transparent resize-none" placeholder="Type Full Details"></textarea>
                 </div>
-                <div className="flex items-center justify-between">
+                <div className="flex flex-col md:flex-row gap-5 md:gap-0 items-center justify-between pt-5">
                     <button type="submit" className="py-3 px-16 font-sans tracking-wide text-sm font-medium text-center text-white rounded-lg bg-prime w-full sm:w-fit hover:bg-primary-800 focus:outline-none">Submit</button>
                     <ul className="flex items-center justify-center sm:justify-start gap-4">
                         {

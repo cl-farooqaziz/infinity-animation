@@ -17,6 +17,7 @@ const Testimonial = ({ content }) => {
         speed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1,
+        adaptiveHeight: true,
         responsive: [
             {
                 breakpoint: 600,
@@ -41,7 +42,7 @@ const Testimonial = ({ content }) => {
                             </p>
                         </div>
                     </div>
-                    <div className={`w-full md:w-[80%] lg:w-[60%] 3xl:w-[50%] mx-auto bg-[url("../../public/images/testimonial-bg.png")] bg-no-repeat bg-center bg-cover p-[30px] lg:py-[75px] xl:py-[100px] 2xl:py-[120px] 3xl:p-[105px] pb-0`}>
+                    <div className={`w-full md:w-[75%] lg:w-[60%] 3xl:w-[50%] mx-auto bg-[url("../../public/images/testimonial-bg.png")] bg-no-repeat bg-center bg-cover p-[30px] lg:py-[75px] xl:py-[100px] 2xl:py-[120px] 3xl:p-[105px] pb-[70px] slideBg`}>
                         <Slider {...testiSlider} className="testiSlider">
                             {testiContent.map((testimonial, index) => (
                                 <div key={index}>

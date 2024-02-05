@@ -18,21 +18,27 @@ body {
 }
 
 .bg-prime {
-  background: linear-gradient(90deg,
-      rgba(245, 9, 11, 1) 0%,
-      rgba(255, 45, 75, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(245, 9, 11, 1) 0%,
+    rgba(255, 45, 75, 1) 100%
+  );
 }
 
 .bg-second {
-  background: linear-gradient(0deg,
-      rgba(245, 9, 11, 1) 0%,
-      rgba(255, 45, 75, 1) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(245, 9, 11, 1) 0%,
+    rgba(255, 45, 75, 1) 100%
+  );
 }
 
 .bg-third {
-  background: linear-gradient(0deg,
-      rgba(245, 9, 11, 1) 0%,
-      rgba(255, 45, 75, 1) 40%);
+  background: linear-gradient(
+    0deg,
+    rgba(245, 9, 11, 1) 0%,
+    rgba(255, 45, 75, 1) 40%
+  );
 }
 
 /* service slider start */
@@ -61,6 +67,7 @@ body {
 .testiSlider .slick-prev {
   left: -255px;
   top: 35%;
+  z-index: 999;
 }
 
 .testiSlider .slick-prev:before {
@@ -70,12 +77,12 @@ body {
 .testiSlider .slick-next {
   right: -155px;
   top: 35%;
+  z-index: 999;
 }
 
 .testiSlider .slick-next:before {
   content: url(../../public/icons/arrow-right.png);
 }
-
 
 /* Blogs Slider start */
 
@@ -145,20 +152,29 @@ body {
   }
 
   .testiSlider .slick-prev {
-    left: -127px;
+    left: 120px;
+    top: inherit;
+    bottom: -90px;
   }
 
   .testiSlider .slick-next {
-    right: -55px;
+    right: 200px;
+    top: inherit;
+    bottom: -90px;
+  }
+
+  .slideBg{
+    background-size: 550px;
   }
 }
 
 @media only screen and (max-width: 567px) {
-
   .wantbg {
-    background: linear-gradient(0deg,
-        rgba(245, 9, 11, 1) 0%,
-        rgba(255, 45, 75, 1) 40%);
+    background: linear-gradient(
+      0deg,
+      rgba(245, 9, 11, 1) 0%,
+      rgba(255, 45, 75, 1) 40%
+    );
   }
 
   .blogsSlider .slick-next {
