@@ -38,16 +38,16 @@ export default function Page() {
     //=====Banner Fold=====//
     const hero = {
         title: (<> 3D <span className='text-primary-100'>Animation</span><br /> Services </>),
-        para: "Breathe Life Into Your Idea With 3d Animation!",
+        para: "Dimensional brilliance for your brand with our 3D animation magic!",
         btnBg: "bg-prime",
     };
     //=====Looking Fold=====//
     const paraArray = [
-        "Bringing aliens to life no, wait, cancel that because 3D designers can bring anything to life, including props, objects, characters, and more. Cloud Animations is a 3D animation company that excels in graphic techniques that incorporate motion into 3D animation design.",
+        "Our 3D animation services are not just visuals; they're an immersive experience that propels your brand into the future. Our skilled team of 3D artists and visionaries transform concepts into living, breathing narratives that captivate audiences. From sleek product showcases to dynamic brand stories, our 3D animations add depth, realism, and an unforgettable touch to your visual identity.",
 
-        "Partnering with a 3D animation studio for marketing your product or services is highly likely to prove to be successful for your business as it catches the audience’s attention instantly and creates an opportunity for branding since the human brain retains 3D video animations reasonably well. It also evokes interactivity as consumers feel more connected to the brand. But most importantly, a 3D animation can be posted on multiple platforms giving your brand an equal chance of exposure from all ends.",
+        "Let's embark on a journey where every frame tells a story, and your brand becomes a three-dimensional masterpiece in the digital landscape. This is more than animation; this is the art of leaving a lasting impression in the minds of your audience.",
 
-        (<><Link href="#" className='text-primary-100 underline'>SPEAK TO AN EXPERT</Link> At The 3D Animation Agency To Determine How We Can Aid Your Business’s Marketing Strategy.</>)
+        // (<><Link href="#" className='text-primary-100 underline'>SPEAK TO AN EXPERT</Link> At The 3D Animation Agency To Determine How We Can Aid Your Business’s Marketing Strategy.</>)
     ];
     const looking = {
         title: (<> 3D Animation </>),
@@ -70,8 +70,8 @@ export default function Page() {
         [polio1, [polio2, polio3], polio4],
     ];
     const portfolio = {
-        title: (<> Our Portfolio of Creative Video Animations </>),
-        para: (<> We take pride in crafting stunning 2D animation videos, whiteboard animations, 3D animations, <br /> typographic animations, and more for our valued clientele. </>),
+        title: (<> Our Exceptional Portfolio for Video Animation </>),
+        para: (<> A visual journey through a kaleidoscope of creativity, where each project tells a unique story of brand elevation and visual excellence. </>),
         tabContents: tabContents,
         tabInfo: tabInfo
     };
@@ -79,23 +79,23 @@ export default function Page() {
     const boostContent = [
         {
             icon: boosticon1,
-            heading: "Capture the Attention",
-            text: "Turn heads, let your ideas come to life and interact with your viewers and capture their imagination.",
+            heading: "Strategic Conceptualization",
+            text: "We kick off by delving deep into your brand ethos, understanding your goals, and strategically conceptualizing visuals that align with your narrative. ",
         },
         {
             icon: boosticon2,
-            heading: "Clicks and More Clicks",
-            text: "Motion graphic videos are synonymous with clickable visual content.",
+            heading: "Creative Mastery",
+            text: "Our team of seasoned creatives then breathe life into these concepts, leveraging cutting-edge techniques and artistic finesse. ",
         },
         {
             icon: boosticon3,
-            heading: "Multi-purpose Animations",
-            text: "Whether it’s explanatory or garnering hype, motion graphics videos can do it all.",
+            heading: "Audience Connection",
+            text: "Impact isn't just about visuals; it's about connection. We ensure that every animation, every narrative beat, is a bridge between your brand and your audience. ",
         },
     ];
     const boost = {
-        title: (<> Time to Turn Heads </>),
-        para: (<> There’s nothing more effective than a motion graphics animation that grabs attention. Here are a few of them: </>),
+        title: (<> Get Them Talking </>),
+        para: (<> Leave an indelible mark on your audience's consciousness. We craft impactful visual experiences that resonate. </>),
         btnBg: "bg-prime",
         boostContent: boostContent,
         flodImg: BoostFlodImg
@@ -105,20 +105,20 @@ export default function Page() {
         {
             ImageOne: conceptIcon1,
             sliderNumber: 1,
-            slideTitle: "Concept",
-            sliderDesc: "We first brainstorm and refine your ideas into a solid concept, ensuring a strong narrative foundation."
+            slideTitle: "Discovery and Strategy",
+            sliderDesc: "We kick off by diving deep into your brand essence, understanding your goals, and formulating a strategic roadmap tailored to your unique identity and objectives."
         },
         {
             ImageOne: conceptIcon2,
             sliderNumber: 2,
-            slideTitle: "Storyboarding",
-            sliderDesc: "Next, we create storyboards that visually map out your video, displaying the sequence of animation events."
+            slideTitle: "Creative Craftsmanship",
+            sliderDesc: "Our skilled team then brings your vision to life, utilizing state-of-the-art techniques and artistic flair to create animations that align with your brand narrative."
         },
         {
             ImageOne: conceptIcon3,
             sliderNumber: 3,
-            slideTitle: "Creation",
-            sliderDesc: "Using the storyboard as our guide, our animators bring your story to life with engaging visuals."
+            slideTitle: "Refinement and Delivery",
+            sliderDesc: "We believe in perfection, so after the initial creation, we refine and polish the content to ensure it not only meets but exceeds your expectations. "
         },
         {
             ImageOne: conceptIcon4,
@@ -128,23 +128,23 @@ export default function Page() {
         },
     ]
     const concept = {
-        title: "How We Animate",
-        para: "As an industry-leading video animation company, we have a firm belief that innovation, when combined with dedication, helps the brand stand out through exceptional video production.",
+        title: "Our Process",
+        para: "We follow a dynamic process, seamlessly blending creativity and strategy to transform your ideas into visually stunning and thoughtful storytelling masterpieces.",
+        conceptContent: conceptContent,
         Servicesconcept: ServiceConcept,
         ConceptParticle: ConceptParticle,
-        conceptContent: conceptContent,
         foldBg: FoldBg,
         btnBg: "bg-prime",
     };
     //=====Pricing Fold=====//
     const pricing = {
         title: (<> Pricing Plans </>),
-        para: (<> Bringing you the best, in a price that is better than the rest </>),
+        para: (<> Easy on the pocket and the eyes. </>),
     };
     //=====Want Fold=====//
     const want = {
         title: "Want to Talk ?",
-        wantDesc: "Are you ready to take the animation route? Call us now!",
+        wantDesc: "Have questions? We have answers, Call Now!",
         bgPrime: true,
     }
     //=====Testimonial Fold=====//
@@ -152,27 +152,27 @@ export default function Page() {
         {
             profile: icon1,
             stars: icon2,
-            name: 'Michael Gardner',
-            message: 'Infinity Animations created a stunning promotional video for my startup. The attention to detail and animation definitely made a positive impact on our online presence and has set us apart from competitors.',
+            name: 'Rebecca Turner, Creative Director',
+            message: 'Mind-blown by the 3D animations created for our brand! The level of detail and realism brought our product showcase to a whole new level. Exceptional work, exceeded expectations!',
             company: 'ABC company',
         },
         {
             profile: icon1,
             stars: icon2,
-            name: 'Sarah',
-            message: 'Infinity Animations created a stunning promotional video for my startup. The attention to detail and animation definitely made a positive impact on our online presence and has set us apart from competitors.',
+            name: 'Daniel Martinez, Marketing Manager',
+            message: 'Our brand story was transformed into a visual spectacle with the 3D animation services. The immersive experience captivated our audience, leaving a lasting impact. Truly remarkable!',
             company: 'ABC company',
         },
         {
             profile: icon1,
             stars: icon2,
-            name: 'John',
-            message: 'Infinity Animations created a stunning promotional video for my startup. The attention to detail and animation definitely made a positive impact on our online presence and has set us apart from competitors.',
+            name: 'Sophia Reynolds, Product Manager',
+            message: "The 3D animations brought our new product to life in ways we couldn't have imagined. The team's creativity and technical prowess delivered visuals that not only wowed our customers but also drove conversions. Highly recommended!",
             company: 'ABC company',
         },
     ];
     const testimonial = {
-        title: (<> The Ultimate Collection Of <br /> Our Incredible Customer Experiences </>),
+        title: (<> An Who’s Who of Industry Leading Clients</>),
         para: (<> Achieved 1000+ Impactful Results That Speak Volumes </>),
         btnBg: "bg-prime",
         testiContent: testiContent

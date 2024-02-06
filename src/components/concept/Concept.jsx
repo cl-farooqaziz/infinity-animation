@@ -27,8 +27,8 @@ const Concept = ({ content }) => {
                                     </div>
                                 </div>
                                 <div>
-                                    <h3 className="text-[24px] xl:text-[30px] font-sans font-normal tracking-wide mb-2">Concept</h3>
-                                    <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3">No work of art or wonder can ever be brought to life without a concrete concept. </p>
+                                    <h3 className="text-[24px] xl:text-[30px] font-sans font-normal tracking-wide mb-2">Consultation </h3>
+                                    <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3">Our process begins with a thorough consultation to understand your vision and goals. We delve into the intricacies of your project, gathering insights that guide the creative direction. </p>
                                 </div>
                             </div>
                             <div className="sm:p-4">
@@ -39,8 +39,8 @@ const Concept = ({ content }) => {
                                     </div>
                                 </div>
                                 <div>
-                                    <h3 className="text-[24px] xl:text-[30px] font-sans font-normal tracking-wide mb-2">Storyboarding</h3>
-                                    <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3">Every frame of the story or idea is as essential as every piece of the puzzle.</p>
+                                    <h3 className="text-[24px] xl:text-[30px] font-sans font-normal tracking-wide mb-2">Storyboarding </h3>
+                                    <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3">Once the concept is crystallized, we move to the storyboard phase. Our expert team crafts a visual roadmap, outlining each scene and transition. </p>
                                 </div>
                             </div>
                             <div className="sm:p-4">
@@ -51,8 +51,8 @@ const Concept = ({ content }) => {
                                     </div>
                                 </div>
                                 <div>
-                                    <h3 className="text-[24px] xl:text-[30px] font-sans font-normal tracking-wide mb-2">Creation</h3>
-                                    <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3">What good is an artistic idea or a magical story if it does not visually exist?</p>
+                                    <h3 className="text-[24px] xl:text-[30px] font-sans font-normal tracking-wide mb-2">Animation </h3>
+                                    <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3">With a solid plan in place, our skilled animators bring your project to life. Whether it's 2D or 3D animation, whiteboard sketches, or motion graphics, our team executes with precision and creativity.</p>
                                 </div>
                             </div>
                             <div className="sm:p-4">
@@ -63,8 +63,8 @@ const Concept = ({ content }) => {
                                     </div>
                                 </div>
                                 <div>
-                                    <h3 className="text-[24px] xl:text-[30px] font-sans font-normal tracking-wide mb-2">Delivery</h3>
-                                    <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3">And what good are the promises that cannot be kept, right? We don’t do that here!</p>
+                                    <h3 className="text-[24px] xl:text-[30px] font-sans font-normal tracking-wide mb-2">Review </h3>
+                                    <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3">Before finalizing the project, we invite you to review the animation in detail. This step allows for any necessary adjustments or fine-tuning to guarantee the end result meets your expectations.</p>
                                 </div>
                             </div>
                         </div>
