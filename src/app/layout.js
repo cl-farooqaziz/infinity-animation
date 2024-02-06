@@ -10,6 +10,17 @@ export const metadata = {
   // Title & Descriptions
   title: "The Entrancing Portal of Animation | Infinity Animations",
   description: "Infinity Animations, prioritizing art, illuminates the dark and mundane world of animation, offering affordable services through their certified animators.",
+  // Canonical
+  alternates: { canonical: 'https://infinity-animation.vercel.app/contact-us/' },
+  // OG Metas
+  openGraph: {
+    title: 'The Entrancing Portal of Animation | Infinity Animations',
+    description: 'Infinity Animations, prioritizing art, illuminates the dark and mundane world of animation, offering affordable services through their certified animators.',
+    url: 'https://infinity-animation.vercel.app/contact-us/',
+    siteName: 'Web Design Hub',
+    locale: 'en_US',
+    type: 'website',
+  },
 }
 
 export default function RootLayout({ children }) {

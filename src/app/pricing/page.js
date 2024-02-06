@@ -12,14 +12,14 @@ import icon2 from "media/icons/stars.png"
 export default function Page() {
     //=====Banner Fold=====//
     const hero = {
-        title: (<> We Have The Right <br /> <span className='text-primary-100'>Animation</span> For The Right You</>),
-        para: "Cost-Effective and Brand Oriented Animation Pricing That Ensure Conversions for Your Business",
+        title: (<> Pricing Plans Tailored to Bring Your Ideas to Life </>),
+        para: "The perfect animation solution with our transparent and flexible pricing plans.",
         btnBg: "bg-prime",
     };
     //=====Pricing Fold=====//
     const pricing = {
         title: (<> Pricing Plans </>),
-        para: (<> Bringing you the best, in a price that is better than the rest </>),
+        para: (<> Easy on the pocket and the eyes. </>),
     };
     //=====Want Fold=====//
     const want = {

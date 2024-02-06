@@ -7,7 +7,7 @@ export default function Page() {
     //=====Banner Fold=====//
     const hero = {
         title: (<> Contact Us </>),
-        para: "You’ll Get A Response From The Infinity Animations Team Within 24-Hours",
+        para: "Ready to turn your ideas into reality? Reach out!",
         btnBg: "bg-prime",
     };
     return (

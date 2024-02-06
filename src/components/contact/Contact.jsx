@@ -17,10 +17,10 @@ const Contact = () => {
                     <div className='flex items-center justify-around'>
                         <div className='w-full text-center'>
                             <h1 className="text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight my-2">
-                                Let’s Establish Contact
+                                Reach Out
                             </h1>
                             <p className="w-[80%] mx-auto text-[16px] font-normal font-sans leading-snug tracking-wider text-center mb-5">
-                                Let’s Share. Let’s Discuss. Let’s Create Magic.
+                                Engage, share and traverse with us
                             </p>
                         </div>
                     </div>
@@ -29,7 +29,7 @@ const Contact = () => {
                             <Form />
                         </div>
                         <div className={`${styles.imgBefore} relative lg:block hidden`}>
-                            <Image src={contactImg} className="absolute right-[-3.5%] 2xl:right-[-15%] 3xl:right-[-29.5%] top-[-18.5%]" alt="Infinity Animation" />
+                            <Image src={contactImg} className="absolute right-[-3.5%] xl:right-[-4%] 2xl:right-[-4%] xxl:right-[-15%] 3xl:right-[-29.5%] top-[-14.5%]" alt="Infinity Animation" />
                         </div>
                     </div>
                 </div>

@@ -16,16 +16,16 @@ import Partners from "@/components/partners/Partners";
 export default function Page() {
     //=====Banner Fold=====//
     const hero = {
-        title: (<> Your Chance To Choose <span className="text-primary-100">The Best</span> </>),
-        para: "Partner with experts, lead the competition!",
+        title: (<> The Best on All Counts! </>),
+        para: "The excellence of execution.",
         btnBg: "bg-prime",
     };
     //=====Looking Fold=====//
     const paraArray = [
-        "With a team of professional video animators, Infinity Animations is a Maryland-based company that has won clients' hearts by providing quality and flaw-free customer services. Leading the way as the top Video Animators in town, we help businesses spread the word through the most perfectly curated animation videos!",
+        "Our dedication to client satisfaction goes beyond delivering animations – it involves crafting experiences. We understand the power of storytelling, integrate audio elements with mastery, and add the artistic touch to every project for that extra shine.",
     ];
     const looking = {
-        title: (<> A Bit Of History </>),
+        title: (<> From the Vault </>),
         para: { paraArray },
         flodImg: LookingFlodImg
     };

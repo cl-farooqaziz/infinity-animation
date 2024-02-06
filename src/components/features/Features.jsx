@@ -18,8 +18,8 @@ const Features = () => {
                     <div className="grid grid-cols-12 items-center gap-4">
                         <div className="col-span-12">
                             <div className="mb-3 lg:mb-[150px]">
-                                <h2 className='text-[40px] md:text-[60px] font-semibold font-sans leading-tight text-center mb-3'>The Core Features</h2>
-                                <p className='text-[16px] font-normal font-sans leading-snug tracking-wider text-center lg:w-8/12 mx-auto'>Customers have always been and will remain the prime focus of  Infinity Animations. Prioritizing customer reviews and feedback has enriched our platform and helped us improve our services to ensure sustainable growth and satisfied customers. </p>
+                                <h2 className='text-[40px] md:text-[60px] font-semibold font-sans leading-tight text-center mb-3'>Our Core Features</h2>
+                                <p className='text-[16px] font-normal font-sans leading-snug tracking-wider text-center lg:w-8/12 mx-auto'>Our core objectives remain to seamlessly blend creativity and precision. Crafting visually captivating animations that not only tell compelling stories but also exceed the expectations of our clients.</p>
                             </div>
                         </div>
                         <div className="col-span-12 lg:col-span-6">
@@ -27,30 +27,29 @@ const Features = () => {
                                 <div className="col-span-12 md:col-span-6">
                                     <div className="card backdrop-blur-sm bg-white/20 border border-[#707070] rounded-[15px] pt-4 px-4 pb-10 h-full">
                                         <Image src={Icon1} alt='icon 1' width={64} height={67} />
-                                        <h3 className='text-white text-[30px] font-bold font-sans mb-2 mt-2'>Creative Mindset</h3>
-                                        <p className='text-white text-[14px] font-sans font-light'>Customers have always been and will remain the prime focus of  Infinity Animations. Prioritizing customer reviews and feedback has enriched our platform and helped us improve our services to ensure sustainable growth and satisfied customers.</p>
+                                        <h3 className='text-white text-[30px] font-bold font-sans mb-2 mt-2'>Creative Collaboration</h3>
+                                        <p className='text-white text-[14px] font-sans font-light'>We prioritize collaborative partnerships, working closely with our clients to understand their visions and preferences, ensuring a shared journey towards achieving the best creative outcomes.</p>
                                     </div>
                                 </div>
                                 <div className="col-span-12 md:col-span-6">
                                     <div className="card backdrop-blur-sm bg-white/20 border border-[#707070] rounded-[15px] pt-4 px-4 pb-10 h-full">
                                         <Image src={Icon2} alt='icon 1' width={64} height={67} />
-                                        <h3 className='text-white text-[30px] font-bold font-sans mb-2 mt-2'>Clean Approach</h3>
-                                        <p className='text-white text-[14px] font-sans font-light'>A clean Approach is a critical factor in all our developments & operations. Precision is our modus- operandi.</p>
+                                        <h3 className='text-white text-[30px] font-bold font-sans mb-2 mt-2'>Strategic Storytelling</h3>
+                                        <p className='text-white text-[14px] font-sans font-light'>Emphasizing the importance of strategic storytelling, we infuse narratives with depth and meaning, ensuring that each animation not only engages but resonates with the audience on a profound level.</p>
                                     </div>
                                 </div>
                                 <div className="col-span-12 md:col-span-6">
                                     <div className="card backdrop-blur-sm bg-white/20 border border-[#707070] rounded-[15px] pt-4 px-4 pb-10 h-full">
                                         <Image src={Icon3} alt='icon 1' width={64} height={67} />
-                                        <h3 className='text-white text-[30px] font-bold font-sans mb-2 mt-2'>Customer is Our
-                                            Priority</h3>
-                                        <p className='text-white text-[14px] font-sans font-light'>Customers have always been and will remain the prime focus of  Infinity Animations. Prioritizing customer reviews and feedback has enriched our platform and helped us improve our services to ensure sustainable growth and satisfied customers.</p>
+                                        <h3 className='text-white text-[30px] font-bold font-sans mb-2 mt-2'>Technical Precision</h3>
+                                        <p className='text-white text-[14px] font-sans font-light'>At the core of our approach is technical precision. Whether it's animation techniques, audio integration, or the final polish, we uphold a commitment to meticulous craftsmanship, delivering animations of the highest quality.</p>
                                     </div>
                                 </div>
                                 <div className="col-span-12 md:col-span-6">
                                     <div className="card backdrop-blur-sm bg-white/20 border border-[#707070] rounded-[15px] pt-4 px-4 pb-10 h-full">
                                         <Image src={Icon4} alt='icon 1' width={64} height={67} />
-                                        <h3 className='text-white text-[30px] font-bold font-sans mb-2 mt-2'>Tested Methodology</h3>
-                                        <p className='text-white text-[14px] font-sans font-light'>Extensive quality assurance is carried out before the work is shared with the client!</p>
+                                        <h3 className='text-white text-[30px] font-bold font-sans mb-2 mt-2'>Client-Centric Focus</h3>
+                                        <p className='text-white text-[14px] font-sans font-light'>Placing clients at the forefront, we maintain transparent communication, flexible solutions, and a dedication to exceeding expectations, ensuring that every client feels valued and involved throughout the creative process.</p>
                                     </div>
                                 </div>
                             </div>
@@ -64,8 +63,8 @@ const Features = () => {
                             <div className="col-span-6">
                                 <div className="card backdrop-blur-sm bg-white/20 border border-[#707070] rounded-[15px] pt-4 px-4 pb-10 h-full">
                                     <Image src={Icon5} alt='icon 1' width={64} height={67} />
-                                    <h3 className='text-white text-[30px] font-bold font-sans mb-2 mt-2'>Teamwork Efforts</h3>
-                                    <p className='text-white text-[14px] font-sans font-light'>Teamwork is always a ticket to success for  Infinity Animations. We work closely with great astuteness to ensure that you have one big extended team that moves you towards your goal.</p>
+                                    <h3 className='text-white text-[30px] font-bold font-sans mb-2 mt-2'>Continuous Innovation</h3>
+                                    <p className='text-white text-[14px] font-sans font-light'>To stay at the forefront of the animation industry, we embrace continuous innovation. From exploring new animation techniques to incorporating the latest trends, we strive to deliver cutting-edge and impactful results for our clients.</p>
                                 </div>
                             </div>
                         </div>

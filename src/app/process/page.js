@@ -15,30 +15,30 @@ import icon2 from "media/icons/stars.png"
 export default function Page() {
     //=====Banner Fold=====//
     const hero = {
-        title: (<> The Process <br /> <span className='text-primary-100'>Efficient</span>, Effective <br /> & Dynamic </>),
-        para: "A simple yet efficient  Infinity Animations process.",
+        title: (<> Journey to Brilliance with Guaranteed Results </>),
+        para: "Animation Creation Unpacked!",
         btnBg: "bg-prime",
     };
     //=====StoryLine Fold=====//
     const accordionData = [
         {
-            question: 'Art Of Storytelling',
-            answer: "Animation video makers at  Infinity Animations believe scripts are the soul of a video. We turn your vision into reality with a team of creative minds who excel at characterization and storyboarding. We make extensive efforts to create a storyboard, helping you visualize the final product, share your feedback, and make alterations if needed.",
+            question: 'Strategic Storytelling',
+            answer: "Begin with a strategic approach to storytelling, ensuring that every animation project has a compelling narrative foundation that resonates with your audience.",
             StoryLineImg: StoryLine2
         },
         {
-            question: 'Clear & Crisp Audio',
-            answer: "3D animation, a world of infinite possibilities, sculpts dreams into reality. With lifelike characters and immersive worlds, it transports us to new dimensions where imagination knows no bounds.",
+            question: 'Audio Excellence',
+            answer: "Elevate the storytelling experience with audio mastery. Our team meticulously selects and integrates sound elements to enhance emotional connections and create a truly immersive experience.",
             StoryLineImg: StoryLine1
         },
         {
-            question: 'Vision To Animation',
-            answer: "Whiteboard animation, a fascinating blend of simplicity and storytelling, unravels ideas with an artistic touch. Black ink dances on a white canvas, breathing life into concepts and turning knowledge into art.",
+            question: 'Dynamic Animation',
+            answer: "Infuse life into your story with dynamic animations. From 2D to 3D, our animation expertise brings characters, scenes, and concepts to vibrant existence, captivating your audience with visually stunning sequences.",
             StoryLineImg: StoryLine2
         },
         {
-            question: 'The Finessing Touch',
-            answer: "Motion graphics, the symphony of movement, and design orchestrate visuals into a hypnotic dance. With fluidity and precision, it transforms data and concepts into dynamic narratives that enthrall and inform.",
+            question: 'The Midas Touch',
+            answer: "Add the final touch of brilliance with our Midas Touch – a meticulous polish and refinement process that ensures your animation shines with perfection. Every detail is scrutinized to deliver an animated masterpiece that exceeds expectations.",
             StoryLineImg: StoryLine1
         },
     ];

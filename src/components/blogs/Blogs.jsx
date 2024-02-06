@@ -2,18 +2,14 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from 'next/link'
-
-
 // Import Slick Slider
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
-
-// //===== Images 
+//===== Images 
 import Blog1 from "media/blogs/blog-1.png"
 
-const Blog = () => {
+const Blogs = () => {
 
     const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -306,4 +302,4 @@ const Blog = () => {
     )
 }
 
-export default Blog
+export default Blogs
