@@ -36,15 +36,15 @@ import icon2 from "media/icons/stars.png"
 export default function Page() {
     //=====Banner Fold=====//
     const hero = {
-        title: (<> Motion Graphics </>),
-        para: "Create Immersive Visual Experiences With Motion Graphics",
+        title: (<> Motion Graphics Services </>),
+        para: "Dynamic stories, vibrant motion to enhance your brand with visual brilliance",
         btnBg: "bg-prime",
     };
     //=====Looking Fold=====//
     const paraArray = [
-        "The simplest explanation for motion graphics is an animation that incorporates text. A motion graphics animated video offers a brilliant way for brands to communicate with their viewers and add depth to their stories. They’re perceived as far more attractive than simple ads or text formats and require half the time and money needed for complex animations. For example, motion graphic animations are great for displaying products to customers in a fun, entertaining, and engaging way that may potentially increase sales.",
+        "Beyond static visuals, we specialize in creating motion graphics that add a layer of vitality to your brand's narrative. From engaging social media content to immersive corporate presentations, our team combines creativity with technical expertise to craft animations that captivate audiences. ",
 
-        "Hire a motion graphic artist or designer from Cloud Animations to deliver your brand message. The motion graphic design can be displayed interchangeably amongst a variety of formats and may also be shared on social media and other digital mediums to extend the reach of the content further.Use videos as a potent tool for propelling your brands ahead with Infinity Animations."
+        "In the fast-paced digital landscape, our Motion Graphics Services stand out as beacons of innovation and engagement. Whether you're launching a new product, explaining complex concepts, or aiming to enhance your brand's online presence, our motion graphics are designed to leave a lasting impression. "
     ];
     const looking = {
         title: (<> Motion Graphics </>),
@@ -67,8 +67,8 @@ export default function Page() {
         [polio1, [polio2, polio3], polio4],
     ];
     const portfolio = {
-        title: (<> Our Portfolio of Creative Video Animations </>),
-        para: (<> We take pride in crafting stunning 2D animation videos, whiteboard animations, 3D animations, <br className="lg:block hidden" /> typographic animations, and more for our valued clientele. </>),
+        title: (<> Our Exceptional Portfolio for Video Animation </>),
+        para: (<> A visual journey through a kaleidoscope of creativity, where each project tells a unique story of brand elevation and visual excellence. </>),
         tabContents: tabContents,
         tabInfo: tabInfo
     };
@@ -76,23 +76,23 @@ export default function Page() {
     const boostContent = [
         {
             icon: boosticon1,
-            heading: "Capture the Attention",
-            text: "Turn heads, let your ideas come to life and interact with your viewers and capture their imagination.",
+            heading: "Strategic Conceptualization",
+            text: " We kick off by delving deep into your brand ethos, understanding your goals, and strategically conceptualizing visuals that align with your narrative. ",
         },
         {
             icon: boosticon2,
-            heading: "Clicks and More Clicks",
-            text: "Motion graphic videos are synonymous with clickable visual content.",
+            heading: "Creative Mastery",
+            text: "Our team of seasoned creatives then breathe life into these concepts, leveraging cutting-edge techniques and artistic finesse. ",
         },
         {
             icon: boosticon3,
-            heading: "Multi-purpose Animations",
-            text: "Whether it’s explanatory or garnering hype, motion graphics videos can do it all.",
+            heading: "Audience Connection",
+            text: "Impact isn't just about visuals; it's about connection. We ensure that every animation, every narrative beat, is a bridge between your brand and your audience. ",
         },
     ];
     const boost = {
-        title: (<> Time to Turn Heads </>),
-        para: (<> There’s nothing more effective than a motion graphics animation that grabs attention. Here are a few of them: </>),
+        title: (<> Get Them Talking </>),
+        para: (<> Leave an indelible mark on your audience's consciousness. We craft impactful visual experiences that resonate. </>),
         btnBg: "bg-prime",
         boostContent: boostContent,
         flodImg: BoostFlodImg
@@ -102,20 +102,20 @@ export default function Page() {
         {
             ImageOne: conceptIcon1,
             sliderNumber: 1,
-            slideTitle: "Concept",
-            sliderDesc: "We first brainstorm and refine your ideas into a solid concept, ensuring a strong narrative foundation."
+            slideTitle: "1.	Discovery and Strategy",
+            sliderDesc: "We kick off by diving deep into your brand essence, understanding your goals, and formulating a strategic roadmap tailored to your unique identity and objectives."
         },
         {
             ImageOne: conceptIcon2,
             sliderNumber: 2,
-            slideTitle: "Storyboarding",
-            sliderDesc: "Next, we create storyboards that visually map out your video, displaying the sequence of animation events."
+            slideTitle: "2.	Creative Craftsmanship",
+            sliderDesc: "Our skilled team then brings your vision to life, utilizing state-of-the-art techniques and artistic flair to create animations that align with your brand narrative."
         },
         {
             ImageOne: conceptIcon3,
             sliderNumber: 3,
-            slideTitle: "Creation",
-            sliderDesc: "Using the storyboard as our guide, our animators bring your story to life with engaging visuals."
+            slideTitle: "3.	Refinement and Delivery",
+            sliderDesc: "We believe in perfection, so after the initial creation, we refine and polish the content to ensure it not only meets but exceeds your expectations. "
         },
         {
             ImageOne: conceptIcon4,
@@ -125,23 +125,23 @@ export default function Page() {
         },
     ]
     const concept = {
-        title: "How We Animate",
-        para: "As an industry-leading video animation company, we have a firm belief that innovation, when combined with dedication, helps the brand stand out through exceptional video production.",
+        title: "Our Process",
+        para: "We follow a dynamic process, seamlessly blending creativity and strategy to transform your ideas into visually stunning and thoughtful storytelling masterpieces.",
+        conceptContent: conceptContent,
         Servicesconcept: ServiceConcept,
         ConceptParticle: ConceptParticle,
-        conceptContent: conceptContent,
         foldBg: FoldBg,
         btnBg: "bg-prime",
     };
     //=====Pricing Fold=====//
     const pricing = {
         title: (<> Pricing Plans </>),
-        para: (<> Bringing you the best, in a price that is better than the rest </>),
+        para: (<> Easy on the pocket and the eyes. </>),
     };
     //=====Want Fold=====//
     const want = {
         title: "Want to Talk ?",
-        wantDesc: "Are you ready to take the animation route? Call us now!",
+        wantDesc: "Have questions? We have answers, Call Now!",
         bgPrime: true,
     }
     //=====Testimonial Fold=====//
@@ -149,27 +149,27 @@ export default function Page() {
         {
             profile: icon1,
             stars: icon2,
-            name: 'Michael Gardner',
-            message: 'Infinity Animations created a stunning promotional video for my startup. The attention to detail and animation definitely made a positive impact on our online presence and has set us apart from competitors.',
+            name: 'Jordan Adams, Content Creator',
+            message: 'The team’s ability to weave creativity into dynamic visuals elevated our storytelling game. The animations not only grabbed attention but also turned our narratives into visual spectacles that resonated.',
             company: 'ABC company',
         },
         {
             profile: icon1,
             stars: icon2,
-            name: 'Sarah',
-            message: 'Infinity Animations created a stunning promotional video for my startup. The attention to detail and animation definitely made a positive impact on our online presence and has set us apart from competitors.',
+            name: 'Rachel Bennett, Startup Founder',
+            message: "As a startup navigating the competitive landscape, the motion graphics services provided by this team were invaluable. The animations not only conveyed our brand's personality but also made our online presence more compelling. ",
             company: 'ABC company',
         },
         {
             profile: icon1,
             stars: icon2,
-            name: 'John',
-            message: 'Infinity Animations created a stunning promotional video for my startup. The attention to detail and animation definitely made a positive impact on our online presence and has set us apart from competitors.',
+            name: 'Brandon Turner, Creative Director',
+            message: 'The commitment to delivering visually striking animations, combined with a keen understanding of brand aesthetics, made the collaboration seamless and highly successful.',
             company: 'ABC company',
         },
     ];
     const testimonial = {
-        title: (<> The Ultimate Collection Of <br /> Our Incredible Customer Experiences </>),
+        title: (<> An Who’s Who of Industry Leading Clients </>),
         para: (<> Achieved 1000+ Impactful Results That Speak Volumes </>),
         btnBg: "bg-prime",
         testiContent: testiContent

@@ -1,8 +1,19 @@
 // Meta Data
 export const metadata = {
     // Title & Descriptions
-    title: "Infinity Animation - Whiteboard Animation",
-    description: "Infinity Animation",
+    title: "Transforming Ideas into Visual Masterpieces Through Whiteboard Animations",
+    description: "Experience the art of storytelling with depth through our Whiteboard Animation services. Every stroke adds nuance to your message.",
+    // Canonical
+    alternates: { canonical: 'https://infinity-animation.vercel.app/why-us/' },
+    // OG Metas
+    openGraph: {
+        title: 'Transforming Ideas into Visual Masterpieces Through Whiteboard Animations',
+        description: 'Experience the art of storytelling with depth through our Whiteboard Animation services. Every stroke adds nuance to your message.',
+        url: 'https://infinity-animation.vercel.app/why-us/',
+        siteName: 'Web Design Hub',
+        locale: 'en_US',
+        type: 'website',
+    },
 }
 
 export default function RootLayout({ children }) {

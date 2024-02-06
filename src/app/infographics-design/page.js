@@ -37,14 +37,14 @@ export default function Page() {
     //=====Banner Fold=====//
     const hero = {
         title: (<> Infographics <span className='text-primary-100'>Design</span><br /> Services </>),
-        para: "Words? Not Today. It’S An Infographics Kind Of Day.",
+        para: "Transforming ideas into infographic masterpieces for impactful communication.",
         btnBg: "bg-prime",
     };
     //=====Looking Fold=====//
     const paraArray = [
-        "Are you bored with words? Your audience might be too. Try infographics digital marketing to deliver complex data in the simplest, most straightforward visual format. Cloud Animations is an infographic design agency that masters the visual representation of information with its creative social media infographic design. We take immense pride in being the leading infographic design service in the USA for comparison, geographic, hierarchical, informational, list, process, statistical, timeline, and other types of infographics.",
+        "Welcome to a world where data transforms into dynamic visual narratives – our Infographics Design Services redefine the art of communication. From sleek corporate reports to engaging social media content, our team infuses creativity into every pixel, transforming data into an immersive visual experience. ",
 
-        "Research has proven that internet users remember visually compelling infographic elements more effectively than text-based online content. Hire infographic designers from Cloud Animations to help viewers quickly and accurately comprehend information. Our infographics design, creation, and submission services enhance knowledge retention, align the brand image, improve employee satisfaction, and engage distracted visitors on the website."
+        "Whether you're aiming to simplify complex concepts for your audience or enhance your brand's visual identity, our infographics are tailor-made to convey information with flair. Each design is a harmonious blend of art and data, ensuring your message doesn't just get seen but also leaves a lasting impression. This is more than design; this is the art of making information visually unforgettable."
     ];
     const looking = {
         title: (<> Infographics </>),
@@ -67,8 +67,8 @@ export default function Page() {
         [polio1, [polio2, polio3], polio4],
     ];
     const portfolio = {
-        title: (<> Our Portfolio of Creative Video Animations </>),
-        para: (<> We take pride in crafting stunning 2D animation videos, whiteboard animations, 3D animations, <br /> typographic animations, and more for our valued clientele. </>),
+        title: (<> Our Exceptional Portfolio for Video Animation </>),
+        para: (<> A visual journey through a kaleidoscope of creativity, where each project tells a unique story of brand elevation and visual excellence. </>),
         tabContents: tabContents,
         tabInfo: tabInfo
     };
@@ -76,23 +76,23 @@ export default function Page() {
     const boostContent = [
         {
             icon: boosticon1,
-            heading: "Capture the Attention",
-            text: "Turn heads, let your ideas come to life and interact with your viewers and capture their imagination.",
+            heading: "Strategic Conceptualization",
+            text: "We kick off by delving deep into your brand ethos, understanding your goals, and strategically conceptualizing visuals that align with your narrative. ",
         },
         {
             icon: boosticon2,
-            heading: "Clicks and More Clicks",
-            text: "Motion graphic videos are synonymous with clickable visual content.",
+            heading: "Creative Mastery",
+            text: "Our team of seasoned creatives then breathe life into these concepts, leveraging cutting-edge techniques and artistic finesse. ",
         },
         {
             icon: boosticon3,
-            heading: "Multi-purpose Animations",
-            text: "Whether it’s explanatory or garnering hype, motion graphics videos can do it all.",
+            heading: "Audience Connection",
+            text: "Impact isn't just about visuals; it's about connection. We ensure that every animation, every narrative beat, is a bridge between your brand and your audience. ",
         },
     ];
     const boost = {
-        title: (<> Time to Turn Heads </>),
-        para: (<> There’s nothing more effective than a motion graphics animation that grabs attention. Here are a few of them: </>),
+        title: (<> Get Them Talking </>),
+        para: (<> Leave an indelible mark on your audience's consciousness. We craft impactful visual experiences that resonate. </>),
         btnBg: "bg-prime",
         boostContent: boostContent,
         flodImg: BoostFlodImg
@@ -102,20 +102,20 @@ export default function Page() {
         {
             ImageOne: conceptIcon1,
             sliderNumber: 1,
-            slideTitle: "Concept",
-            sliderDesc: "We first brainstorm and refine your ideas into a solid concept, ensuring a strong narrative foundation."
+            slideTitle: "Discovery and Strategy",
+            sliderDesc: "We kick off by diving deep into your brand essence, understanding your goals, and formulating a strategic roadmap tailored to your unique identity and objectives."
         },
         {
             ImageOne: conceptIcon2,
             sliderNumber: 2,
-            slideTitle: "Storyboarding",
-            sliderDesc: "Next, we create storyboards that visually map out your video, displaying the sequence of animation events."
+            slideTitle: "Creative Craftsmanship",
+            sliderDesc: "Our skilled team then brings your vision to life, utilizing state-of-the-art techniques and artistic flair to create animations that align with your brand narrative."
         },
         {
             ImageOne: conceptIcon3,
             sliderNumber: 3,
-            slideTitle: "Creation",
-            sliderDesc: "Using the storyboard as our guide, our animators bring your story to life with engaging visuals."
+            slideTitle: "Refinement and Delivery",
+            sliderDesc: "We believe in perfection, so after the initial creation, we refine and polish the content to ensure it not only meets but exceeds your expectations. "
         },
         {
             ImageOne: conceptIcon4,
@@ -125,23 +125,23 @@ export default function Page() {
         },
     ]
     const concept = {
-        title: "How We Animate",
-        para: "As an industry-leading video animation company, we have a firm belief that innovation, when combined with dedication, helps the brand stand out through exceptional video production.",
+        title: "Our Process",
+        para: "We follow a dynamic process, seamlessly blending creativity and strategy to transform your ideas into visually stunning and thoughtful storytelling masterpieces.",
+        conceptContent: conceptContent,
         Servicesconcept: ServiceConcept,
         ConceptParticle: ConceptParticle,
-        conceptContent: conceptContent,
         foldBg: FoldBg,
         btnBg: "bg-prime",
     };
     //=====Pricing Fold=====//
     const pricing = {
         title: (<> Pricing Plans </>),
-        para: (<> Bringing you the best, in a price that is better than the rest </>),
+        para: (<> Easy on the pocket and the eyes. </>),
     };
     //=====Want Fold=====//
     const want = {
         title: "Want to Talk ?",
-        wantDesc: "Are you ready to take the animation route? Call us now!",
+        wantDesc: "Have questions? We have answers, Call Now!",
         bgPrime: true,
     }
     //=====Testimonial Fold=====//
@@ -149,27 +149,27 @@ export default function Page() {
         {
             profile: icon1,
             stars: icon2,
-            name: 'Michael Gardner',
-            message: 'Infinity Animations created a stunning promotional video for my startup. The attention to detail and animation definitely made a positive impact on our online presence and has set us apart from competitors.',
+            name: 'Marcus Thompson, Business Owner',
+            message: 'The infographics created by the team brought a new dimension to how we communicate our business data. Their designs are not just visually appealing but strategically aligned with our brand message. ',
             company: 'ABC company',
         },
         {
             profile: icon1,
             stars: icon2,
-            name: 'Sarah',
-            message: 'Infinity Animations created a stunning promotional video for my startup. The attention to detail and animation definitely made a positive impact on our online presence and has set us apart from competitors.',
+            name: 'Elena Martinez, Research Analyst',
+            message: 'As a research analyst, the infographics produced have been a tremendous asset. The infographics not only enhance the understanding of our research but also make our findings more accessible to a wider audience.',
             company: 'ABC company',
         },
         {
             profile: icon1,
             stars: icon2,
-            name: 'John',
-            message: 'Infinity Animations created a stunning promotional video for my startup. The attention to detail and animation definitely made a positive impact on our online presence and has set us apart from competitors.',
+            name: 'Gregory Mitchell, Nonprofit Director',
+            message: 'Our nonprofit organization needed a fresh approach to convey our impact, and the infographics designed by this team delivered beyond expectations. The visual storytelling captured the essence of our mission, making our initiatives more relatable and impactful. ',
             company: 'ABC company',
         },
     ];
     const testimonial = {
-        title: (<> The Ultimate Collection Of <br /> Our Incredible Customer Experiences </>),
+        title: (<> An Who’s Who of Industry Leading Clients </>),
         para: (<> Achieved 1000+ Impactful Results That Speak Volumes </>),
         btnBg: "bg-prime",
         testiContent: testiContent
