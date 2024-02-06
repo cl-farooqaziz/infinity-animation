@@ -37,14 +37,14 @@ export default function Page() {
     //=====Banner Fold=====//
     const hero = {
         title: (<> 2D <span className='text-primary-100'>Animation</span><br /> Services </>),
-        para: "Spread Your Message While Keeping It Classy With 2d Animations",
+        para: "Vintage visuals that speak your language and stir nostalgia.",
         btnBg: "bg-prime",
     };
     //=====Looking Fold=====//
     const paraArray = [
-        "2D animation design has gained immense popularity since when it was first introduced. Today it’s primarily deployed in 2D animation studios for creating advertisements, marketing videos, animated movies or cartoons, corporate presentations, and video games. Besides being adorable, 2D animations tend to capture audiences through their auditory, visual, and kinesthetic aspects.",
-        
-        "Information communicated to the viewers in a visual format is perceived far better since it stimulates different brain regions while simultaneously engaging multiple senses to enable the user to comprehend data more effectively. This deeper level of engagement also triggers the urge in users to share what they find attractive, thus, accounting for more prospects."
+        "Dive into the vibrant world of 2D animation with our services that blend creativity and innovation. We specialize in crafting animations that not only visually captivate but also narrate your brand story with unparalleled flair. From lively characters to dynamic motion graphics, our 2D animation services bring a touch of magic to your content.",
+
+        "Whether you're launching a product, explaining a complex idea, or simply aiming to entertain, our 2D animations are designed to resonate with your audience. We take pride in infusing each frame with a personality that mirrors your brand, creating visuals that not only engage but leave a lasting imprint on the viewer's mind. "
     ];
     const looking = {
         title: (<> 2D Animation </>),
@@ -67,8 +67,8 @@ export default function Page() {
         [polio1, [polio2, polio3], polio4],
     ];
     const portfolio = {
-        title: (<> Our Portfolio of Creative Video Animations </>),
-        para: (<> We take pride in crafting stunning 2D animation videos, whiteboard animations, 3D animations, <br /> typographic animations, and more for our valued clientele. </>),
+        title: (<> Our Exceptional Portfolio for Video Animation </>),
+        para: (<> A visual journey through a kaleidoscope of creativity, where each project tells a unique story of brand elevation and visual excellence. </>),
         tabContents: tabContents,
         tabInfo: tabInfo
     };
@@ -76,23 +76,23 @@ export default function Page() {
     const boostContent = [
         {
             icon: boosticon1,
-            heading: "Capture the Attention",
-            text: "Turn heads, let your ideas come to life and interact with your viewers and capture their imagination.",
+            heading: "Strategic Conceptualization",
+            text: "We kick off by delving deep into your brand ethos, understanding your goals, and strategically conceptualizing visuals that align with your narrative. ",
         },
         {
             icon: boosticon2,
-            heading: "Clicks and More Clicks",
-            text: "Motion graphic videos are synonymous with clickable visual content.",
+            heading: "Creative Mastery",
+            text: "Our team of seasoned creatives then breathe life into these concepts, leveraging cutting-edge techniques and artistic finesse. ",
         },
         {
             icon: boosticon3,
-            heading: "Multi-purpose Animations",
-            text: "Whether it’s explanatory or garnering hype, motion graphics videos can do it all.",
+            heading: "Audience Connection",
+            text: "Impact isn't just about visuals; it's about connection. We ensure that every animation, every narrative beat, is a bridge between your brand and your audience.",
         },
     ];
     const boost = {
-        title: (<> Time to Turn Heads </>),
-        para: (<> There’s nothing more effective than a motion graphics animation that grabs attention. Here are a few of them: </>),
+        title: (<> Get Them Talking </>),
+        para: (<> Leave an indelible mark on your audience's consciousness. We craft impactful visual experiences that resonate. </>),
         btnBg: "bg-prime",
         boostContent: boostContent,
         flodImg: BoostFlodImg
@@ -102,20 +102,20 @@ export default function Page() {
         {
             ImageOne: conceptIcon1,
             sliderNumber: 1,
-            slideTitle: "Concept",
-            sliderDesc: "We first brainstorm and refine your ideas into a solid concept, ensuring a strong narrative foundation."
+            slideTitle: "Discovery and Strategy",
+            sliderDesc: "We kick off by diving deep into your brand essence, understanding your goals, and formulating a strategic roadmap tailored to your unique identity and objectives."
         },
         {
             ImageOne: conceptIcon2,
             sliderNumber: 2,
-            slideTitle: "Storyboarding",
-            sliderDesc: "Next, we create storyboards that visually map out your video, displaying the sequence of animation events."
+            slideTitle: "Creative Craftsmanship",
+            sliderDesc: "Our skilled team then brings your vision to life, utilizing state-of-the-art techniques and artistic flair to create animations that align with your brand narrative."
         },
         {
             ImageOne: conceptIcon3,
             sliderNumber: 3,
-            slideTitle: "Creation",
-            sliderDesc: "Using the storyboard as our guide, our animators bring your story to life with engaging visuals."
+            slideTitle: "Refinement and Delivery",
+            sliderDesc: "We believe in perfection, so after the initial creation, we refine and polish the content to ensure it not only meets but exceeds your expectations. "
         },
         {
             ImageOne: conceptIcon4,
@@ -125,23 +125,23 @@ export default function Page() {
         },
     ]
     const concept = {
-        title: "How We Animate",
-        para: "As an industry-leading video animation company, we have a firm belief that innovation, when combined with dedication, helps the brand stand out through exceptional video production.",
+        title: "Our Process",
+        para: "We follow a dynamic process, seamlessly blending creativity and strategy to transform your ideas into visually stunning and thoughtful storytelling masterpieces.",
+        conceptContent: conceptContent,
         Servicesconcept: ServiceConcept,
         ConceptParticle: ConceptParticle,
-        conceptContent: conceptContent,
         foldBg: FoldBg,
         btnBg: "bg-prime",
     };
     //=====Pricing Fold=====//
     const pricing = {
         title: (<> Pricing Plans </>),
-        para: (<> Bringing you the best, in a price that is better than the rest </>),
+        para: (<> Easy on the pocket and the eyes. </>),
     };
     //=====Want Fold=====//
     const want = {
         title: "Want to Talk ?",
-        wantDesc: "Are you ready to take the animation route? Call us now!",
+        wantDesc: "Have questions? We have answers, Call Now!",
         bgPrime: true,
     }
     //=====Testimonial Fold=====//
@@ -149,27 +149,26 @@ export default function Page() {
         {
             profile: icon1,
             stars: icon2,
-            name: 'Michael Gardner',
-            message: 'Infinity Animations created a stunning promotional video for my startup. The attention to detail and animation definitely made a positive impact on our online presence and has set us apart from competitors.',
+            name: 'Emma Thompson, Marketing Manager',
+            message: 'Mind-blowing creativity! The 2D animation for our product launch was a game-changer. Our audience loved the visual storytelling, and it translated into tangible engagement and sales. Kudos! ',
+        },
+        {
+            profile: icon1,
+            stars: icon2,
+            name: 'Samuel Rodriguez, CEO',
+            message: 'Working with this team was a breeze! They took our concepts and turned them into visually stunning 2D animations. Our brand message was conveyed with charm and simplicity, captivating our audience.',
             company: 'ABC company',
         },
         {
             profile: icon1,
             stars: icon2,
-            name: 'Sarah',
-            message: 'Infinity Animations created a stunning promotional video for my startup. The attention to detail and animation definitely made a positive impact on our online presence and has set us apart from competitors.',
-            company: 'ABC company',
-        },
-        {
-            profile: icon1,
-            stars: icon2,
-            name: 'John',
-            message: 'Infinity Animations created a stunning promotional video for my startup. The attention to detail and animation definitely made a positive impact on our online presence and has set us apart from competitors.',
+            name: 'Megan Harper, Creative Director',
+            message: "Incredible attention to detail! The 2D animation service brought our brand's story to life in ways we hadn't imagined. The creativity and precision in each frame left us thoroughly impressed.",
             company: 'ABC company',
         },
     ];
     const testimonial = {
-        title: (<> The Ultimate Collection Of <br /> Our Incredible Customer Experiences </>),
+        title: (<> An Who’s Who of Industry Leading Clients </>),
         para: (<> Achieved 1000+ Impactful Results That Speak Volumes </>),
         btnBg: "bg-prime",
         testiContent: testiContent

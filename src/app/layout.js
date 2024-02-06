@@ -8,15 +8,15 @@ import "./global.css";
 // Meta Data
 export const metadata = {
   // Title & Descriptions
-  title: "The Entrancing Portal of Animation | Infinity Animations",
-  description: "Infinity Animations, prioritizing art, illuminates the dark and mundane world of animation, offering affordable services through their certified animators.",
+  title: "Your Vision Coupled with Creative Excellence",
+  description: "Explore our animation studio's diverse services, where creativity meets precision, bringing your ideas to life in captivating motion.",
   // Canonical
-  alternates: { canonical: 'https://infinity-animation.vercel.app/contact-us/' },
+  alternates: { canonical: 'https://infinity-animation.vercel.app/' },
   // OG Metas
   openGraph: {
-    title: 'The Entrancing Portal of Animation | Infinity Animations',
-    description: 'Infinity Animations, prioritizing art, illuminates the dark and mundane world of animation, offering affordable services through their certified animators.',
-    url: 'https://infinity-animation.vercel.app/contact-us/',
+    title: "Your Vision Coupled with Creative Excellence",
+    description: "Explore our animation studio's diverse services, where creativity meets precision, bringing your ideas to life in captivating motion.",
+    url: 'https://infinity-animation.vercel.app/',
     siteName: 'Web Design Hub',
     locale: 'en_US',
     type: 'website',

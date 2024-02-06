@@ -37,14 +37,14 @@ export default function Page() {
     //=====Banner Fold=====//
     const hero = {
         title: (<> Architectural <br />Visualization Services </>),
-        para: "Move Past The 'Edit My Video' Fiasco.",
+        para: "Architectural visualization that transcends imagination! ",
         btnBg: "bg-prime",
     };
     //=====Looking Fold=====//
     const paraArray = [
-        "Cloud Animations doubles as an architectural visualization company that practices 2D and 3D architectural visualization to redefine modern architecture. Visualizing interior and exterior designs come in handy prior to the building process as it presents the building structure in a way that the layman can easily digest.",
+        "From sleek interiors to breathtaking exteriors, our team of visualization experts crafts immersive experiences that transcend traditional blueprints. Witness your ideas take shape with unparalleled realism, making every detail an essential part of the narrative. ",
 
-        "The architectural rendering services offered by one of the best architectural visualization studios in town allow you to create two-dimensional and three-dimensional depictions of proposed architectural designs. In simpler words, you get a firsthand virtual experience of what your space will look like once it’s built entirely beforehand. Signing up with Cloud Animations for architectural visualization and 3D rendering services gives you a chance NOT to feel sorry for yourself later on because that’s just how accurately we represent the design intent."
+        "At the intersection of innovation and aesthetics, our Architectural Visualization Services go beyond rendering structures; they create visual stories that resonate. Whether it's a residential project, commercial space, or urban development, our commitment to precision and creativity ensures a visual journey that aligns seamlessly with your design philosophy. Join us in the pursuit of architectural excellence, where every visualization becomes a testament to the future of design – compelling, immersive, and simply extraordinary."
     ];
     const looking = {
         title: (<> Architectural Visualization </>),
@@ -67,8 +67,8 @@ export default function Page() {
         [polio1, [polio2, polio3], polio4],
     ];
     const portfolio = {
-        title: (<> Our Portfolio of Creative Architectural Services </>),
-        para: (<> We take pride in crafting stunning 2D animation videos, whiteboard animations, 3D animations, <br /> typographic animations, and more for our valued clientele. </>),
+        title: (<> Our Exceptional Portfolio for Video Animation </>),
+        para: (<> A visual journey through a kaleidoscope of creativity, where each project tells a unique story of brand elevation and visual excellence. </>),
         tabContents: tabContents,
         tabInfo: tabInfo
     };
@@ -76,23 +76,23 @@ export default function Page() {
     const boostContent = [
         {
             icon: boosticon1,
-            heading: "Capture the Attention",
-            text: "Turn heads, let your ideas come to life and interact with your viewers and capture their imagination.",
+            heading: "Strategic Conceptualization",
+            text: "We kick off by delving deep into your brand ethos, understanding your goals, and strategically conceptualizing visuals that align with your narrative. ",
         },
         {
             icon: boosticon2,
-            heading: "Clicks and More Clicks",
-            text: "Motion graphic videos are synonymous with clickable visual content.",
+            heading: "Creative Mastery",
+            text: "Our team of seasoned creatives then breathe life into these concepts, leveraging cutting-edge techniques and artistic finesse. ",
         },
         {
             icon: boosticon3,
-            heading: "Multi-purpose Animations",
-            text: "Whether it’s explanatory or garnering hype, motion graphics videos can do it all.",
+            heading: "Audience Connection",
+            text: "Impact isn't just about visuals; it's about connection. We ensure that every animation, every narrative beat, is a bridge between your brand and your audience. ",
         },
     ];
     const boost = {
-        title: (<> Time to Turn Heads </>),
-        para: (<> There’s nothing more effective than a motion graphics animation that grabs attention. Here are a few of them: </>),
+        title: (<> Get Them Talking </>),
+        para: (<> Leave an indelible mark on your audience's consciousness. We craft impactful visual experiences that resonate. </>),
         btnBg: "bg-prime",
         boostContent: boostContent,
         flodImg: BoostFlodImg
@@ -102,20 +102,20 @@ export default function Page() {
         {
             ImageOne: conceptIcon1,
             sliderNumber: 1,
-            slideTitle: "Concept",
-            sliderDesc: "We first brainstorm and refine your ideas into a solid concept, ensuring a strong narrative foundation."
+            slideTitle: "Discovery and Strategy",
+            sliderDesc: "We kick off by diving deep into your brand essence, understanding your goals, and formulating a strategic roadmap tailored to your unique identity and objectives."
         },
         {
             ImageOne: conceptIcon2,
             sliderNumber: 2,
-            slideTitle: "Storyboarding",
-            sliderDesc: "Next, we create storyboards that visually map out your video, displaying the sequence of animation events."
+            slideTitle: "Creative Craftsmanship",
+            sliderDesc: "Our skilled team then brings your vision to life, utilizing state-of-the-art techniques and artistic flair to create animations that align with your brand narrative."
         },
         {
             ImageOne: conceptIcon3,
             sliderNumber: 3,
-            slideTitle: "Creation",
-            sliderDesc: "Using the storyboard as our guide, our animators bring your story to life with engaging visuals."
+            slideTitle: "Refinement and Delivery",
+            sliderDesc: "We believe in perfection, so after the initial creation, we refine and polish the content to ensure it not only meets but exceeds your expectations. "
         },
         {
             ImageOne: conceptIcon4,
@@ -125,50 +125,50 @@ export default function Page() {
         },
     ]
     const concept = {
-        title: "How We Animate",
-        para: "As an industry-leading video animation company, we have a firm belief that innovation, when combined with dedication, helps the brand stand out through exceptional video production.",
+        title: "Our Process",
+        para: "We follow a dynamic process, seamlessly blending creativity and strategy to transform your ideas into visually stunning and thoughtful storytelling masterpieces.",
+        conceptContent: conceptContent,
         Servicesconcept: ServiceConcept,
         ConceptParticle: ConceptParticle,
-        conceptContent: conceptContent,
         foldBg: FoldBg,
         btnBg: "bg-prime",
     };
     //=====Pricing Fold=====//
     const pricing = {
         title: (<> Pricing Plans </>),
-        para: (<> Bringing you the best, in a price that is better than the rest </>),
+        para: (<> Easy on the pocket and the eyes. </>),
     };
     //=====Want Fold=====//
     const want = {
         title: "Want to Talk ?",
-        wantDesc: "Are you ready to take the animation route? Call us now!"
+        wantDesc: "Have questions? We have answers, Call Now!"
     }
     //=====Testimonial Fold=====//
     const testiContent = [
         {
             profile: icon1,
             stars: icon2,
-            name: 'Michael Gardner',
-            message: 'Infinity Animations created a stunning promotional video for my startup. The attention to detail and animation definitely made a positive impact on our online presence and has set us apart from competitors.',
+            name: 'Emily Lewis, Architectural Firm Partner',
+            message: 'Our design concepts truly came to life with the architectural visualization services. The attention to detail and realism exceeded our expectations. ',
             company: 'ABC company',
         },
         {
             profile: icon1,
             stars: icon2,
-            name: 'Sarah',
-            message: 'Infinity Animations created a stunning promotional video for my startup. The attention to detail and animation definitely made a positive impact on our online presence and has set us apart from competitors.',
+            name: 'Michael Chen, Real Estate Developer',
+            message: "The architectural visualizations provided by this team played a pivotal role in our project's success. Prospective buyers were not just shown spaces; they were taken on a visual journey through their future homes. ",
             company: 'ABC company',
         },
         {
             profile: icon1,
             stars: icon2,
-            name: 'John',
-            message: 'Infinity Animations created a stunning promotional video for my startup. The attention to detail and animation definitely made a positive impact on our online presence and has set us apart from competitors.',
+            name: 'Isabella Rodriguez, Interior Designer',
+            message: 'Working with this team on our interior design projects was a game-changer. The architectural visualizations allowed us to fine-tune details, ensuring our designs translated seamlessly from concept to reality. ',
             company: 'ABC company',
         },
     ];
     const testimonial = {
-        title: (<> The Ultimate Collection Of <br /> Our Incredible Customer Experiences </>),
+        title: (<> An Who’s Who of Industry Leading Clients </>),
         para: (<> Achieved 1000+ Impactful Results That Speak Volumes </>),
         btnBg: "bg-prime",
         testiContent: testiContent

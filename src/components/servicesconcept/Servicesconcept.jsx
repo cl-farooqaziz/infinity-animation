@@ -69,7 +69,7 @@ const Servicesconcept = ({ content }) => {
                                                 </div>
                                             </div>
                                             <div>
-                                                <h3 className="text-[24px] xl:text-[30px] font-sans font-bold tracking-wide mb-2">{concept.slideTitle}</h3>
+                                                <h3 className="text-[24px] xl:text-[30px] xl:leading-[35px] font-sans font-bold tracking-wide mb-2">{concept.slideTitle}</h3>
                                                 <p className="text-[12px] xl:text-[16px] font-sans font-normal tracking-wider line-clamp-3">{concept.sliderDesc}</p>
                                             </div>
                                         </div>
