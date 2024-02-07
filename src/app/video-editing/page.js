@@ -37,18 +37,19 @@ export default function Page() {
     //=====Banner Fold=====//
     const hero = {
         title: (<> Video Editing <br /> Services </>),
-        para: "Move Past The 'Edit My Video' Fiasco.",
+        para: "Redefining Stories with Precision and Flair!",
         btnBg: "bg-prime",
     };
     //=====Looking Fold=====//
     const paraArray = [
-        "Pre-production, production, and post-production are three critical phases of making a video. While it may not seem apparent, since most of it happens behind the scenes, video editors blend sounds and images to present films that turn into excellent marketing tools for companies worldwide. The correct approach to video editing can attract newer audiences, get prospects to convert, and retain existing customers for a brand.",
-        
-        "A great majority of consumers agree that a brand’s video makes it easier for them to decide whether or not to buy a particular product or service. Sign up to Cloud Animations, a leading video editing agency that guarantees easy transitions, smooth flow, perfect cuts, and seamless sound editing when combining different portions of the film. We ensure that your message doesn’t get lost in transition."
+        "Beyond just cutting and trimming, our skilled editors craft a narrative flow that captivates audiences from the first frame to the last. Whether it's a corporate video, a promotional clip, or a creative masterpiece, our team meticulously refines every detail, ensuring your story is not just told but experienced. ",
+
+        "In the fast-paced digital landscape, where attention spans are fleeting, our Video Editing Services stand out as architects of engagement. We understand that every cut, transition, and effect contributes to the overall impact of your video. Our team seamlessly weaves together visuals and sound, creating a symphony of storytelling that leaves a lasting impression. "
     ];
     const looking = {
         title: (<> Video Editing </>),
         para: { paraArray },
+        isCTA: true,
         flodImg: LookingFlodImg
     };
     //=====Portfilio Fold=====//
@@ -67,8 +68,8 @@ export default function Page() {
         [polio1, [polio2, polio3], polio4],
     ];
     const portfolio = {
-        title: (<> Our Portfolio of Creative Video Animations </>),
-        para: (<> We take pride in crafting stunning 2D animation videos, whiteboard animations, 3D animations, <br /> typographic animations, and more for our valued clientele. </>),
+        title: (<> Our Exceptional Portfolio for Video Animation </>),
+        para: (<> A visual journey through a kaleidoscope of creativity, where each project tells a unique story of brand elevation and visual excellence. </>),
         tabContents: tabContents,
         tabInfo: tabInfo
     };
@@ -76,23 +77,23 @@ export default function Page() {
     const boostContent = [
         {
             icon: boosticon1,
-            heading: "Capture the Attention",
-            text: "Turn heads, let your ideas come to life and interact with your viewers and capture their imagination.",
+            heading: "Strategic Conceptualization",
+            text: " We kick off by delving deep into your brand ethos, understanding your goals, and strategically conceptualizing visuals that align with your narrative. ",
         },
         {
             icon: boosticon2,
-            heading: "Clicks and More Clicks",
-            text: "Motion graphic videos are synonymous with clickable visual content.",
+            heading: "Creative Mastery",
+            text: "Our team of seasoned creatives then breathe life into these concepts, leveraging cutting-edge techniques and artistic finesse. ",
         },
         {
             icon: boosticon3,
-            heading: "Multi-purpose Animations",
-            text: "Whether it’s explanatory or garnering hype, motion graphics videos can do it all.",
+            heading: "Audience Connection",
+            text: "Impact isn't just about visuals; it's about connection. We ensure that every animation, every narrative beat, is a bridge between your brand and your audience. ",
         },
     ];
     const boost = {
-        title: (<> Time to Turn Heads </>),
-        para: (<> There’s nothing more effective than a motion graphics animation that grabs attention. Here are a few of them: </>),
+        title: (<> Get Them Talking </>),
+        para: (<> Leave an indelible mark on your audience's consciousness. We craft impactful visual experiences that resonate. </>),
         btnBg: "bg-prime",
         boostContent: boostContent,
         flodImg: BoostFlodImg
@@ -102,20 +103,20 @@ export default function Page() {
         {
             ImageOne: conceptIcon1,
             sliderNumber: 1,
-            slideTitle: "Concept",
-            sliderDesc: "We first brainstorm and refine your ideas into a solid concept, ensuring a strong narrative foundation."
+            slideTitle: "Discovery and Strategy",
+            sliderDesc: "We kick off by diving deep into your brand essence, understanding your goals, and formulating a strategic roadmap tailored to your unique identity and objectives."
         },
         {
             ImageOne: conceptIcon2,
             sliderNumber: 2,
-            slideTitle: "Storyboarding",
-            sliderDesc: "Next, we create storyboards that visually map out your video, displaying the sequence of animation events."
+            slideTitle: "Creative Craftsmanship",
+            sliderDesc: "Our skilled team then brings your vision to life, utilizing state-of-the-art techniques and artistic flair to create animations that align with your brand narrative."
         },
         {
             ImageOne: conceptIcon3,
             sliderNumber: 3,
-            slideTitle: "Creation",
-            sliderDesc: "Using the storyboard as our guide, our animators bring your story to life with engaging visuals."
+            slideTitle: "Refinement and Delivery",
+            sliderDesc: "We believe in perfection, so after the initial creation, we refine and polish the content to ensure it not only meets but exceeds your expectations. "
         },
         {
             ImageOne: conceptIcon4,
@@ -125,50 +126,50 @@ export default function Page() {
         },
     ]
     const concept = {
-        title: "How We Animate",
-        para: "As an industry-leading video animation company, we have a firm belief that innovation, when combined with dedication, helps the brand stand out through exceptional video production.",
+        title: "Our Process",
+        para: "We follow a dynamic process, seamlessly blending creativity and strategy to transform your ideas into visually stunning and thoughtful storytelling masterpieces.",
+        conceptContent: conceptContent,
         Servicesconcept: ServiceConcept,
         ConceptParticle: ConceptParticle,
-        conceptContent: conceptContent,
         foldBg: FoldBg,
         btnBg: "bg-prime",
     };
     //=====Pricing Fold=====//
     const pricing = {
         title: (<> Pricing Plans </>),
-        para: (<> Bringing you the best, in a price that is better than the rest </>),
+        para: (<> Easy on the pocket and the eyes. </>),
     };
     //=====Want Fold=====//
     const want = {
         title: "Want to Talk ?",
-        wantDesc: "Are you ready to take the animation route? Call us now!"
+        wantDesc: "Have questions? We have answers, Call Now!"
     }
     //=====Testimonial Fold=====//
     const testiContent = [
         {
             profile: icon1,
             stars: icon2,
-            name: 'Michael Gardner',
-            message: 'Infinity Animations created a stunning promotional video for my startup. The attention to detail and animation definitely made a positive impact on our online presence and has set us apart from competitors.',
+            name: 'Natalie Foster, Content Creator',
+            message: 'The attention to detail, creativity, and ability to understand the nuances of our content elevated our videos to a whole new level. Working with them was a collaborative journey, and the results were nothing short of cinematic magic.',
             company: 'ABC company',
         },
         {
             profile: icon1,
             stars: icon2,
-            name: 'Sarah',
-            message: 'Infinity Animations created a stunning promotional video for my startup. The attention to detail and animation definitely made a positive impact on our online presence and has set us apart from competitors.',
+            name: 'Aaron Mitchell, Corporate Communications Director',
+            message: "As a director overseeing corporate communications, I can attest to the transformative impact of this team's video editing services. They not only meet but exceed expectations in turning our raw footage into polished, engaging content. ",
             company: 'ABC company',
         },
         {
             profile: icon1,
             stars: icon2,
-            name: 'John',
-            message: 'Infinity Animations created a stunning promotional video for my startup. The attention to detail and animation definitely made a positive impact on our online presence and has set us apart from competitors.',
+            name: 'Sophie Ramirez, Social Media Influencer',
+            message: 'In the competitive world of social media, standing out is everything. The edits are not just cuts; they are storytelling elements that keep my audience engaged and eager for more. Highly recommended for anyone looking to make a visual impact!',
             company: 'ABC company',
         },
     ];
     const testimonial = {
-        title: (<> The Ultimate Collection Of <br /> Our Incredible Customer Experiences </>),
+        title: (<> An Who’s Who of Industry Leading Clients </>),
         para: (<> Achieved 1000+ Impactful Results That Speak Volumes </>),
         btnBg: "bg-prime",
         testiContent: testiContent

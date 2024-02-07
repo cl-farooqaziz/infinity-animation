@@ -42,10 +42,10 @@ const Testimonial = ({ content }) => {
                             </p>
                         </div>
                     </div>
-                    <div className={`w-full md:w-[75%] lg:w-[60%] 3xl:w-[50%] mx-auto bg-[url("../../public/images/testimonial-bg.png")] bg-no-repeat bg-center bg-cover p-[30px] lg:py-[75px] xl:py-[100px] 2xl:py-[120px] 3xl:p-[105px] pb-[70px] slideBg`}>
+                    <div className={`w-full md:w-[75%] lg:w-[60%] 3xl:w-[50%] mx-auto bg-[url("../../public/images/testimonial-bg.png")] bg-no-repeat bg-center bg-cover p-[30px] lg:py-[60px] xl:py-[90px] 2xl:py-[115px] 3xl:p-[71px] pb-[70px] slideBg`}>
                         <Slider {...testiSlider} className="testiSlider">
                             {testiContent.map((testimonial, index) => (
-                                <div key={index}>
+                                <div key={index} className="h-full">
                                     <div className="flex flex-col items-center">
                                         <Image src={testimonial.profile} className="w-[10%] mb-3" alt='Infinity Animation' />
                                         <Image src={testimonial.stars} className="w-[16%] mb-3" alt='Infinity Animation' />

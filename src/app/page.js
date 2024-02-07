@@ -43,6 +43,7 @@ export default function Page() {
     const looking = {
         title: (<> Looking For a Professional Video Animation Company? </>),
         para: { paraArray },
+        isCTA: true,
         flodImg: LookingFlodImg
     };
     //=====StoryLine Fold=====//

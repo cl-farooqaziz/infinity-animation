@@ -27,6 +27,7 @@ export default function Page() {
     const looking = {
         title: (<> From the Vault </>),
         para: { paraArray },
+        isCTA: true,
         flodImg: LookingFlodImg
     };
     //=====Want Fold=====//

@@ -49,6 +49,7 @@ export default function Page() {
     const looking = {
         title: (<> Architectural Visualization </>),
         para: { paraArray },
+        isCTA: true,
         flodImg: LookingFlodImg
     };
     //=====Portfilio Fold=====//
