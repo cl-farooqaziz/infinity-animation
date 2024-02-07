@@ -7,14 +7,14 @@ import CTA from "@/components/cta/CTA";
 import trustPlatforms from "media/icons/trust.png";
 
 const Hero = ({ content }) => {
-    const { title, para, btnBg, btnColor, btnBorder, btnHover, } = content;
+    const { title, para, } = content;
     // Set Bg-Image
     const router = usePathname();
     let backgroundImage;
     let margin;
     switch (router) {
         case "/":
-            backgroundImage = 'bg-[length:100%_70%] bg-bottom lg:items-end lg:bg-[url("../../public/home/banner-img.png")]'
+            backgroundImage = 'bg-[length:100%_70%] bg-bottom lg:items-end xxl:items-center lg:bg-[url("../../public/home/banner-img.png")]'
             margin = 'mt-0'
             break;
         case '/why-us':

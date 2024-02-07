@@ -43,14 +43,14 @@ const Servicesconcept = ({ content }) => {
     return (
         <>
             <section className='xl:pt-36 lg:pb-16 md:pb-12 pb-8 relative'>
-                <Image src={foldBg} alt='bg' className='absolute top-[-125px] right-0 w-full' />
+                <Image src={foldBg} alt='Infinity Animation' className='absolute top-[-125px] right-0 w-full' />
                 <div className="container">
                     <div className="grid grid-cols-12 gap-y-7 md:gap-y-0">
                         <div className="col-span-12 md:col-span-4">
                             <div className='relative -ml-6'>
-                                <Image src={Servicesconcept} alt='ServiceConcept' quality={85} className='lg:w-10/12' />
+                                <Image src={Servicesconcept} alt='Infinity Animation' quality={85} className='lg:w-10/12' />
                                 <div className='absolute bottom-[-80%] lg:bottom-[-100%] left-[12%] lg:left-[6%]'>
-                                    <Image src={ConceptParticle} alt='ConceptParticle' quality={85} className='w-full' />
+                                    <Image src={ConceptParticle} alt='Infinity Animation' quality={85} className='w-full' />
                                 </div>
                             </div>
                         </div>

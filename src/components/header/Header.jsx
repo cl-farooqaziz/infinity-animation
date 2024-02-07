@@ -1,126 +1,254 @@
 "use client"
-import { useState } from "react";
+import React from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { Collapse, IconButton, MobileNav, Navbar } from "@material-tailwind/react";
 // Import Components
 import CTA from "@/components/cta/CTA";
+import {
+    Navbar, Collapse, Typography, IconButton, List, ListItem, Menu, MenuHandler, MenuList, MenuItem,
+} from "@material-tailwind/react";
+import {
+    ChevronDownIcon, Bars3Icon, XMarkIcon, ChevronRightIcon,
+} from "@heroicons/react/24/outline";
+import {
+    Bars4Icon, GlobeAmericasIcon, NewspaperIcon, PhoneIcon, RectangleGroupIcon, SquaresPlusIcon, SunIcon, TagIcon, UserGroupIcon,
+} from "@heroicons/react/24/solid";
 // Import Images
 import logo from "../../../public/images/logo.png";
 
-const Header = () => {
-    const [openNav, setOpenNav] = useState(false);
-    const [openSubMenu, setOpenSubMenu] = useState(false);
-    const navList = (
-        <ul className="lg:flex lg:items-center gap-5 xl:gap-10 lg:h-full rounded-2xl bg-black lg:bg-transparent lg:rounded-none py-5 lg:py-0 px-5 lg:px-0">
-            <li className="lg:h-full lg:flex lg:items-center">
-                <Link href="/" className="font-sans text-lg font-normal leading-10">Home</Link>
-            </li>
-            <li className="lg:h-full lg:flex lg:items-center">
-                <Link href="/why-us" className="font-sans text-lg font-normal leading-10">Why Us</Link>
-            </li>
-            <li className="lg:h-full lg:flex lg:items-center group relative">
-                <button href="/" className="font-sans text-lg font-normal leading-10 flex items-center gap-3">
-                    Services
-                </button>
-                {/* <div className="lg:absolute lg:flex lg:opacity-0 lg:invisible group-hover:visible group-hover:opacity-100 top-full w-full lg:w-[600px] lg:justify-between lg:left-[-200px]  xl:left-[-100px] rounded-2xl right-0 bg-white lg:p-3 lg:mt-[-20px]">
-                    <ul className="hidden lg:block w-1/2">
-                        <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
-                            <Link className="text-base" href="/logo-design-company">Logo Design</Link>
-                        </li>
-                        <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
-                            <Link className="text-base" href="/creative-copywriting-company">Creative Copywriting</Link>
-                        </li>
-                        <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
-                            <Link className="text-base" href="/digital-marketing-company">Digital Marketing</Link>
-                        </li>
-                        <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
-                            <Link className="text-base" href="/ecommerce-solutions">Ecommerce Web Solutions</Link>
-                        </li>
-                        <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
-                            <Link className="text-base" href="/website-development-company">Website Development</Link>
-                        </li>
-                    </ul>
-                    <ul className="hidden lg:block w-1/2">
-                        <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
-                            <Link className="text-base" href="/motion-graphic-design-company">Motion Graphics</Link>
-                        </li>
-                        <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
-                            <Link className="text-base" href="/illustration-design-company">Illustration Design</Link>
-                        </li>
-                        <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
-                            <Link className="text-base" href="/marketing-collateral-company">Marketing Collateral</Link>
-                        </li>
-                        <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
-                            <Link className="text-base" href="/mobile-app-design-company">App Design</Link>
-                        </li>
-                        <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
-                            <Link className="text-base" href="/seo-company">SEO Services</Link>
-                        </li>
-                    </ul>
-                    <Collapse open={openSubMenu} className="block lg:hidden">
-                        <ul>
-                            <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
-                                <Link className="text-base" href="/logo-design-company">Logo Design</Link>
-                            </li>
-                            <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
-                                <Link className="text-base" href="/creative-copywriting-company">Creative Copywriting</Link>
-                            </li>
-                            <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
-                                <Link className="text-base" href="/digital-marketing-company">Digital Marketing</Link>
-                            </li>
-                            <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
-                                <Link className="text-base" href="/ecommerce-solutions">Ecommerce Web Solutions</Link>
-                            </li>
-                            <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
-                                <Link className="text-base" href="/website-development-company">Website Development</Link>
-                            </li>
-                            <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
-                                <Link className="text-base" href="/motion-graphic-design-company">Motion Graphics</Link>
-                            </li>
-                            <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
-                                <Link className="text-base" href="/illustration-design-company">Illustration Design</Link>
-                            </li>
-                            <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
-                                <Link className="text-base" href="/marketing-collateral-company">Marketing Collateral</Link>
-                            </li>
-                            <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
-                                <Link className="text-base" href="/mobile-app-design-company">App Design</Link>
-                            </li>
-                            <li className="flex p-3 items-center text-black gap-3 rounded-2xl hover:bg-[#e9e9e9]">
-                                <Link className="text-base" href="/seo-company">SEO Services</Link>
-                            </li>
-                        </ul>
-                    </Collapse>
-                </div> */}
-            </li>
-            <li className="lg:h-full lg:flex lg:items-center">
-                <Link href="/portfolio" className="font-sans text-lg font-normal leading-10">Portfolio</Link>
-            </li>
-            <li className="lg:h-full lg:flex lg:items-center">
-                <Link href="/process" className="font-sans text-lg font-normal leading-10">Process</Link>
-            </li>
-            <li className="lg:h-full lg:flex lg:items-center">
-                <Link href="/pricing" className="font-sans text-lg font-normal leading-10">Pricing</Link>
-            </li>
-            <li className="lg:h-full lg:flex lg:items-center">
-                <Link href="/blog" className="font-sans text-lg font-normal leading-10">Blog</Link>
-            </li>
-            <li className="lg:h-full lg:flex lg:items-center">
-                <Link href="/contact-us" className="font-sans text-lg font-normal leading-10">Contact Us</Link>
-            </li>
-        </ul>
+const megaMenuItems = [
+    {
+        title: "2d Animation",
+        icon: SquaresPlusIcon,
+        href: "/2d-animation",
+    },
+    {
+        title: "3d Animation",
+        icon: UserGroupIcon,
+        href: "/3d-animation",
+    },
+    {
+        title: "Architectural Services",
+        icon: Bars4Icon,
+        href: "/architectural-services",
+    },
+    {
+        title: "CGI & VFX",
+        icon: SunIcon,
+        href: "/cgi-and-vfx",
+    },
+    {
+        title: "Hybrid & cel Animations",
+        icon: GlobeAmericasIcon,
+        href: "/hybrid-&-cel-animations",
+    },
+    {
+        title: "Infographics Design",
+        icon: PhoneIcon,
+        href: "/infographics-design",
+    },
+    {
+        title: "Logo Animation",
+        icon: NewspaperIcon,
+        href: "/logo-animation",
+    },
+    {
+        title: "Motion Graphics",
+        icon: RectangleGroupIcon,
+        href: "/motion-graphics",
+    },
+    {
+        title: "Video Editing",
+        icon: TagIcon,
+        href: "/video-editing",
+    },
+    {
+        title: "Whiteboard Animation",
+        icon: UserGroupIcon,
+        href: "/whiteboard-animation",
+    },
+];
+
+function MegaMenu() {
+    const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
+    const renderItems = megaMenuItems.map(
+        ({ icon, title, href }, key) => (
+            <a href={href} key={key}>
+                <MenuItem className="flex items-center gap-3 rounded-lg mb-1 lg:mb-0">
+                    <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2">
+                        {" "}
+                        {React.createElement(icon, {
+                            strokeWidth: 2,
+                            className: "h-6 text-gray-900 w-6 text-black",
+                        })}
+                    </div>
+                    <div>
+                        <Typography
+                            variant="h6"
+                            color="blue-gray"
+                            className="flex items-center font-sans text-[16px] font-normal text-black"
+                        >
+                            {title}
+                        </Typography>
+                    </div>
+                </MenuItem>
+            </a>
+        ),
     );
+    // Mobile Mega Menu 
+    const [megamenu, setMegaMenu] = React.useState(false);
+    const handleMegaMenu = () => {
+        setMegaMenu((prev) => !prev);
+    }
     return (
-        <header>
-            <Navbar className="max-w-none px-0 py-0 absolute top-0 left-0 z-[9999] rounded-none bg-transparent shadow-none backdrop-saturate-100 backdrop-blur-none border-none">
-                <div className="container">
-                    <div className="flex items-center justify-between h-24 pr-3">
-                        <Link href="/">
+        <React.Fragment>
+            <Menu
+                open={isMenuOpen}
+                handler={setIsMenuOpen}
+                offset={{ mainAxis: 20 }}
+                placement="bottom"
+                allowHover={true}
+            >
+                <MenuHandler>
+                    <Typography as="div" variant="small" className="font-medium">
+                        <ListItem
+                            className="flex items-center px-2 gap-2 py-2 font-sans text-[14px] xl:text-[16px] font-normal leading-[20px]"
+                            selected={isMenuOpen || isMobileMenuOpen}
+                            onClick={() => {
+                                handleMegaMenu();
+                            }}
+                        >
+                            Services
+                            <ChevronDownIcon
+                                strokeWidth={2.5}
+                                className={`hidden h-3 w-3 transition-transform lg:block ${isMenuOpen ? "rotate-180" : ""
+                                    }`}
+                            />
+                            <ChevronRightIcon
+                                strokeWidth={2.5}
+                                className={`block h-3 w-3 mt-1 transition-transform lg:hidden ${isMobileMenuOpen ? "rotate-180" : ""
+                                    }`}
+                            />
+                        </ListItem>
+                    </Typography>
+                </MenuHandler>
+                <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
+                    <ul className="grid grid-cols-3 gap-y-2 outline-none outline-0">
+                        {renderItems}
+                    </ul>
+                </MenuList>
+            </Menu>
+            <div className={megamenu ? `absolute left-[0%] top-0 pt-5 bg-white w-full h-full transition-all duration-300 ease-in-out` : `lg:hidden absolute left-[-130%] top-0 pt-5 bg-white w-full h-full transition-all duration-300 ease-in-out`}>
+                <Collapse open={isMobileMenuOpen}>{renderItems}</Collapse>
+                <div className="absolute top-[10px] right-[10px] bg-black rounded-full p-1" onClick={() => handleMegaMenu()}>
+                    <XMarkIcon
+                        strokeWidth={2.5}
+                        className={`block h-5 w-5 transition-transform text-white lg:hidden`}
+                    />
+                </div>
+            </div>
+        </React.Fragment>
+    );
+}
+
+function NavList() {
+    return (
+        <List className="mt-4 lg:mt-0 mb-0 p-0 pb-4 lg:pb-0 lg:flex-row lg:p-1 gap-3 bg-black lg:bg-transparent border-b-2 border-[prime/100] lg:border-0">
+            <Typography
+                as="a"
+                href="/"
+                variant="small"
+                color="white"
+                className="font-sans text-[14px] xl:text-[16px] font-normal"
+            >
+                <ListItem className="flex items-center gap-2 p-2 xl:px-4 py-2">Home</ListItem>
+            </Typography>
+            <Typography
+                as="a"
+                href="/why-us"
+                variant="small"
+                color="white"
+                className="font-sans text-[14px] xl:text-[16px] font-normal"
+            >
+                <ListItem className="flex items-center gap-2 p-2 xl:px-4 py-2">Why Us</ListItem>
+            </Typography>
+            <MegaMenu />
+            <Typography
+                as="a"
+                href="/portfolio"
+                variant="small"
+                color="white"
+                className="font-sans text-[14px] xl:text-[16px] font-normal"
+            >
+                <ListItem className="flex items-center gap-2 p-2 xl:px-4 py-2">Portfilio</ListItem>
+            </Typography>
+            <Typography
+                as="a"
+                href="/process"
+                variant="small"
+                color="white"
+                className="font-sans text-[14px] xl:text-[16px] font-normal"
+            >
+                <ListItem className="flex items-center gap-2 p-2 xl:px-4 py-2">Process</ListItem>
+            </Typography>
+            <Typography
+                as="a"
+                href="/pricing"
+                variant="small"
+                color="white"
+                className="font-sans text-[14px] xl:text-[16px] font-normal"
+            >
+                <ListItem className="flex items-center gap-2 p-2 xl:px-4 py-2">Pricing</ListItem>
+            </Typography>
+            <Typography
+                as="a"
+                href="/blog"
+                variant="small"
+                color="white"
+                className="font-sans text-[14px] xl:text-[16px] font-normal"
+            >
+                <ListItem className="flex items-center gap-2 p-2 xl:px-4 py-2">Blog</ListItem>
+            </Typography>
+            <Typography
+                as="a"
+                href="/contact-us"
+                variant="small"
+                color="white"
+                className="font-sans text-[14px] xl:text-[16px] font-normal"
+            >
+                <ListItem className="flex items-center gap-2 p-2 xl:px-4 py-2">
+                    Contact Us
+                </ListItem>
+            </Typography>
+        </List>
+    );
+}
+
+const Header = () => {
+    const [openNav, setOpenNav] = React.useState(false);
+
+    React.useEffect(() => {
+        window.addEventListener(
+            "resize",
+            () => window.innerWidth >= 991 && setOpenNav(false),
+        );
+    }, []);
+
+    return (
+        <header className="w-full absolute top-0 left-0 z-[9999] rounded-none bg-transparent">
+            <div className="container">
+                <Navbar className="max-w-none px-0 py-2 rounded-none bg-transparent shadow-none backdrop-saturate-100 backdrop-blur-none border-none">
+                    <div className="flex items-center justify-between text-white relative">
+                        <Typography
+                            as="a"
+                            href="/"
+                            variant="h6"
+                            className="mr-4 cursor-pointer py-1.5 lg:ml-2"
+                        >
                             <Image src={logo} className="w-[50%]" alt="Infinity Animation" />
-                        </Link>
-                        <div className="hidden lg:flex ml-auto h-full items-center gap-10">
-                            {navList}
+                        </Typography>
+                        <div className="hidden lg:flex gap-5">
+                            <NavList />
                             <CTA
                                 text="Get Started"
                                 icon1={true}
@@ -131,51 +259,25 @@ const Header = () => {
                         </div>
                         <IconButton
                             variant="text"
-                            className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
-                            ripple={false}
-                            onClick={() => setOpenNav(!openNav)} >
+                            color="blue-gray"
+                            className="lg:hidden flex items-center justify-center"
+                            onClick={() => setOpenNav(!openNav)}
+                        >
                             {openNav ? (
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    className="h-6 w-6"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                    strokeWidth={2}
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        d="M6 18L18 6M6 6l12 12"
-                                    />
-                                </svg>
+                                <XMarkIcon className="h-[40px] w-[40px]" strokeWidth={2} />
                             ) : (
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    className="h-6 w-6"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth={2} >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        d="M4 6h16M4 12h16M4 18h16"
-                                    />
-                                </svg>
+                                <Bars3Icon className="h-[40px] w-[40px]" strokeWidth={2} />
                             )}
                         </IconButton>
                     </div>
-                </div>
-                {openNav && (
-                    <Collapse open={openNav} className="block xl:hidden">
-                        <div className="container mx-auto">
-                            {navList}
-                        </div>
-                    </Collapse>
-                )}
-            </Navbar>
+                    {openNav && (
+                        <Collapse open={openNav}>
+                            <NavList />
+                        </Collapse>
+                    )}
+                </Navbar>
+            </div>
         </header>
     );
 }
-
 export default Header;

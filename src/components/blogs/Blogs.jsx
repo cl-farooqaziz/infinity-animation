@@ -10,13 +10,10 @@ import 'slick-carousel/slick/slick-theme.css';
 import Blog1 from "media/blogs/blog-1.png"
 
 const Blogs = () => {
-
     const [currentSlide, setCurrentSlide] = useState(0);
-
     const handleBeforeChange = (oldIndex, newIndex) => {
         setCurrentSlide(newIndex);
     };
-
     const renderDots = (dots, slider) => (
         <ul className="absolute right-0 bottom-0 z-50">
             {dots.map((dot, index) => (
@@ -80,7 +77,7 @@ const Blogs = () => {
                             <div className="my-2 px-2">
                                 <div className="card backdrop-blur-sm bg-white/20 rounded-[30px]">
                                     <div className="img">
-                                        <Image src={Blog1} alt='blog 1' className='object-contain w-full' />
+                                        <Image src={Blog1} alt='Infinity Animation' className='object-contain w-full' />
                                     </div>
                                     <div className="content p-4">
                                         <h3 className='text-[16px] sm:text-[20px] font-bold font-sans xl:w-9/12 leading-[20px] sm:leading-[24px]'>How Whiteboard Explainer Videos
@@ -98,7 +95,7 @@ const Blogs = () => {
                             <div className="my-2 px-2">
                                 <div className="card backdrop-blur-sm bg-white/20 rounded-[30px]">
                                     <div className="img">
-                                        <Image src={Blog1} alt='blog 1' className='object-contain w-full' />
+                                        <Image src={Blog1} alt='Infinity Animation' className='object-contain w-full' />
                                     </div>
                                     <div className="content p-4">
                                         <h3 className='text-[16px] sm:text-[20px] font-bold font-sans xl:w-9/12 leading-[20px] sm:leading-[24px]'>How Whiteboard Explainer Videos
@@ -116,7 +113,7 @@ const Blogs = () => {
                             <div className="my-2 px-2">
                                 <div className="card backdrop-blur-sm bg-white/20 rounded-[30px]">
                                     <div className="img">
-                                        <Image src={Blog1} alt='blog 1' className='object-contain w-full' />
+                                        <Image src={Blog1} alt='Infinity Animation' className='object-contain w-full' />
                                     </div>
                                     <div className="content p-4">
                                         <h3 className='text-[16px] sm:text-[20px] font-bold font-sans xl:w-9/12 leading-[20px] sm:leading-[24px]'>How Whiteboard Explainer Videos
@@ -134,7 +131,7 @@ const Blogs = () => {
                             <div className="my-2 px-2">
                                 <div className="card backdrop-blur-sm bg-white/20 rounded-[30px]">
                                     <div className="img">
-                                        <Image src={Blog1} alt='blog 1' className='object-contain w-full' />
+                                        <Image src={Blog1} alt='Infinity Animation' className='object-contain w-full' />
                                     </div>
                                     <div className="content p-4">
                                         <h3 className='text-[16px] sm:text-[20px] font-bold font-sans xl:w-9/12 leading-[20px] sm:leading-[24px]'>How Whiteboard Explainer Videos
@@ -152,7 +149,7 @@ const Blogs = () => {
                             <div className="my-2 px-2">
                                 <div className="card backdrop-blur-sm bg-white/20 rounded-[30px]">
                                     <div className="img">
-                                        <Image src={Blog1} alt='blog 1' className='object-contain w-full' />
+                                        <Image src={Blog1} alt='Infinity Animation' className='object-contain w-full' />
                                     </div>
                                     <div className="content p-4">
                                         <h3 className='text-[16px] sm:text-[20px] font-bold font-sans xl:w-9/12 leading-[20px] sm:leading-[24px]'>How Whiteboard Explainer Videos
@@ -170,7 +167,7 @@ const Blogs = () => {
                             <div className="my-2 px-2">
                                 <div className="card backdrop-blur-sm bg-white/20 rounded-[30px]">
                                     <div className="img">
-                                        <Image src={Blog1} alt='blog 1' className='object-contain w-full' />
+                                        <Image src={Blog1} alt='Infinity Animation' className='object-contain w-full' />
                                     </div>
                                     <div className="content p-4">
                                         <h3 className='text-[16px] sm:text-[20px] font-bold font-sans xl:w-9/12 leading-[20px] sm:leading-[24px]'>How Whiteboard Explainer Videos
@@ -188,7 +185,7 @@ const Blogs = () => {
                             <div className="my-2 px-2">
                                 <div className="card backdrop-blur-sm bg-white/20 rounded-[30px]">
                                     <div className="img">
-                                        <Image src={Blog1} alt='blog 1' className='object-contain w-full' />
+                                        <Image src={Blog1} alt='Infinity Animation' className='object-contain w-full' />
                                     </div>
                                     <div className="content p-4">
                                         <h3 className='text-[16px] sm:text-[20px] font-bold font-sans xl:w-9/12 leading-[20px] sm:leading-[24px]'>How Whiteboard Explainer Videos
@@ -206,7 +203,7 @@ const Blogs = () => {
                             <div className="my-2 px-2">
                                 <div className="card backdrop-blur-sm bg-white/20 rounded-[30px]">
                                     <div className="img">
-                                        <Image src={Blog1} alt='blog 1' className='object-contain w-full' />
+                                        <Image src={Blog1} alt='Infinity Animation' className='object-contain w-full' />
                                     </div>
                                     <div className="content p-4">
                                         <h3 className='text-[16px] sm:text-[20px] font-bold font-sans xl:w-9/12 leading-[20px] sm:leading-[24px]'>How Whiteboard Explainer Videos
@@ -224,7 +221,7 @@ const Blogs = () => {
                             <div className="my-2 px-2">
                                 <div className="card backdrop-blur-sm bg-white/20 rounded-[30px]">
                                     <div className="img">
-                                        <Image src={Blog1} alt='blog 1' className='object-contain w-full' />
+                                        <Image src={Blog1} alt='Infinity Animation' className='object-contain w-full' />
                                     </div>
                                     <div className="content p-4">
                                         <h3 className='text-[16px] sm:text-[20px] font-bold font-sans xl:w-9/12 leading-[20px] sm:leading-[24px]'>How Whiteboard Explainer Videos
@@ -242,7 +239,7 @@ const Blogs = () => {
                             <div className="my-2 px-2">
                                 <div className="card backdrop-blur-sm bg-white/20 rounded-[30px]">
                                     <div className="img">
-                                        <Image src={Blog1} alt='blog 1' className='object-contain w-full' />
+                                        <Image src={Blog1} alt='Infinity Animation' className='object-contain w-full' />
                                     </div>
                                     <div className="content p-4">
                                         <h3 className='text-[16px] sm:text-[20px] font-bold font-sans xl:w-9/12 leading-[20px] sm:leading-[24px]'>How Whiteboard Explainer Videos
@@ -260,7 +257,7 @@ const Blogs = () => {
                             <div className="my-2 px-2">
                                 <div className="card backdrop-blur-sm bg-white/20 rounded-[30px]">
                                     <div className="img">
-                                        <Image src={Blog1} alt='blog 1' className='object-contain w-full' />
+                                        <Image src={Blog1} alt='Infinity Animation' className='object-contain w-full' />
                                     </div>
                                     <div className="content p-4">
                                         <h3 className='text-[16px] sm:text-[20px] font-bold font-sans xl:w-9/12 leading-[20px] sm:leading-[24px]'>How Whiteboard Explainer Videos
@@ -278,7 +275,7 @@ const Blogs = () => {
                             <div className="my-2 px-2">
                                 <div className="card backdrop-blur-sm bg-white/20 rounded-[30px]">
                                     <div className="img">
-                                        <Image src={Blog1} alt='blog 1' className='object-contain w-full' />
+                                        <Image src={Blog1} alt='Infinity Animation' className='object-contain w-full' />
                                     </div>
                                     <div className="content p-4">
                                         <h3 className='text-[16px] sm:text-[20px] font-bold font-sans xl:w-9/12 leading-[20px] sm:leading-[24px]'>How Whiteboard Explainer Videos
