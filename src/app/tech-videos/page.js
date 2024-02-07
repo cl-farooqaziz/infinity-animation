@@ -2,6 +2,8 @@
 import Hero from "@/components/hero/Hero";
 import Review from "@/components/review/Review";
 import Looking from '@/components/looking/Looking';
+import Product from "@/components/product/Product";
+import Company from '@/components/company/Company';
 import Portfolio from '@/components/portfolio/Portfolio';
 import Boost from '@/components/boost/Boost';
 import Servicesconcept from '@/components/servicesconcept/Servicesconcept';
@@ -10,7 +12,8 @@ import Want from '@/components/want/Want';
 import Testimonial from '@/components/testimonial/Testimonial';
 import Contact from '@/components/contact/Contact';
 // Import Images
-import LookingFlodImg from "media/hybrid-cel/looking-img.png";
+import LookingFlodImg from "media/tech-videos/looking-img.png";
+import ProductImg from "media/tech-videos/product-img.png";
 //==== Portfolio Images
 import polio1 from "media/home/portfolio1.png"
 import polio2 from "media/home/portfolio2.png"
@@ -32,25 +35,57 @@ import conceptIcon4 from "media/icons/concept-icon4.png"
 //==== Testimonial Images
 import icon1 from "media/images/client.png"
 import icon2 from "media/icons/stars.png"
+import checkIcon from 'media/icons/check-img.png'
+
 
 export default function Page() {
     //=====Banner Fold=====//
     const hero = {
-        title: (<> Hybrid & <span className='text-primary-100'>Cel</span><br /> Animations </>),
-        para: "Where Tradition Meets Innovation in Captivating Animation Excellence! ",
+        title: (<> We Create Your
+            Noise Through Tech
+            Video<span className='text-primary-100'> Production</span> </>),
+        para: "",
         btnBg: "bg-prime",
     };
     //=====Looking Fold=====//
     const paraArray = [
-        "With Hybrid and Cel Animation, we seamlessly merge traditional hand-drawn Cel animation techniques with cutting-edge digital elements. This dynamic fusion results in visuals that not only pay homage to the timeless charm of Cel animation but also push the boundaries of innovation. ",
-
-        "Each movement, every detail is a testament to the artistry of animation, creating a visual language that speaks directly to the hearts of your audience. This is more than animation; this is a symphony of timeless artistry and contemporary brilliance."
+        "The video content for complicated and complex tech products is always not what you expect. Why not opt for the best-performing videos to make some 'Buzz'? We are here to help you to create disruption in the technology industry. From conception to scripting and from storyboarding to production we deliver your message clearly through our superhero video content. Choose from any different video type we offer to benefit yourself with all facets of SaaS and tech marketing and sales.",
     ];
     const looking = {
-        title: (<> Hybrid Animation </>),
+        title: (<> We Simplify Your Product Through Our Tech Video Production </>),
         para: { paraArray },
-        isCTA: true,
+        isCTA: false,
         flodImg: LookingFlodImg
+    };
+    //=====Product=====//
+    const productArray = [
+        "We know how hard it is to distill tech and SaaS products spell-binding SaaS videos. With our incredible video production, you can integrate animations, typography, screen recordings, voice-over, and data visualization to simplify software and tech explanation.",
+    ];
+    const product = {
+        title: (<> We Show Your Tech Product In Action </>),
+        para: { productArray },
+        flodImg: ProductImg
+    };
+    //=====Company=====//
+    const componyArray = [
+        "Videos are important for tech companies to establish their voice and increase their brand identity. Especially, corporate video production is especially are being used by lots of technology companies for informational and entertainment purposes. Even videos are best when it simply comes to a product demonstration.",
+    ];
+    const lists = [
+        "Statista states that video content has a market penetration of 83.8% in the United States alone.",
+        "According to Wyzowl video marketing statistics 91% of businesses use video as a marketing tool in 2023.",
+        "According to HubSpot marketing stats, 87% of video marketers experienced an increase in website traffic through videos.",
+    ]
+    const listCompanies = {
+        subtitle: "According to some stats:",
+        subPara: "These stats and facts show that videos are of utmost importance for any business to include in their online marketing strategy and tech companies are no exception.",
+        lists: { lists },
+        checkImg: checkIcon,
+    }
+    const companies = {
+        title: (<> Why Videos Are Important For Tech Companies? </>),
+        para: { componyArray },
+        flodImg: ProductImg,
+        list: { listCompanies }
     };
     //=====Portfilio Fold=====//
     const tabInfo = [
@@ -68,7 +103,7 @@ export default function Page() {
         [polio1, [polio2, polio3], polio4],
     ];
     const portfolio = {
-        title: (<> Our Exceptional Portfolio for Video Animation  </>),
+        title: (<> Our Exceptional Portfolio for Video Animation </>),
         para: (<> A visual journey through a kaleidoscope of creativity, where each project tells a unique story of brand elevation and visual excellence. </>),
         tabContents: tabContents,
         tabInfo: tabInfo
@@ -88,12 +123,12 @@ export default function Page() {
         {
             icon: boosticon3,
             heading: "Audience Connection",
-            text: "Impact isn't just about visuals; it's about connection. We ensure that every animation, every narrative beat, is a bridge between your brand and your audience. ",
+            text: "Impact isn't just about visuals; it's about connection. We ensure that every animation, every narrative beat, is a bridge between your brand and your audience.",
         },
     ];
     const boost = {
         title: (<> Get Them Talking </>),
-        para: (<> Leave an indelible mark on your audience's consciousness. We craft impactful visual experiences that resonate.</>),
+        para: (<> Leave an indelible mark on your audience's consciousness. We craft impactful visual experiences that resonate. </>),
         btnBg: "bg-prime",
         boostContent: boostContent,
         flodImg: BoostFlodImg
@@ -150,22 +185,21 @@ export default function Page() {
         {
             profile: icon1,
             stars: icon2,
-            name: 'Nina Walker, Creative Director',
-            message: 'Their ability to blend traditional Cel techniques with modern digital elements created animations that are both nostalgic and cutting-edge. The result? Visuals that resonate with our audience on a deeply emotional level.',
+            name: 'Emma Thompson, Marketing Manager',
+            message: 'Mind-blowing creativity! The 2D animation for our product launch was a game-changer. Our audience loved the visual storytelling, and it translated into tangible engagement and sales. Kudos! ',
+        },
+        {
+            profile: icon1,
+            stars: icon2,
+            name: 'Samuel Rodriguez, CEO',
+            message: 'Working with this team was a breeze! They took our concepts and turned them into visually stunning 2D animations. Our brand message was conveyed with charm and simplicity, captivating our audience.',
             company: 'ABC company',
         },
         {
             profile: icon1,
             stars: icon2,
-            name: 'Lucas Carter, Content Producer',
-            message: 'Collaborating on projects with this team has been a game-changer. Their Hybrid Animation services brought a unique blend of tradition and innovation, adding a dynamic and captivating layer to our content. ',
-            company: 'ABC company',
-        },
-        {
-            profile: icon1,
-            stars: icon2,
-            name: 'Isabel Rodriguez, Art Enthusiast',
-            message: 'As a lover of traditional animation, I was thrilled to discover the Cel Animation services provided by this team. The hand-drawn charm in their animations is enchanting, capturing the essence of classic animation while seamlessly incorporating modern elements. ',
+            name: 'Megan Harper, Creative Director',
+            message: "Incredible attention to detail! The 2D animation service brought our brand's story to life in ways we hadn't imagined. The creativity and precision in each frame left us thoroughly impressed.",
             company: 'ABC company',
         },
     ];
@@ -181,6 +215,8 @@ export default function Page() {
             <Hero content={hero} />
             <Review />
             <Looking content={looking} />
+            <Product content={product} />
+            <Company content={companies} />
             <Portfolio content={portfolio} />
             <Boost content={boost} />
             <Servicesconcept content={concept} />

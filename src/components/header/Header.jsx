@@ -125,7 +125,7 @@ const Header = () => {
                                 text="Get Started"
                                 icon1={true}
                                 href="#"
-                                css="text-white hover:bg-transparent border-[0px]"
+                                css="text-white hover:bg-transparent border-[0px] sm:w-max md:w-[160px]"
                                 bg="bg-prime"
                             />
                         </div>

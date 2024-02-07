@@ -19,6 +19,7 @@ const Want = ({ content }) => {
                             color={`${btnBg ?? "bg-prime"} text-white`}
                             border={`border-2 ${btnBorder ?? "border-white md:border-[#f5090b]"}`}
                             hover={`hover:text-white ${btnHover ?? "hover:bg-transparent"} hover:border-[#ffffff]`}
+                            css={`sm:w-max md:w-[160px]`}
                             link="#" />
                         <CTA
                             text="Live Chat"
@@ -26,6 +27,7 @@ const Want = ({ content }) => {
                             color={`${btnColor ?? "text-white"} bg-transparent`}
                             border={`border-2 ${btnBorder ?? "border-[#ffffff]"}`}
                             hover="hover:bg-prime hover:border-[#f5090b]"
+                            css={`sm:w-max md:w-[160px]`}
                             link="javascript:$zopim.livechat.window.show();" />
                     </div>
                 </div>

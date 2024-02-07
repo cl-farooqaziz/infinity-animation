@@ -74,14 +74,14 @@ const Concept = ({ content }) => {
                                 text="Get Started"
                                 icon1={true}
                                 href="#"
-                                css="text-white hover:bg-transparent border-[#f5090b] hover:border-[#ffffff]"
+                                css="text-white hover:bg-transparent border-[#f5090b] hover:border-[#ffffff] sm:w-max md:w-[160px]"
                                 bg="bg-prime"
                             />
                             <CTA
                                 text="Live Chat"
                                 icon2={true}
                                 href="javascript:$zopim.livechat.window.show();"
-                                css="text-white hover:bg-prime border-[#ffffff] hover:border-[#f5090b]"
+                                css="text-white hover:bg-prime border-[#ffffff] hover:border-[#f5090b] sm:w-max md:w-[160px]"
                                 bg="bg-transparent"
                             />
                         </div>

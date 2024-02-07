@@ -49,6 +49,7 @@ export default function Page() {
     const looking = {
         title: (<> Infographics </>),
         para: { paraArray },
+        isCTA: true,
         flodImg: LookingFlodImg
     };
     //=====Portfilio Fold=====//

@@ -52,6 +52,7 @@ export default function Page() {
     const looking = {
         title: (<> 3D Animation </>),
         para: { paraArray },
+        isCTA: true,
         flodImg: LookingFlodImg
     };
     //=====Portfilio Fold=====//

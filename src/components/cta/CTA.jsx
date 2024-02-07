@@ -17,7 +17,7 @@ const CTA = ({ text, href, bg, css, icon1, icon2 }) => {
 
             <div className="w-full sm:w-max" dangerouslySetInnerHTML={{
                 __html: `
-                <a href=${href} class="sm:w-max md:w-[160px] text-center px-5 h-[50px] ${bg} border-2 text-[18px] font-normal font-sans tracking-wider rounded-md block leading-[48px] ${css} transition-all">
+                <a href=${href} class=" text-center px-5 h-[50px] ${bg} border-2 text-[18px] font-normal font-sans tracking-wider rounded-md block leading-[48px] ${css} transition-all">
                     ${text}
                 </a>`
             }} />

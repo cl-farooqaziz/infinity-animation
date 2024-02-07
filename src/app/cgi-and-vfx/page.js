@@ -49,6 +49,7 @@ export default function Page() {
     const looking = {
         title: (<> CGI/VFX </>),
         para: { paraArray },
+        isCTA: true,
         flodImg: LookingFlodImg
     };
     //=====Portfilio Fold=====//

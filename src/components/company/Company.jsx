@@ -5,8 +5,8 @@ import { usePathname } from 'next/navigation';
 // Import Components
 import CTA from "@/components/cta/CTA";
 
-const Looking = ({ content }) => {
-    const { title, para: { paraArray }, isCTA, flodImg } = content;
+const Company = ({ content }) => {
+    const { title, para: { componyArray }, isCTA, flodImg } = content;
     // set fold Image
     const router = usePathname();
     let lookinImage;
@@ -32,7 +32,7 @@ const Looking = ({ content }) => {
                             <h1 className="text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight mb-5">
                                 {title}
                             </h1>
-                            {paraArray.map((para, index) => (
+                            {componyArray.map((para, index) => (
                                 <p key={index} className="text-[16px] font-normal font-sans leading-snug tracking-wider text-justify mb-5">
                                     {para}
                                 </p>
@@ -46,13 +46,6 @@ const Looking = ({ content }) => {
                                     bg="bg-prime"
                                 />
 
-                                {isCTA ? <CTA
-                                    text="Live Chat"
-                                    icon2={true}
-                                    href="javascript:$zopim.livechat.window.show();"
-                                    css="text-white hover:bg-prime border-[#ffffff] hover:border-[#f5090b] sm:w-max md:w-[160px]"
-                                    bg="bg-transparent"
-                                /> : null}
                             </div>
                         </div>
                     </div>
@@ -62,4 +55,4 @@ const Looking = ({ content }) => {
     )
 }
 
-export default Looking
+export default Company
