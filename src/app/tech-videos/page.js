@@ -5,8 +5,6 @@ import Looking from '@/components/looking/Looking';
 import Product from "@/components/product/Product";
 import Company from '@/components/company/Company';
 import Portfolio from '@/components/portfolio/Portfolio';
-import Boost from '@/components/boost/Boost';
-import Servicesconcept from '@/components/servicesconcept/Servicesconcept';
 import Pricing from "@/components/pricing/Pricing";
 import Want from '@/components/want/Want';
 import Testimonial from '@/components/testimonial/Testimonial';
@@ -21,21 +19,29 @@ import polio3 from "media/home/portfolio3.png"
 import polio4 from "media/home/portfolio4.png"
 //==== Boost Images
 import BoostFlodImg from "media/images/boost-img.png";
-import boosticon1 from "media/icons/boost-icon4.png"
-import boosticon2 from "media/icons/boost-icon5.png"
-import boosticon3 from "media/icons/boost-icon6.png"
-// ==== Service Concept Images
-import ServiceConcept from 'media/images/concept-img.png'
-import ConceptParticle from "media/images/concept-bef.png"
+//===== Tech Type Images
+import TechImage1 from "media/tech-type/techtype1.png"
+import TechImage2 from "media/tech-type/techtype2.png"
+import TechImage3 from "media/tech-type/techtype3.png"
+//===== Case Studies Images 
+import Slide1 from "media/case-studies/slide1.png"
+import Slide2 from "media/case-studies/slide2.png"
+import Slide3 from "media/case-studies/slide3.png"
+import Slide4 from "media/case-studies/slide4.png"
+import Slide5 from "media/case-studies/slide5.png"
+// ==== Service Concept Images 
 import FoldBg from 'media/images/fold-bg.png'
-import conceptIcon1 from "media/icons/concept-icon1.png"
-import conceptIcon2 from "media/icons/concept-icon2.png"
-import conceptIcon3 from "media/icons/concept-icon3.png"
-import conceptIcon4 from "media/icons/concept-icon4.png"
+import conceptIcon1 from "media/icons/bizz1.png"
+import conceptIcon2 from "media/icons/bizz2.png"
+import conceptIcon3 from "media/icons/bizz3.png"
+import conceptIcon4 from "media/icons/bizz4.png"
 //==== Testimonial Images
 import icon1 from "media/images/client.png"
 import icon2 from "media/icons/stars.png"
 import checkIcon from 'media/icons/check-img.png'
+import BuzzFlick from "@/components/buzzflick/Buzzflick";
+import Tech from "@/components/tech-type/Tech";
+import Case from "@/components/caseStudies/Case";
 
 
 export default function Page() {
@@ -70,22 +76,19 @@ export default function Page() {
     const componyArray = [
         "Videos are important for tech companies to establish their voice and increase their brand identity. Especially, corporate video production is especially are being used by lots of technology companies for informational and entertainment purposes. Even videos are best when it simply comes to a product demonstration.",
     ];
-    const lists = [
+    const listArray = [
         "Statista states that video content has a market penetration of 83.8% in the United States alone.",
         "According to Wyzowl video marketing statistics 91% of businesses use video as a marketing tool in 2023.",
         "According to HubSpot marketing stats, 87% of video marketers experienced an increase in website traffic through videos.",
     ]
-    const listCompanies = {
-        subtitle: "According to some stats:",
-        subPara: "These stats and facts show that videos are of utmost importance for any business to include in their online marketing strategy and tech companies are no exception.",
-        lists: { lists },
-        checkImg: checkIcon,
-    }
     const companies = {
         title: (<> Why Videos Are Important For Tech Companies? </>),
         para: { componyArray },
-        flodImg: ProductImg,
-        list: { listCompanies }
+        subtitle: "According to some stats:",
+        subPara: "These stats and facts show that videos are of utmost importance for any business to include in their online marketing strategy and tech companies are no exception.",
+        flodImg: BoostFlodImg,
+        list: { listArray },
+        checkImg: checkIcon,
     };
     //=====Portfilio Fold=====//
     const tabInfo = [
@@ -103,72 +106,100 @@ export default function Page() {
         [polio1, [polio2, polio3], polio4],
     ];
     const portfolio = {
-        title: (<> Our Exceptional Portfolio for Video Animation </>),
-        para: (<> A visual journey through a kaleidoscope of creativity, where each project tells a unique story of brand elevation and visual excellence. </>),
+        title: (<> Our Portfolio </>),
+        para: (<> Explore Our Captivating Creations </>),
         tabContents: tabContents,
         tabInfo: tabInfo
     };
-    //=====Boost Fold=====//
-    const boostContent = [
-        {
-            icon: boosticon1,
-            heading: "Strategic Conceptualization",
-            text: "We kick off by delving deep into your brand ethos, understanding your goals, and strategically conceptualizing visuals that align with your narrative. ",
-        },
-        {
-            icon: boosticon2,
-            heading: "Creative Mastery",
-            text: "Our team of seasoned creatives then breathe life into these concepts, leveraging cutting-edge techniques and artistic finesse. ",
-        },
-        {
-            icon: boosticon3,
-            heading: "Audience Connection",
-            text: "Impact isn't just about visuals; it's about connection. We ensure that every animation, every narrative beat, is a bridge between your brand and your audience.",
-        },
-    ];
-    const boost = {
-        title: (<> Get Them Talking </>),
-        para: (<> Leave an indelible mark on your audience's consciousness. We craft impactful visual experiences that resonate. </>),
-        btnBg: "bg-prime",
-        boostContent: boostContent,
-        flodImg: BoostFlodImg
-    };
-    //=====Service Concept Fold=====//
-    const conceptContent = [
+    //===== buzzflick Fold=====//
+    const buzzflickContent = [
         {
             ImageOne: conceptIcon1,
             sliderNumber: 1,
-            slideTitle: "Discovery and Strategy",
-            sliderDesc: "We kick off by diving deep into your brand essence, understanding your goals, and formulating a strategic roadmap tailored to your unique identity and objectives."
+            slideTitle: "Our Videos Are Engaging",
+            paraOne: "Covering technology-based content in videos is not easy. You have to be creative, thoughtful, and less complicated to convey the information effectively. That is why BuzzFlick makes sure the tech video production involves all the creative elements to make the videos more engaging for the viewer. ",
+            paraTwo: "Not only does it compellingly present tech product or information, but also keep audiences hooked to the chair till the end of the video. A win-win situation. Our team of communicators is best at storytelling through videos. And hence, people like a good story, we have to be better at it to make your videos well-received.",
         },
         {
             ImageOne: conceptIcon2,
             sliderNumber: 2,
-            slideTitle: "Creative Craftsmanship",
-            sliderDesc: "Our skilled team then brings your vision to life, utilizing state-of-the-art techniques and artistic flair to create animations that align with your brand narrative."
+            slideTitle: "Our Videos Create an Emotional Connection",
+            paraOne: "Written words can’t connect with people on the level that videos carry with them. According to MarTech Series, the study conducted by Motista states that the success key for any brand is the emotional connection. The report revealed that emotionally connected customers of brands have a higher lifetime value by 306% than merely satisfied customers. ",
+            paraTwo: "And what’s better than BuzzFlick’s technology video production to connect with customers and prospect buyers emotionally? Our videos are far more effective than a text-based piece of content. Using video instead of other content types significantly increases the likelihood of establishing an emotional connection with your audience.",
         },
         {
             ImageOne: conceptIcon3,
             sliderNumber: 3,
-            slideTitle: "Refinement and Delivery",
-            sliderDesc: "We believe in perfection, so after the initial creation, we refine and polish the content to ensure it not only meets but exceeds your expectations. "
+            slideTitle: "Our Videos Educate Your Audience",
+            paraOne: "According to Think With Google:",
+            paraTwo: "86% of U.S. viewers use YouTube often to learn new things.",
+            paraThree: "Similarly, a study conducted by Google states that:",
+            paraFour: "58% of people learn new skills through digital videos",
+            paraFive: "People process visual information more rapidly than text. That is why educational videos are great for educating your audience and making tech information more memorable.",
+            paraSix: "We put tech information in our videos in a digestible educational format so that people are likely to understand tech products easily and efficiently. Not only our videos are helpful for your customer, but also you can get training videos for your employees to make them understand how a software and tech product works to demonstrate them to others flawlessly.",
         },
         {
             ImageOne: conceptIcon4,
             sliderNumber: 4,
-            slideTitle: "Concept",
-            sliderDesc: "We first brainstorm and refine your ideas into a solid concept, ensuring a strong narrative foundation."
+            slideTitle: "Our Videos Are Exceptional",
+            paraOne: "With videos all over the internet, BuzzFlick strives to be exceptionally unique and stand out. We have taken tech video production to the next level by hiring a team full of design, animation, and tech enthusiasts to deliver you the exceptional content you were looking for.",
+            paraTwo: "With creativity, excellence, aesthetics, and a unique storytelling approach, we are making tech video content digestible, easy to understand, and flawless. Now give your tech products the creative edge they need through our tech-based videos and elevate your brand identity like never before.",
         },
     ]
-    const concept = {
-        title: "Our Process",
-        para: "We follow a dynamic process, seamlessly blending creativity and strategy to transform your ideas into visually stunning and thoughtful storytelling masterpieces.",
-        conceptContent: conceptContent,
-        Servicesconcept: ServiceConcept,
-        ConceptParticle: ConceptParticle,
+    const buzzflick = {
+        title: "The Four E’s of BuzzFlick For Tech Video Production",
+        para: "BuzzFlick is not just another video production company that throws content on the go. Our tech video production is a wholesome process that explains your brand as well as captures your audiences through the four E's.",
+        conceptContent: buzzflickContent,
         foldBg: FoldBg,
         btnBg: "bg-prime",
     };
+    //======Tech Type Fold======//
+    const techCard = [
+        {
+            CardOne: TechImage1,
+            CardTitle: "Explainer And Education Videos",
+            CardPara: "Explainer and educational videos are mostly used by technology companies with animations to deliver a complicated message simply and digestibly. You can go through our portfolio of animated explainer and educational videos to see how brilliantly we have executed the concepts for our clients."
+        },
+        {
+            CardOne: TechImage2,
+            CardTitle: "Training, Learning And Development Videos",
+            CardPara: "Tech companies use training, learning, and development videos for employees to explain to them about the new product launch, a technical subject course, or even organization ethics. We understand how important these kinds of videos are and we capture the true essence of your organization in our videos to train your employees well."
+        },
+        {
+            CardOne: TechImage3,
+            CardTitle: "Product Demonstration Videos",
+            CardPara: "Tech product demonstration is the best Video marketing strategy for technology companies and we are helping many of them in the best way possible. Through more visuals and easy-to-understand narratives, we are presenting these intangible products more realistically. These videos are equally best for brand and product promotion."
+        },
+    ]
+
+    const techType = {
+        title: "What Type Of Tech Videos We Make?",
+        card: techCard,
+    }
+    //=====CaseStudies Fold=====//
+    const sliderImage = [
+        {
+            sliderImage: Slide1,
+        },
+        {
+            sliderImage: Slide2,
+        },
+        {
+            sliderImage: Slide3,
+        },
+        {
+            sliderImage: Slide4,
+        },
+        {
+            sliderImage: Slide5,
+        }
+    ]
+
+    const caseStudies = {
+        title: "Case Studies",
+        sliderImages: sliderImage,
+    }
+
     //=====Pricing Fold=====//
     const pricing = {
         title: (<> Pricing Plans </>),
@@ -218,8 +249,9 @@ export default function Page() {
             <Product content={product} />
             <Company content={companies} />
             <Portfolio content={portfolio} />
-            <Boost content={boost} />
-            <Servicesconcept content={concept} />
+            <BuzzFlick content={buzzflick} />
+            <Tech content={techType} />
+            <Case content={caseStudies} />
             <Pricing content={pricing} />
             <Want content={want} />
             <Testimonial content={testimonial} />

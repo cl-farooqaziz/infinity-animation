@@ -35,6 +35,30 @@ body {
       rgba(255, 45, 75, 1) 40%);
 }
 
+.rotateY {
+  transform: rotateY(-180deg);
+}
+
+
+/* scroll bar css start */
+
+/* width */
+.buzzflick::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+.buzzflick::-webkit-scrollbar-track {
+  background: #272727;
+}
+
+/* Handle */
+.buzzflick::-webkit-scrollbar-thumb {
+  background: #F5090B;
+}
+
+/* scroll bar css End */
+
 /* service slider start */
 
 .servicesConcept .slick-prev {
