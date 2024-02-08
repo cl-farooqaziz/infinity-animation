@@ -115,7 +115,11 @@ function MegaMenu() {
                             className="flex items-center px-2 gap-2 py-2 font-sans text-[14px] xl:text-[16px] font-normal leading-[20px]"
                             selected={isMenuOpen || isMobileMenuOpen}
                             onClick={() => {
-                                handleMegaMenu();
+                                if (window.innerWidth <= 991) {
+                                    handleMegaMenu();
+                                } else {
+                                    setIsMobileMenuOpen((cur) => !cur)
+                                }
                             }}
                         >
                             Services
@@ -230,7 +234,7 @@ const Header = () => {
     React.useEffect(() => {
         window.addEventListener(
             "resize",
-            () => window.innerWidth >= 991 && setOpenNav(false),
+            () => window.innerWidth >= 960 && setOpenNav(false),
         );
     }, []);
 
@@ -260,7 +264,7 @@ const Header = () => {
                         <IconButton
                             variant="text"
                             color="blue-gray"
-                            className="lg:hidden flex items-center justify-center"
+                            className="lg:hidden flex items-center justify-center pr-5"
                             onClick={() => setOpenNav(!openNav)}
                         >
                             {openNav ? (
@@ -271,7 +275,7 @@ const Header = () => {
                         </IconButton>
                     </div>
                     {openNav && (
-                        <Collapse open={openNav}>
+                        <Collapse open={openNav} className="block lg:hidden">
                             <NavList />
                         </Collapse>
                     )}
