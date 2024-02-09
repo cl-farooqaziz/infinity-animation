@@ -69,7 +69,7 @@ export default function Page() {
     ];
     const product = {
         title: (<> We Show Your Tech Product In Action </>),
-        para: productArray ,
+        para: { productArray },
         flodImg: ProductImg
     };
     //=====Company=====//
