@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 import CTA from "@/components/cta/CTA";
 
 const Company = ({ content }) => {
-    const { title, para: { componyArray }, list: { listArray }, subtitle, checkImg, subPara, flodImg, css, btn } = content;
+    const { title, para: { componyArray }, list: { listArray }, subtitle, checkImg, subPara, flodImg, css, btn, lists } = content;
     // set fold Image
     const router = usePathname();
     let lookinImage;
@@ -52,22 +52,24 @@ const Company = ({ content }) => {
                                     null
                                 }
                             </div>
-                            <div className="mt-4">
-                                <h2 className="text-[50px] font-bold font-sans">
-                                    {subtitle}
-                                </h2>
-                                <p className="text-[16px] font-normal font-sans leading-snug tracking-wider text-justify mb-7">{subPara}</p>
-                                <ul>
-                                    {listArray.map((list, index) => (
-                                        <li key={index} className="flex items-start space-x-2 mb-1">
-                                            <Image src={checkImg} alt="check-image" />
-                                            <span className="text-[16px] font-light font-sans leading-normal tracking-wider text-justify lg:w-11/12">
-                                                {list}
-                                            </span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
+                            {lists ?
+                                <div className="mt-4">
+                                    <h2 className="text-[50px] font-bold font-sans">
+                                        {subtitle}
+                                    </h2>
+                                    <p className="text-[16px] font-normal font-sans leading-snug tracking-wider text-justify mb-7">{subPara}</p>
+                                    <ul>
+                                        {listArray.map((list, index) => (
+                                            <li key={index} className="flex items-start space-x-2 mb-1">
+                                                <Image src={checkImg} alt="check-image" />
+                                                <span className="text-[16px] font-light font-sans leading-normal tracking-wider text-justify lg:w-11/12">
+                                                    {list}
+                                                </span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div> : null
+                            }
                         </div>
                     </div>
                 </div>

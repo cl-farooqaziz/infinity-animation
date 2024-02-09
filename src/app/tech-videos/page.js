@@ -69,7 +69,7 @@ export default function Page() {
     ];
     const product = {
         title: (<> We Show Your Tech Product In Action </>),
-        para: { productArray },
+        para: productArray ,
         flodImg: ProductImg
     };
     //=====Company=====//
@@ -89,6 +89,7 @@ export default function Page() {
         flodImg: BoostFlodImg,
         list: { listArray },
         btn: true,
+        lists: true,
         checkImg: checkIcon,
         css: "rotateY"
     };
@@ -110,7 +111,8 @@ export default function Page() {
     const portfolio = {
         title: (<> Our Portfolio </>),
         para: (<> Explore Our Captivating Creations </>),
-        tabContents: tabContents,
+         tabContents: tabContents,
+        tabsInfo: true,
         tabInfo: tabInfo
     };
     //===== buzzflick Fold=====//
@@ -153,6 +155,8 @@ export default function Page() {
         para: "BuzzFlick is not just another video production company that throws content on the go. Our tech video production is a wholesome process that explains your brand as well as captures your audiences through the four E's.",
         conceptContent: buzzflickContent,
         foldBg: FoldBg,
+        isBtn: true,
+        isEducateBuzz: true,
         btnBg: "bg-prime",
     };
     //======Tech Type Fold======//

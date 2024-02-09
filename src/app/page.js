@@ -124,7 +124,8 @@ export default function Page() {
     const portfolio = {
         title: (<> Our Exceptional Portfolio for Video Animation </>),
         para: (<> A visual journey through a kaleidoscope of creativity, where each project tells a unique story of brand elevation and visual excellence. </>),
-        tabContents: tabContents,
+         tabContents: tabContents,
+        tabsInfo: true,
         tabInfo: tabInfo
     };
     //=====Concept Fold=====//
