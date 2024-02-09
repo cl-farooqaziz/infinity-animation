@@ -13,7 +13,7 @@ import {
     Bars4Icon, GlobeAmericasIcon, NewspaperIcon, PhoneIcon, RectangleGroupIcon, SquaresPlusIcon, SunIcon, TagIcon, UserGroupIcon,
 } from "@heroicons/react/24/solid";
 // Import Images
-import logo from "../../../public/images/logo.png";
+import logo from "../../../public/images/logo.gif";
 
 const megaMenuItems = [
     {
@@ -247,18 +247,20 @@ const Header = () => {
                             as="a"
                             href="/"
                             variant="h6"
-                            className="mr-4 cursor-pointer py-1.5 lg:ml-2"
+                            className="mr-4 cursor-pointer py-1.5 lg:ml-2 lg:w-[315px]"
                         >
-                            <Image src={logo} className="w-[50%]" alt="Infinity Animation" />
+                            <Image src={logo} className="w-[45%] xl:w-[60%]" alt="Infinity Animation" />
                         </Typography>
                         <div className="hidden lg:flex gap-5">
                             <NavList />
                             <CTA
                                 text="Get Started"
                                 icon1={true}
-                                href="#"
-                                css="text-white hover:bg-transparent border-[0px] sm:w-max md:w-[160px]"
                                 bg="bg-prime"
+                                color={`text-white`}
+                                border={`border-2 border-[#f5090b]`}
+                                hover="hover:bg-transparent"
+                                href="#"
                             />
                         </div>
                         <IconButton

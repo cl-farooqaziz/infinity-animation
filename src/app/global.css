@@ -18,29 +18,55 @@ body {
 }
 
 .bg-prime {
-  background: linear-gradient(90deg,
-      rgba(245, 9, 11, 1) 0%,
-      rgba(255, 45, 75, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(245, 9, 11, 1) 0%,
+    rgba(255, 45, 75, 1) 100%
+  );
 }
 
 .bg-second {
-  background: linear-gradient(0deg,
-      rgba(245, 9, 11, 1) 0%,
-      rgba(255, 45, 75, 1) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(245, 9, 11, 1) 0%,
+    rgba(255, 45, 75, 1) 100%
+  );
 }
 
 .bg-third {
-  background: linear-gradient(0deg,
-      rgba(245, 9, 11, 1) 0%,
-      rgba(255, 45, 75, 1) 40%);
+  background: linear-gradient(
+    0deg,
+    rgba(245, 9, 11, 1) 0%,
+    rgba(255, 45, 75, 1) 40%
+  );
 }
 
 .rotateY {
   transform: rotateY(-180deg);
 }
 
+/*=============== scroll bar css start ===============*/
 
-/* scroll bar css start */
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #272727;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    0deg,
+    rgba(245, 9, 11, 1) 0%,
+    rgba(255, 45, 75, 1) 100%
+  );
+}
+
+/* ================================== */
 
 /* width */
 .buzzflick::-webkit-scrollbar {
@@ -54,12 +80,12 @@ body {
 
 /* Handle */
 .buzzflick::-webkit-scrollbar-thumb {
-  background: #F5090B;
+  background: #f5090b;
 }
 
-/* scroll bar css End */
+/*=============== scroll bar css End ===============*/
 
-/* service slider start */
+/*=============== service slider start ===============*/
 
 .servicesConcept .slick-prev {
   left: -22px;
@@ -80,20 +106,30 @@ body {
   bottom: inherit;
 }
 
-/* testi slider start */
+/*=============== testi slider start ===============*/
 
 .testiSlider .slick-slide {
   height: 300px;
 }
 
 .testiSlider .slick-prev {
-  left: -255px;
+  left: -200px;
   top: 35%;
   z-index: 999;
 }
 
 .testiSlider .slick-prev:before {
-  content: url(../../public/icons/arrow-left.png);
+  content: url(../../public/icons/arrow-red.png);
+  opacity: 1;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  transform: rotate(180deg);
 }
 
 .testiSlider .slick-next {
@@ -103,10 +139,19 @@ body {
 }
 
 .testiSlider .slick-next:before {
-  content: url(../../public/icons/arrow-right.png);
+  content: url(../../public/icons/arrow-red.png);
+  opacity: 1;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
 }
 
-/* Blogs Slider start */
+/*=============== Blogs Slider start ===============*/
 
 .blogsSlider .slick-prev {
   left: 0;
@@ -128,9 +173,9 @@ body {
   content: url(../../public/icons/red-arrow-r.png);
 }
 
-/* Blogs Slider End */
+/*=============== Blogs Slider End ===============*/
 
-/* Brands Slider start */
+/*=============== Brands Slider start ===============*/
 
 .brandsSlider .slick-prev {
   left: inherit;
@@ -153,9 +198,9 @@ body {
   content: url(../../public/icons/arrow-right.png);
 }
 
-/* Brands Slider End */
+/*=============== Brands Slider End ===============*/
 
-/* Media Query Start */
+/*=============== Media Query Start ===============*/
 
 @media only screen and (max-width: 1920px) {
   .blogsSlider .slick-dots {
@@ -217,9 +262,11 @@ body {
 
 @media only screen and (max-width: 567px) {
   .wantbg {
-    background: linear-gradient(0deg,
-        rgba(245, 9, 11, 1) 0%,
-        rgba(255, 45, 75, 1) 40%);
+    background: linear-gradient(
+      0deg,
+      rgba(245, 9, 11, 1) 0%,
+      rgba(255, 45, 75, 1) 40%
+    );
   }
 
   .blogsSlider .slick-next {
@@ -251,4 +298,4 @@ body {
   }
 }
 
-/* Media Query End */
+/*=============== Media Query End ===============*/

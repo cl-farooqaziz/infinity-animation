@@ -1,9 +1,9 @@
-const nodemailer = require("nodemailer");
+import nodemailer from "nodemailer";
 
 export default async function POST(req, res) {
     try {
         const { name, email, phone, message, IP, currentdate, pageUrl } = await req.body;
-        const brandname = 'Crystallite Digital'
+        const brandname = 'Infinity Animations'
         const transporter = nodemailer.createTransport({
             service: "gmail",
             host: "smtp.gmail.com",
@@ -17,15 +17,7 @@ export default async function POST(req, res) {
 
         const mailOptions = {
             from: 'leads@infinityanimations.com',
-            to: [
-                'leads@infinityanimations.com',
-                'harrykennedy.cs@gmail.com',
-                'info@infinityanimations.com',
-                'ppc@infinityanimations.com',
-                'rafael@infinityanimations.com',
-                'travis.king@infinityanimations.com',
-                'chris@infinityanimations.com'
-            ],
+            to: 'harrykennedy.cs@gmail.com',
             subject: `Infinity Animations Lead`,
             html: `
             <table>
@@ -65,7 +57,6 @@ export default async function POST(req, res) {
         }
 
         await transporter.sendMail(mailOptions);
-
         return res.json({ "message": "Email send sucessfully", "data": [name, email, phone, message, brandname, IP, currentdate, pageUrl], "status": 200 });
     } catch (error) {
         return res.json({ "message": "Failed to send Email", "data": error, "status": 500 });

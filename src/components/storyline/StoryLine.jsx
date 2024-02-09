@@ -3,8 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { usePathname } from 'next/navigation';
 // Import Images
-import arrowDown from "media/icons/arrow-down.png";
-import arrowUp from "media/icons/arrow-up.png";
+import arrow from "media/icons/arrow.png";
 // Import CSS
 import styles from "./StoryLine.module.css"
 
@@ -56,11 +55,21 @@ const StoryLine = ({ content }) => {
                         <div className="w-full md:w-[700px]">
                             <div className="grid">
                                 {accordionData.map((item, index) => (
-                                    <div key={index} className={`py-1 ${padding} ${activeIndex === index ? 'border-primary-100' : ' border-white'} border-b-2`}>
+                                    <div key={index} className={`py-4 ${padding} ${activeIndex === index ? 'border-primary-100' : ' border-white'} border-b-2`}>
                                         <div className="flex justify-between items-center cursor-pointer"
                                             onClick={() => handleClick(index)}>
                                             <h3 className={`text-[18px] sm:text-[20px] font-normal font-sans ${text}`}>{item.question}</h3>
-                                            <span>{activeIndex === index ? <Image src={arrowUp} alt="Infinity Animation" /> : <Image src={arrowDown} alt="Infinity Animation" />}</span>
+                                            <span>
+                                                {activeIndex === index ?
+                                                    <div className="flex items-center justify-center w-[30px] h-[30px] bg-prime rounded-full">
+                                                        <Image src={arrow} className="w-[40%]" alt="Infinity Animation" />
+                                                    </div>
+                                                    :
+                                                    <div className="flex items-center justify-center w-[30px] h-[30px] bg-white rounded-full">
+                                                        <Image src={arrow} className="w-[40%] rotate-180 invert" alt="Infinity Animation" />
+                                                    </div>
+                                                }
+                                            </span>
                                         </div>
                                         {activeIndex === index && (
                                             <div className={`text-[14px] sm:text-[16px] font-normal font-sans pb-1 ${styles.ani}`}>{item.answer}</div>
