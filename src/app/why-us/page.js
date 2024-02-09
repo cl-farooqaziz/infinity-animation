@@ -28,6 +28,7 @@ export default function Page() {
         title: (<> From the Vault </>),
         para: { paraArray },
         isCTA: true,
+        isBtns: true,
         flodImg: LookingFlodImg
     };
     //=====Want Fold=====//

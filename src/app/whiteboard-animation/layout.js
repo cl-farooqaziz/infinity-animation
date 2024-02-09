@@ -10,7 +10,7 @@ export const metadata = {
         title: 'Transforming Ideas into Visual Masterpieces Through Whiteboard Animations',
         description: 'Experience the art of storytelling with depth through our Whiteboard Animation services. Every stroke adds nuance to your message.',
         url: 'https://infinity-animation.vercel.app/why-us/',
-        siteName: 'Web Design Hub',
+     siteName: 'InFinity Animation',
         locale: 'en_US',
         type: 'website',
     },

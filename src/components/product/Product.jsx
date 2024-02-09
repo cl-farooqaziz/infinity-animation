@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 import CTA from "@/components/cta/CTA";
 
 const Product = ({ content }) => {
-    const { title, para: { productArray }, btnBg, btnColor, btnBorder, btnHover, isCTA, flodImg } = content;
+    const { title, para: { productArray }, css, flodImg } = content;
 
     const router = usePathname();
 
@@ -23,7 +23,7 @@ const Product = ({ content }) => {
 
     return (
         <>
-            <section className={`w-full flex items-center justify-start py-6 md:py-8 lg:py-16 bg-none lg:bg-[url("../../public/images/fold-bg.png")] bg-no-repeat bg-center bg-cover relative`}>
+            <section className={`w-full flex items-center justify-start py-6 md:py-8 lg:py-16 relative`}>
                 <div className="container">
                     <div className='flex flex-col-reverse lg:flex-row items-center justify-around gap-y-7'>
                         <div className={`w-full lg:w-[600px] ${lookingSecCol}`}>
@@ -47,7 +47,7 @@ const Product = ({ content }) => {
                             </div>
                         </div>
                         <div className={`w-full lg:w-[600px] ${lookinImage}`}>
-                            <Image src={flodImg} className="w-full mx-auto" alt="Infinity Animation" quality={85} />
+                            <Image src={flodImg} className={`mx-auto w-full ${css}`} alt="Infinity Animation" quality={85} />
                         </div>
                     </div>
                 </div>

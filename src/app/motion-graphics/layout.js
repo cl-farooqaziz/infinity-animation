@@ -10,7 +10,7 @@ export const metadata = {
         title: "Explore Our Motion Graphics Services for Engaging and Immersive Storytelling",
         description: "Experience the power of motion as we turn your ideas into mesmerizing visual narratives. Let's bring your story to life!.",
         url: 'https://infinity-animation.vercel.app/motion-graphics',
-        siteName: 'Web Design Hub',
+     siteName: 'InFinity Animation',
         locale: 'en_US',
         type: 'website',
     },

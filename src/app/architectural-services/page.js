@@ -50,6 +50,7 @@ export default function Page() {
         title: (<> Architectural Visualization </>),
         para: { paraArray },
         isCTA: true,
+        isBtns: true,
         flodImg: LookingFlodImg
     };
     //=====Portfilio Fold=====//

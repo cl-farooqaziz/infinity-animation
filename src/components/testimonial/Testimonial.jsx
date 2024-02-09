@@ -34,7 +34,7 @@ const Testimonial = ({ content }) => {
                 <div className="container">
                     <div className='flex items-start justify-between'>
                         <div className='w-full text-center'>
-                            <h1 className="text-[30px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight mb-3">
+                            <h1 className="text-[30px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-none mb-3">
                                 {title}
                             </h1>
                             <p className="text-[16px] font-normal font-sans leading-snug tracking-wider text-center mb-5">

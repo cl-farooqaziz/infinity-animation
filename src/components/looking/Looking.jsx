@@ -6,15 +6,58 @@ import { usePathname } from 'next/navigation';
 import CTA from "@/components/cta/CTA";
 
 const Looking = ({ content }) => {
-    const { title, para: { paraArray }, isCTA, flodImg } = content;
+    const { title, para: { paraArray }, isCTA, flodImg, css, isBtns } = content;
     // set fold Image
     const router = usePathname();
     let lookinImage;
     let lookingSecCol;
+    let bgTransparent;
     switch (router) {
         case '/why-us':
             lookinImage = 'lg:min-w-[1000px] mr-auto'
             lookingSecCol = 'md:absolute right-[54px] top-[18%]'
+            break;
+        case '/2d-animation':
+            bgTransparent = 'lg:bg-[url("../../public/images/fold-bg.png")]'
+            break;
+        case '/3d-animation':
+            bgTransparent = 'lg:bg-[url("../../public/images/fold-bg.png")]'
+            break;
+        case '/architectural-services':
+            bgTransparent = 'lg:bg-[url("../../public/images/fold-bg.png")]'
+            break;
+        case '/cgi-and-vfx':
+            bgTransparent = 'lg:bg-[url("../../public/images/fold-bg.png")]'
+            break;
+        case '/contact-us':
+            bgTransparent = 'lg:bg-[url("../../public/images/fold-bg.png")]'
+            break;
+        case '/hybrid-&-cel-animations':
+            bgTransparent = 'lg:bg-[url("../../public/images/fold-bg.png")]'
+            break;
+        case '/infographics-design':
+            bgTransparent = 'lg:bg-[url("../../public/images/fold-bg.png")]'
+            break;
+        case '/motion-graphics':
+            bgTransparent = 'lg:bg-[url("../../public/images/fold-bg.png")]'
+            break;
+        case '/portfolio':
+            bgTransparent = 'lg:bg-[url("../../public/images/fold-bg.png")]'
+            break;
+        case '/pricing':
+            bgTransparent = 'lg:bg-[url("../../public/images/fold-bg.png")]'
+            break;
+        case '/tech-videos':
+            bgTransparent = 'lg:bg-[url("../../public/images/fold-bg.png")]'
+            break;
+        case '/video-editing':
+            bgTransparent = 'lg:bg-[url("../../public/images/fold-bg.png")]'
+            break;
+        case '/whiteboard-animation':
+            bgTransparent = 'lg:bg-[url("../../public/images/fold-bg.png")]'
+            break;
+        case '/why-us':
+            bgTransparent = 'lg:bg-[url("../../public/images/fold-bg.png")]'
             break;
         default:
             break;
@@ -22,11 +65,11 @@ const Looking = ({ content }) => {
 
     return (
         <>
-            <section className={`w-full flex items-center justify-start py-6 md:py-8 lg:py-16 bg-none lg:bg-[url("../../public/images/fold-bg.png")] bg-no-repeat bg-center bg-cover relative`}>
+            <section className={`w-full flex items-center justify-start py-6 md:py-8 lg:py-16 bg-none  bg-no-repeat bg-center bg-cover relative ${bgTransparent}`}>
                 <div className="container">
                     <div className='flex flex-col-reverse lg:flex-row items-center justify-around gap-y-7'>
                         <div className={`w-full lg:w-[500px] ${lookinImage}`}>
-                            <Image src={flodImg} className="w-9/12 lg:w-full mx-auto" alt="Infinity Animation" quality={85} />
+                            <Image src={flodImg} className={`w-9/12 lg:w-full mx-auto ${css}`} alt="Infinity Animation" quality={85} />
                         </div>
                         <div className={`w-full lg:w-[800px] ${lookingSecCol}`}>
                             <h1 className="text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight mb-5">
@@ -37,23 +80,27 @@ const Looking = ({ content }) => {
                                     {para}
                                 </p>
                             ))}
-                            <div className="flex gap-6">
-                                <CTA
-                                    text="Get Started"
-                                    icon1={true}
-                                    href="#"
-                                    css="text-white hover:bg-transparent border-[#f5090b] hover:border-[#ffffff] sm:w-max md:w-[160px]"
-                                    bg="bg-prime"
-                                />
 
-                                {isCTA ? <CTA
-                                    text="Live Chat"
-                                    icon2={true}
-                                    href="javascript:$zopim.livechat.window.show();"
-                                    css="text-white hover:bg-prime border-[#ffffff] hover:border-[#f5090b] sm:w-max md:w-[160px]"
-                                    bg="bg-transparent"
-                                /> : null}
-                            </div>
+                            {isBtns ?
+                                <div className="flex gap-6">
+                                    <CTA
+                                        text="Get Started"
+                                        icon1={true}
+                                        href="#"
+                                        css="text-white hover:bg-transparent border-[#f5090b] hover:border-[#ffffff] sm:w-max md:w-[160px]"
+                                        bg="bg-prime"
+                                    />
+
+                                    {isCTA ? <CTA
+                                        text="Live Chat"
+                                        icon2={true}
+                                        href="javascript:$zopim.livechat.window.show();"
+                                        css="text-white hover:bg-prime border-[#ffffff] hover:border-[#f5090b] sm:w-max md:w-[160px]"
+                                        bg="bg-transparent"
+                                    /> : null}
+                                </div> :
+                                null
+                            }
                         </div>
                     </div>
                 </div>

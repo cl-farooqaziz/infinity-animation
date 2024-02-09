@@ -4,14 +4,15 @@ import React from 'react'
 import CTA from '../cta/CTA';
 
 const Tech = ({ content }) => {
-    const { title, card } = content;
+    const { title, card, desc, isBtn } = content;
     return (
         <>
-            <section>
+            <section className='py-8 lg:py-16'> 
                 <div className="container">
                     <div className="grid grid-cols-12">
                         <div className="col-span-12">
-                            <h2 className='text-[50px] font-bold font-sans text-center text-white'>{title}</h2>
+                            <h2 className='text-[50px] font-bold font-sans text-center text-white leading-[55px] mb-4'>{title}</h2>
+                            <p className="text-white font-sans font-light text-[16px] text-center">{desc}</p>
                         </div>
                     </div>
                     <div className="grid grid-cols-12 lg:grid-cols-3 gap-x-5 mb-12">
@@ -28,26 +29,29 @@ const Tech = ({ content }) => {
                             </div>
                         ))}
                     </div>
-                    <div className="grid grid-cols-12">
-                        <div className="col-span-12">
-                            <div className="flex items-center justify-center gap-x-5">
-                                <CTA
-                                    text="Get a Quote"
-                                    icon1={true}
-                                    href="#"
-                                    css="text-white hover:bg-transparent border-[#f5090b] hover:border-[#ffffff] sm:w-max md:w-[160px]"
-                                    bg="bg-prime"
-                                />
-                                <CTA
-                                    text="See Portfolio"
-                                    icon1={true}
-                                    href="#"
-                                    css="text-white hover:bg-prime border-[#ffffff] hover:border-[#f5090b] sm:w-max md:w-[160px]"
-                                    bg="bg-transparent"
-                                />
+
+                    {isBtn ?
+                        <div className="grid grid-cols-12">
+                            <div className="col-span-12">
+                                <div className="flex items-center justify-center gap-x-5">
+                                    <CTA
+                                        text="Get a Quote"
+                                        icon1={true}
+                                        href="#"
+                                        css="text-white hover:bg-transparent border-[#f5090b] hover:border-[#ffffff] sm:w-max md:w-[160px]"
+                                        bg="bg-prime"
+                                    />
+                                    <CTA
+                                        text="See Portfolio"
+                                        icon1={true}
+                                        href="#"
+                                        css="text-white hover:bg-prime border-[#ffffff] hover:border-[#f5090b] sm:w-max md:w-[160px]"
+                                        bg="bg-transparent"
+                                    />
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                        </div> :
+                        null}
                 </div>
             </section>
         </>

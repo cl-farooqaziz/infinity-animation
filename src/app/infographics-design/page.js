@@ -50,6 +50,7 @@ export default function Page() {
         title: (<> Infographics </>),
         para: { paraArray },
         isCTA: true,
+        isBtns: true,
         flodImg: LookingFlodImg
     };
     //=====Portfilio Fold=====//

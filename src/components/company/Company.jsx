@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 import CTA from "@/components/cta/CTA";
 
 const Company = ({ content }) => {
-    const { title, para: { componyArray }, list: { listArray }, subtitle, checkImg, subPara, flodImg } = content;
+    const { title, para: { componyArray }, list: { listArray }, subtitle, checkImg, subPara, flodImg, css, btn } = content;
     // set fold Image
     const router = usePathname();
     let lookinImage;
@@ -26,28 +26,31 @@ const Company = ({ content }) => {
                 <div className="container">
                     <div className='flex flex-col-reverse lg:flex-row items-center justify-around gap-y-7'>
                         <div className={`w-full lg:w-[500px] ${lookinImage}`}>
-                            <Image src={flodImg} className="w-9/12 lg:w-full mx-auto rotateY" alt="Infinity Animation" quality={85} />
+                            <Image src={flodImg} className={`w-9/12 lg:w-full mx-auto ${css}`} alt="Infinity Animation" quality={85} />
                         </div>
                         <div className={`w-full lg:w-[800px] ${lookingSecCol}`}>
                             <div>
-                                <h1 className="text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight mb-5">
+                                <h1 className="text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-bold font-sans leading-[65px] mb-5">
                                     {title}
                                 </h1>
                                 {componyArray.map((para, index) => (
-                                    <p key={index} className="text-[16px] font-normal font-sans leading-snug tracking-wider text-justify mb-5">
+                                    <p key={index} className="text-[16px] font-normal font-sans leading-[24px] tracking-wider text-justify mb-5">
                                         {para}
                                     </p>
                                 ))}
-                                <div className="flex gap-6">
-                                    <CTA
-                                        text="Get Started"
-                                        icon1={true}
-                                        href="#"
-                                        css="text-white hover:bg-transparent border-[#f5090b] hover:border-[#ffffff] sm:w-max md:w-[160px]"
-                                        bg="bg-prime"
-                                    />
-
-                                </div>
+                                {btn ?
+                                    <div className="flex gap-6">
+                                        <CTA
+                                            text="Get Started"
+                                            icon1={true}
+                                            href="#"
+                                            css="text-white hover:bg-transparent border-[#f5090b] hover:border-[#ffffff] sm:w-max md:w-[160px]"
+                                            bg="bg-prime"
+                                        />
+                                    </div>
+                                    :
+                                    null
+                                }
                             </div>
                             <div className="mt-4">
                                 <h2 className="text-[50px] font-bold font-sans">

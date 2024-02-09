@@ -50,6 +50,7 @@ export default function Page() {
         title: (<> Logo Animation  </>),
         para: { paraArray },
         isCTA: true,
+        isBtns: true,
         flodImg: LookingFlodImg
     };
     //=====Portfilio Fold=====//

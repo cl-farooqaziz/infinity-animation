@@ -9,10 +9,13 @@ import contactImg from "media/contact/contact-img.png";
 import styles from "./Contact.module.css"
 
 const Contact = () => {
+
+    // form code start
+
     return (
         <>
             <section className={`w-full h-full mt-8 md:mt-16 mb-10 flex items-center justify-star relative`}>
-                <Image src={contactBg} className="absolute w-full top-[-12%] left-[-12%] sm:block hidden" alt="Infinity Animation" />
+                <Image src={contactBg} className="absolute w-full top-[-12%] left-[-12%] sm:block hidden -z-1" alt="Infinity Animation" />
                 <div className="container">
                     <div className='flex items-center justify-around'>
                         <div className='w-full text-center'>
@@ -24,7 +27,7 @@ const Contact = () => {
                             </p>
                         </div>
                     </div>
-                    <div className='grid grid-cols-1 lg:grid-cols-2 mt-6 md:mt-4 bg-black'>
+                    <div className='grid grid-cols-1 lg:grid-cols-2 mt-6 md:mt-4 bg-transparent relative z-50'>
                         <div className="px-6 py-8 md:py-12 border rounded-[30px]">
                             <Form />
                         </div>

@@ -10,7 +10,7 @@ export const metadata = {
         title: 'Contact Us - Infinity Animation',
         description: 'Ready to turn your ideas into reality? Reach out!',
         url: 'https://infinity-animation.vercel.app/contact-us/',
-        siteName: 'Web Design Hub',
+     siteName: 'InFinity Animation',
         locale: 'en_US',
         type: 'website',
     },

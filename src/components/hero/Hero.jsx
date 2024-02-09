@@ -68,6 +68,9 @@ const Hero = ({ content }) => {
         case '/tech-videos':
             backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/tech-videos/banner-bg.png")]'
             break;
+        case '/corporate-video':
+            backgroundImage = 'bg-cover bg-center lg:bg-[url("../../public/corporate-video/banner-bg.png")]'
+            break;
         default:
             break;
     }
