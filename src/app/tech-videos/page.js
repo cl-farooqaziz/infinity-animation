@@ -5,9 +5,11 @@ import Looking from '@/components/looking/Looking';
 import Product from "@/components/product/Product";
 import Company from '@/components/company/Company';
 import Portfolio from '@/components/portfolio/Portfolio';
-import Pricing from "@/components/pricing/Pricing";
-import Want from '@/components/want/Want';
+import BuzzFlick from "@/components/buzzflick/Buzzflick";
+import Tech from "@/components/tech-type/Tech";
+import Production from "@/components/productionprocess/Production";
 import Testimonial from '@/components/testimonial/Testimonial';
+import Faqs from "@/components/faqs/Faqs";
 import Contact from '@/components/contact/Contact';
 // Import Images
 import LookingFlodImg from "media/tech-videos/looking-img.png";
@@ -39,9 +41,6 @@ import conceptIcon4 from "media/icons/bizz4.png"
 import icon1 from "media/images/client.png"
 import icon2 from "media/icons/stars.png"
 import checkIcon from 'media/icons/check-img.png'
-import BuzzFlick from "@/components/buzzflick/Buzzflick";
-import Tech from "@/components/tech-type/Tech";
-import Case from "@/components/caseStudies/Case";
 
 
 export default function Page() {
@@ -61,6 +60,7 @@ export default function Page() {
         title: (<> We Simplify Your Product Through Our Tech Video Production </>),
         para: { paraArray },
         isCTA: false,
+        isBtns: true,
         flodImg: LookingFlodImg
     };
     //=====Product=====//
@@ -88,7 +88,9 @@ export default function Page() {
         subPara: "These stats and facts show that videos are of utmost importance for any business to include in their online marketing strategy and tech companies are no exception.",
         flodImg: BoostFlodImg,
         list: { listArray },
+        btn: true,
         checkImg: checkIcon,
+        css: "rotateY"
     };
     //=====Portfilio Fold=====//
     const tabInfo = [
@@ -174,7 +176,9 @@ export default function Page() {
 
     const techType = {
         title: "What Type Of Tech Videos We Make?",
+        desc: "",
         card: techCard,
+        isBtn: true,
     }
     //=====CaseStudies Fold=====//
     const sliderImage = [
@@ -199,17 +203,46 @@ export default function Page() {
         title: "Case Studies",
         sliderImages: sliderImage,
     }
+    //===== Production Fold ====== //
 
-    //=====Pricing Fold=====//
-    const pricing = {
-        title: (<> Pricing Plans </>),
-        para: (<> Easy on the pocket and the eyes. </>),
-    };
-    //=====Want Fold=====//
-    const want = {
-        title: "Want to Talk ?",
-        wantDesc: "Have questions? We have answers, Call Now!",
-        bgPrime: true,
+    const otherCards = [
+        {
+            cardTitle: <>Storyboard Creation</>,
+            cardDesc: 'In this phase of tech video production, our creative digital artists sketch a simple yet pulsating visual representation of tech video for your company to give you an idea of how your video will look like.',
+            cardNum: "03",
+        },
+        {
+            cardTitle: <>Visual Illustration</>,
+            cardDesc: 'Our skilled illustrators take the storyboard to the next level by creating stunning and vibrant illustrations. It helps to turn your video into more refined and appealing content.',
+            cardNum: "04",
+        },
+        {
+            cardTitle: <>Finalizing Voice Over</>,
+            cardDesc: 'The voice-over artists add a new life to your videos by adding their powerful voices in different languages and accents. You can select the best suitable voice for your tech video.',
+            cardNum: "05",
+        },
+        {
+            cardTitle: <>Animation and Motion <br /> Graphics</>,
+            cardDesc: 'The animation stage involves delivery of finest motion graphics services that bring static illustrations to life in a compelling fashion. Our team brings all the assets together (the script, voice-over, and illustrations) and animates them to create a compelling narrative and powerful story.',
+            cardNum: "06",
+        },
+        {
+            cardTitle: <>Post-production</>,
+            cardDesc: 'Once your animated technology video is ready, the post-production phase starts. We do the final editing and some touch-ups at this stage and our quality assurance team further checks to ensure the perfection we want to achieve to deliver you with the best.',
+            cardNum: "07",
+        },
+        {
+            cardTitle: <>Let’s Buzz</>,
+            cardDesc: 'Once the quality assurance is completed by our team, we share the finalized version of the video with you to get your feedback for any changes. Most probably, our crafted videos are good to go. You can now create a Buzz with your tech video and attract engage and delight your audience.',
+            cardNum: "08",
+        },
+    ]
+
+    const production = {
+        title: "Our Tech Video Production Process",
+        desc: "We believe in an end-to-end approach when it comes to tech video production and that is the reason we have 100s of satisfied clients onboard to get the best tech videos to help their businesses.",
+        firstTwoCards: true,
+        otherCards: otherCards,
     }
     //=====Testimonial Fold=====//
     const testiContent = [
@@ -235,11 +268,33 @@ export default function Page() {
         },
     ];
     const testimonial = {
-        title: (<> An Who’s Who of Industry Leading Clients </>),
+        title: (<> The Ultimate Collection Of <br />
+            Our Incredible Customer Experiences </>),
         para: (<> Achieved 1000+ Impactful Results That Speak Volumes </>),
         btnBg: "bg-prime",
         testiContent: testiContent
     };
+    //===== FAQS =====//
+
+    const accordionData = [
+        {
+            question: 'What Is The Cost Of Tech Video Production?',
+            answer: "The cost for tech video production depends on how complicated your information to be converted into video is. Usually, the cost for a 2D animated video starts from $1000, and the same goes for technology videos. But the amount may vary on length and video style.",
+        },
+        {
+            question: 'What Is The BuzzFlick’s Video Delivery Timeframe?',
+            answer: "Step into a realm of immersive storytelling with our cutting-edge 3D animations. Elevate your visual narratives, whether for product showcases, virtual tours, or cinematic experiences.",
+        },
+        {
+            question: 'What Kind Of Videos BuzzFlick Provides With Tech Video Production Services?',
+            answer: "Simplify the complex and engage your audience with our whiteboard animations. Each stroke unfolds a nuanced narrative, turning ideas into visually compelling stories.",
+        }
+    ];
+
+    const faqs = {
+        title: "Frequently Asked Questions",
+        accordionData: accordionData,
+    }
 
     return (
         <>
@@ -251,10 +306,10 @@ export default function Page() {
             <Portfolio content={portfolio} />
             <BuzzFlick content={buzzflick} />
             <Tech content={techType} />
-            <Case content={caseStudies} />
-            <Pricing content={pricing} />
-            <Want content={want} />
+            {/* <Case content={caseStudies} /> */}
+            <Production content={production} />
             <Testimonial content={testimonial} />
+            <Faqs content={faqs} />
             <Contact />
         </>
     )

@@ -10,7 +10,7 @@ export const metadata = {
         title: 'Passion, Precision, and the Art of Animation Excellence',
         description: 'Learn more about the passionate team driving innovation, precision, and storytelling mastery in every animated frame. ',
         url: 'https://infinity-animation.vercel.app/why-us/',
-        siteName: 'Web Design Hub',
+     siteName: 'InFinity Animation',
         locale: 'en_US',
         type: 'website',
     },

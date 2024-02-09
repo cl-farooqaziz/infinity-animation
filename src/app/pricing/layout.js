@@ -10,7 +10,7 @@ export const metadata = {
         title: 'Transparent Animation Solutions | Discover Our Pricing Plans',
         description: 'Explore our straightforward pricing page to find the perfect animation solution for your needs. Our transparent pricing ensures clarity and flexibility.',
         url: 'https://infinity-animation.vercel.app/pricing/',
-        siteName: 'Web Design Hub',
+     siteName: 'InFinity Animation',
         locale: 'en_US',
         type: 'website',
     },

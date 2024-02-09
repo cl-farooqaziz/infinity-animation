@@ -10,7 +10,7 @@ export const metadata = {
         title: 'Our Performance Driven Animation Creation Process',
         description: 'Step into the behind-the-scenes magic – explore our animation creation process page. From ideation to final delivery, witness the journey of visual tales.',
         url: 'https://infinity-animation.vercel.app/process/',
-        siteName: 'Web Design Hub',
+     siteName: 'InFinity Animation',
         locale: 'en_US',
         type: 'website',
     },

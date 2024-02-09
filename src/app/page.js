@@ -44,6 +44,7 @@ export default function Page() {
         title: (<> Looking For a Professional Video Animation Company? </>),
         para: { paraArray },
         isCTA: true,
+        isBtns: true,
         flodImg: LookingFlodImg
     };
     //=====StoryLine Fold=====//

@@ -130,6 +130,31 @@ body {
 
 /* Blogs Slider End */
 
+/* Brands Slider start */
+
+.brandsSlider .slick-prev {
+  left: inherit;
+  right: 11%;
+  top: inherit;
+  bottom: -65px;
+}
+
+.brandsSlider .slick-prev:before {
+  content: url(../../public/icons/arrow-left.png);
+}
+
+.brandsSlider .slick-next {
+  right: 80px;
+  bottom: -65px;
+  top: inherit;
+}
+
+.brandsSlider .slick-next:before {
+  content: url(../../public/icons/arrow-right.png);
+}
+
+/* Brands Slider End */
+
 /* Media Query Start */
 
 @media only screen and (max-width: 1920px) {
