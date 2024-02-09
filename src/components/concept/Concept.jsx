@@ -69,7 +69,7 @@ const Concept = ({ content }) => {
                             </div>
                         </div>
 
-                        <div className="flex flex-wrap justify-center gap-6 mt-7 sm:mt-4 sm:p-4">
+                        <div className="flex flex-wrap justify-center md:justify-start gap-6 mt-7 sm:mt-4 sm:p-4">
                             <CTA
                                 text="Get Started"
                                 icon1={true}
