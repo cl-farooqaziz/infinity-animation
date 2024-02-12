@@ -43,11 +43,9 @@ const Form = () => {
     const [ip, setIP] = useState("");
     //creating function to load ip address from the API
     const getIPData = async () => {
-        const res = await Axios.get(
-            "https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8"
-        );
+        const res = await Axios.get('https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8');
         setIP(res.data);
-    };
+    }
     useEffect(() => {
         getIPData();
     }, []);
@@ -128,12 +126,12 @@ const Form = () => {
                 };
 
                 let bodyContent = JSON.stringify({
-                    IP: `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
-                    Brand: "Creative Logo Designs",
-                    Page: `${page}`,
-                    Date: setDate,
-                    Time: setTime,
-                    JSON: data,
+                    "IP": `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
+                    "Brand": "Infinity Animation",
+                    "Page": `${currentRoute}`,
+                    "Date": currentdate,
+                    "Time": currentdate,
+                    "JSON": JSONdata,
                 });
                 let reqOptions = {
                     url: "https://sheetdb.io/api/v1/1ownp6p7a9xpi",
@@ -152,34 +150,19 @@ const Form = () => {
             <form action="#" className="space-y-2 sm:space-y-4 md:space-y-8">
                 <div>
                     <label htmlFor="subject" className="block sm:mb-2 font-sans tracking-wide text-[16px] font-normal text-white">Full Name*</label>
-                    <input type="text" id="name" name="name" className="block p-3 w-full font-sans tracking-wide text-sm text-white border-0 border-b-2 focus:outline-none focus:border-primary-100 bg-transparent" placeholder="Type Full Name" onChange={handleDataChange} required />
-                    {errors.name && (
-                        <span className="text-[12px] block p-2 font-medium text-white">
-                            {errors.name}
-                        </span>
-                    )}
+                    <input type="text" id="name" name="name" className="block p-3 w-full font-sans tracking-wide text-sm text-white border-0 border-b-2 focus:outline-none focus:border-primary-100 bg-transparent" placeholder="Type Full Name" required />
                 </div>
                 <div>
                     <label htmlFor="subject" className="block sm:mb-2 font-sans tracking-wide text-[16px] font-normal text-white">Phone*</label>
-                    <input type="tel" id="phone" name="phone" minLength="10" maxLength="13" className="block p-3 w-full font-sans tracking-wide text-sm text-white border-0 border-b-2 focus:outline-none focus:border-primary-100 bg-transparent" placeholder="(000) 000-0000" required onChange={handleDataChange} />
-                    {errors.phone && (
-                        <span className="text-[12px] block p-2 font-medium text-white">
-                            {errors.phone}
-                        </span>
-                    )}
+                    <input type="tel" id="phone" name="phone" minLength="10" maxLength="13" pattern="[0-9]*" className="block p-3 w-full font-sans tracking-wide text-sm text-white border-0 border-b-2 focus:outline-none focus:border-primary-100 bg-transparent" placeholder="(000) 000-0000" required />
                 </div>
                 <div>
                     <label htmlFor="email" className="block sm:mb-2 font-sans tracking-wide text-[16px] font-normal text-white">Email Address*</label>
-                    <input type="email" id="email" name="email" className="block p-3 w-full font-sans tracking-wide text-sm text-white border-0 border-b-2 focus:outline-none focus:border-primary-100 bg-transparent" placeholder="Type Email" required onChange={handleDataChange} />
-                    {errors.email && (
-                        <span className="text-[12px] block p-2 font-medium text-white">
-                            {errors.email}
-                        </span>
-                    )}
+                    <input type="email" id="email" name="email" className="block p-3 w-full font-sans tracking-wide text-sm text-white border-0 border-b-2 focus:outline-none focus:border-primary-100 bg-transparent" placeholder="Type Email" required />
                 </div>
                 <div className="sm:col-span-2">
                     <label htmlFor="message" className="block sm:mb-2 font-sans tracking-wide text-[16px] font-normal text-white">Details*</label>
-                    <textarea id="message" name="message" rows="2" className="block p-3 w-full font-sans tracking-wide text-sm text-white border-0 border-b-2 focus:outline-none focus:border-primary-100 bg-transparent resize-none" placeholder="Type Full Details" required onChange={handleDataChange} />
+                    <textarea id="message" name="message" rows="2" className="block p-3 w-full font-sans tracking-wide text-sm text-white border-0 border-b-2 focus:outline-none focus:border-primary-100 bg-transparent resize-none" placeholder="Type Full Details" required />
                 </div>
                 <div className="flex flex-col md:flex-row gap-5 md:gap-0 items-center justify-between pt-5">
                     <button type="submit" className="py-3 px-16 font-sans tracking-wide text-sm font-medium text-center text-white rounded-lg bg-prime w-full sm:w-fit hover:bg-primary-800 focus:outline-none" onClick={handleFormSubmit} disabled={isDisabled}>{formStatus}</button>

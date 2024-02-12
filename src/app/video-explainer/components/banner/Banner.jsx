@@ -14,122 +14,81 @@ import Link from 'next/link'
 
 const Banner = () => {
 
-    // form Start 
-    let newDate = new Date();
-    let date = newDate.getDate();
-    let month = newDate.getMonth() + 1;
-    let year = newDate.getFullYear();
-    // For Time
-    let today = new Date();
-    let setTime = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-    let setDate = `${month < 10 ? `0${month}` : `${month}`}-${date}-${year}`;
+    // form Start
+    // const [ip, setIP] = useState("");
+    // //creating function to load ip address from the API
+    // const getIPData = async () => {
+    //     const res = await Axios.get(
+    //         "https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8"
+    //     );
+    //     setIP(res.data);
+    // };
+    // useEffect(() => {
+    //     getIPData();
+    // }, []);
 
-    const [ip, setIP] = useState("");
-    //creating function to load ip address from the API
-    const getIPData = async () => {
-        const res = await Axios.get(
-            "https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8"
-        );
-        setIP(res.data);
-    };
-    useEffect(() => {
-        getIPData();
-    }, []);
-    // For Page
-    let page = usePathname();
-    const [data, setData] = useState({
-        name: "",
-        phone: "",
-        email: "",
-        message: "",
-        botchecker: null,
-        pageURL: page
-    });
-    const handleDataChange = (e) => {
-        setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-    };
-    const [formStatus, setFormStatus] = useState("Submit");
-    const [errors, setErrors] = useState({});
-    const [isDisabled, setIsDisabled] = useState(false);
-    const formValidateHandle = () => {
-        let errors = {};
-        // Name validation
-        if (!data.name.trim()) {
-            errors.name = "Name is required";
-        }
-        // Email validation
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!data.email.match(emailRegex)) {
-            errors.email = "Valid email is required";
-        }
-        // Phone validation
-        const phoneRegex = /[0-9]/i;
-        if (!data.phone.match(phoneRegex)) {
-            errors.phone = "Valid phone is required";
-        }
-        return errors;
-    };
-    const handleFormSubmit = async (e) => {
-        e.preventDefault();
-        setFormStatus("Processing...");
-        setIsDisabled(true);
+    // const [score, setScore] = useState("Get A Free Quote");
 
-        const errors = formValidateHandle();
-        setErrors(errors);
+    // const router = useRouter();
+    // const currentRoute = router.pathname;
 
-        if (Object.keys(errors).length === 0) {
-            if (data.botchecker === null) {
-                let headersList = {
-                    Accept: "*/*",
-                    "Content-Type": "application/json",
-                };
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
 
-                let bodyContent = JSON.stringify(data);
-                let reqOptions = {
-                    url: "/api/email",
-                    method: "POST",
-                    headers: headersList,
-                    data: bodyContent,
-                };
-                await Axios.request(reqOptions);
-            } else {
-                setFormStatus("Failed...");
-                setIsDisabled(false);
-            }
-        } else {
-            setFormStatus("Failed...");
-            setIsDisabled(false);
-        }
+    //     const data = {
+    //         name: e.target.name.value,
+    //         email: e.target.email.value,
+    //         phone: e.target.phone.value,
+    //         message: e.target.message.value,
+    //         services: e.target.services.value,
+    //         pageUrl: currentRoute,
+    //     };
 
-        if (Object.keys(errors).length === 0) {
-            if (data.botchecker === null) {
+    //     const JSONdata = JSON.stringify(data);
 
+    //     setScore("Sending Data");
 
-                let headersList = {
-                    Accept: "*/*",
-                    Authorization: "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
-                    "Content-Type": "application/json",
-                };
+    //     fetch("api/email/route", {
+    //         method: "POST",
+    //         headers: {
+    //             Accept: "application/json, text/plain, */*",
+    //             "Content-Type": "application/json",
+    //         },
+    //         body: JSONdata,
+    //     }).then((res) => {
+    //         console.log(`Response received ${res}`);
+    //         if (res.status === 200) {
+    //             console.log(`Response Successed ${res}`);
+    //         }
+    //     });
 
-                let bodyContent = JSON.stringify({
-                    IP: `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
-                    Brand: "Creative Logo Designs",
-                    Page: `${page}`,
-                    Date: setDate,
-                    Time: setTime,
-                    JSON: data,
-                });
-                let reqOptions = {
-                    url: "https://sheetdb.io/api/v1/1ownp6p7a9xpi",
-                    method: "POST",
-                    headers: headersList,
-                    data: bodyContent,
-                };
-                await Axios.request(reqOptions);
-                window.location.href = "/thank-you";
-            }
-        }
-    };
+    //     var currentdate = new Date().toLocaleString() + "";
+    //     let headersList = {
+    //         Accept: "*/*",
+    //         "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+    //         Authorization: "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
+    //         "Content-Type": "application/json",
+    //     };
+
+    //     let bodyContent = JSON.stringify({
+    //         IP: `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
+    //         Brand: "BOOK-WRITING-EXPERT",
+    //         Page: `${currentRoute}`,
+    //         Date: currentdate,
+    //         Time: currentdate,
+    //         JSON: JSONdata,
+    //     });
+    //     await fetch("https://sheetdb.io/api/v1/1ownp6p7a9xpi", {
+    //         method: "POST",
+    //         body: bodyContent,
+    //         headers: headersList,
+    //     });
+
+    //     const { pathname } = Router;
+    //     if (pathname == pathname) {
+    //         window.location.href = "https://www.bookwritingexperts.com/thank-you";
+    //     }
+    // };
 
 
     return (
