@@ -26,6 +26,8 @@ import boosticon3 from "media/icons/boost-icon3.png"
 //==== Testimonial Images
 import icon1 from "media/images/client.png"
 import icon2 from "media/icons/stars.png"
+import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
 
 export default function Page() {
     //=====Banner Fold=====//
@@ -125,6 +127,7 @@ export default function Page() {
         title: (<> Our Exceptional Portfolio for Video Animation </>),
         para: (<> A visual journey through a kaleidoscope of creativity, where each project tells a unique story of brand elevation and visual excellence. </>),
         tabContents: tabContents,
+        tabsInfo: true,
         tabInfo: tabInfo
     };
     //=====Concept Fold=====//
@@ -190,6 +193,7 @@ export default function Page() {
 
     return (
         <>
+            <Header />
             <Hero content={hero} />
             <Review />
             <Looking content={looking} />
@@ -199,6 +203,7 @@ export default function Page() {
             <Boost content={boost} />
             <Testimonial content={testimonial} />
             <Contact />
+            <Footer />
         </>
     )
 }

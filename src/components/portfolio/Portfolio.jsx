@@ -3,9 +3,10 @@ import { useState } from 'react';
 import Image from "next/image";
 // Import Css
 import styles from "./PortFolio.module.css"
+import CTA from '../cta/CTA';
 
 const Portfolio = ({ content }) => {
-    const { title, para, tabInfo, tabContents } = content;
+    const { title, para, tabInfo, tabContents, tabsInfo } = content;
     //Tabs
     const [activeTab, setActiveTab] = useState(0);
     const handleTabClick = (index) => {
@@ -25,16 +26,17 @@ const Portfolio = ({ content }) => {
                             </p>
                         </div>
                     </div>
-                    <div className='mt-8 md:mt-12'>
-                        <ul className="flex flex-wrap justify-center text-sm font-medium text-center gap-3 md:gap-5 lg:w-11/12 mx-auto">
-                            {tabInfo.map((tab, index) => (
-                                <li key={index}
-                                    className={`inline-block px-8 md:px-16 py-3 text-[16px] lg:text-[20px] font-normal font-sans text-white border rounded-[27px] cursor-pointer hover:border-primary-100 ${activeTab === index ? 'border-primary-100' : 'border-[#646464]'}`}
-                                    onClick={() => handleTabClick(index)}>
-                                    {tab.label}
-                                </li>
-                            ))}
-                        </ul>
+                    <div className={`${tabsInfo ? "mt-8 md:mt-12" : "mt-0"}`}>
+                        {tabsInfo ?
+                            <ul className="flex flex-wrap justify-center text-sm font-medium text-center gap-3 md:gap-5 lg:w-11/12 mx-auto">
+                                {tabInfo.map((tab, index) => (
+                                    <li key={index}
+                                        className={`inline-block px-8 md:px-16 py-3 text-[16px] lg:text-[20px] font-normal font-sans text-white border rounded-[27px] cursor-pointer hover:border-primary-100 ${activeTab === index ? 'border-primary-100' : 'border-[#646464]'}`}
+                                        onClick={() => handleTabClick(index)}>
+                                        {tab.label}
+                                    </li>
+                                ))}
+                            </ul> : null}
                         <div className="tabs-content pt-7 md:pt-12">
                             {tabContents[activeTab] && (
                                 <div className='flex flex-col sm:flex-row justify-center items-center gap-3 md:gap-10'>
@@ -52,6 +54,18 @@ const Portfolio = ({ content }) => {
                                 </div>
                             )}
                         </div>
+                        {tabInfo ?
+                            <div className='flex items-center justify-center lg:mt-8 mt-4'>
+                                <CTA
+                                    text="View All"
+                                    icon1={true}
+                                    href="#"
+                                    css="text-white hover:bg-transparent border-[#f5090b] hover:border-[#ffffff] sm:w-max md:w-[160px]"
+                                    bg="bg-prime"
+                                />
+                            </div>
+                            : null
+                        }
                     </div>
                 </div>
             </section>
