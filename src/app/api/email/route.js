@@ -1,23 +1,22 @@
-import nodemailer from "nodemailer";
+import { NextResponse, NextRequest } from "next/server"
+import nodemailer from "nodemailer"
 
-export default async function POST(req, res) {
+export async function POST(request) {
     try {
-        const { name, email, phone, message, IP, currentdate, pageUrl } = await req.body;
-        const brandname = 'Infinity Animations'
+        const { name, email, phone, message, pageURL } = await request.json();
         const transporter = nodemailer.createTransport({
-            service: "gmail",
+            service: "Gmail",
             host: "smtp.gmail.com",
             port: 465,
             secure: true,
             auth: {
-                user: 'leads@infinityanimations.com',
+                user: "leads@infinityanimations.com",
                 pass: "10@Kskwoks"
             }
-        })
-
+        });
         const mailOptions = {
-            from: 'leads@infinityanimations.com',
-            to: 'harrykennedy.cs@gmail.com',
+            from: "leads@infinityanimations.com",
+            to: "harrykennedy.cs@gmail.com",
             subject: `Infinity Animations Lead`,
             html: `
             <table>
@@ -38,27 +37,14 @@ export default async function POST(req, res) {
                     <td>${message}</td>
                 </tr>
                 <tr>
-                    <th>IP</th>
-                    <td>${IP}</td>
-                </tr>
-                <tr>
-                    <th>Currentdate</th>
-                    <td>${currentdate}</td>
-                </tr>
-                <tr>
-                    <th>pageUrl</th>
-                    <td>${pageUrl}</td>
-                </tr>
-                <tr>
-                    <th>Brand Name</th>
-                    <td>${brandname}</td>
+                    <th>pageURL</th>
+                    <td>${pageURL}</td>
                 </tr>
             </table>`
         }
-
-        await transporter.sendMail(mailOptions);
-        return res.json({ "message": "Email send sucessfully", "data": [name, email, phone, message, brandname, IP, currentdate, pageUrl], "status": 200 });
+        await transporter.sendMail(mailOptions)
+        return NextResponse.json({ "mesaage": "Email sent successfully", "status": 200 })
     } catch (error) {
-        return res.json({ "message": "Failed to send Email", "data": error, "status": 500 });
+        return NextResponse.json({ "mesaage": "Failed to sent Email", "status": 500 })
     }
 }

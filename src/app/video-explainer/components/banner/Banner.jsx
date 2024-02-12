@@ -14,80 +14,80 @@ import { useRouter } from 'next/navigation'
 const Banner = () => {
 
     // form Start
-    // const [ip, setIP] = useState("");
-    // //creating function to load ip address from the API
-    // const getIPData = async () => {
-    //     const res = await Axios.get(
-    //         "https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8"
-    //     );
-    //     setIP(res.data);
-    // };
-    // useEffect(() => {
-    //     getIPData();
-    // }, []);
+    const [ip, setIP] = useState("");
+    //creating function to load ip address from the API
+    const getIPData = async () => {
+        const res = await Axios.get(
+            "https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8"
+        );
+        setIP(res.data);
+    };
+    useEffect(() => {
+        getIPData();
+    }, []);
 
-    // const [score, setScore] = useState("Get A Free Quote");
+    const [score, setScore] = useState("Get A Free Quote");
 
-    // const router = useRouter();
-    // const currentRoute = router.pathname;
+    const router = useRouter();
+    const currentRoute = router.pathname;
 
-    // const handleSubmit = async (e) => {
-    //     e.preventDefault();
+    const handleSubmit = async (e) => {
+        e.preventDefault();
 
-    //     const data = {
-    //         name: e.target.name.value,
-    //         email: e.target.email.value,
-    //         phone: e.target.phone.value,
-    //         message: e.target.message.value,
-    //         services: e.target.services.value,
-    //         pageUrl: currentRoute,
-    //     };
+        const data = {
+            name: e.target.name.value,
+            email: e.target.email.value,
+            phone: e.target.phone.value,
+            message: e.target.message.value,
+            services: e.target.services.value,
+            pageUrl: currentRoute,
+        };
 
-    //     const JSONdata = JSON.stringify(data);
+        const JSONdata = JSON.stringify(data);
 
-    //     setScore("Sending Data");
+        setScore("Sending Data");
 
-    //     fetch("api/email/route", {
-    //         method: "POST",
-    //         headers: {
-    //             Accept: "application/json, text/plain, */*",
-    //             "Content-Type": "application/json",
-    //         },
-    //         body: JSONdata,
-    //     }).then((res) => {
-    //         console.log(`Response received ${res}`);
-    //         if (res.status === 200) {
-    //             console.log(`Response Successed ${res}`);
-    //         }
-    //     });
+        fetch("src/app/api/email/route.js", {
+            method: "POST",
+            headers: {
+                Accept: "application/json, text/plain, */*",
+                "Content-Type": "application/json",
+            },
+            body: JSONdata,
+        }).then((res) => {
+            console.log(`Response received ${res}`);
+            if (res.status === 200) {
+                console.log(`Response Successed ${res}`);
+            }
+        });
 
-    //     var currentdate = new Date().toLocaleString() + "";
-    //     let headersList = {
-    //         Accept: "*/*",
-    //         "User-Agent": "Thunder Client (https://www.thunderclient.com)",
-    //         Authorization: "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
-    //         "Content-Type": "application/json",
-    //     };
+        var currentdate = new Date().toLocaleString() + "";
+        let headersList = {
+            Accept: "*/*",
+            "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+            Authorization: "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
+            "Content-Type": "application/json",
+        };
 
-    //     let bodyContent = JSON.stringify({
-    //         IP: `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
-    //         Brand: "BOOK-WRITING-EXPERT",
-    //         Page: `${currentRoute}`,
-    //         Date: currentdate,
-    //         Time: currentdate,
-    //         JSON: JSONdata,
-    //     });
-    //     await fetch("https://sheetdb.io/api/v1/1ownp6p7a9xpi", {
-    //         method: "POST",
-    //         body: bodyContent,
-    //         headers: headersList,
-    //     });
+        let bodyContent = JSON.stringify({
+            IP: `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
+            Brand: "BOOK-WRITING-EXPERT",
+            Page: `${currentRoute}`,
+            Date: currentdate,
+            Time: currentdate,
+            JSON: JSONdata,
+        });
+        await fetch("https://sheetdb.io/api/v1/1ownp6p7a9xpi", {
+            method: "POST",
+            body: bodyContent,
+            headers: headersList,
+        });
 
-    //     const { pathname } = Router;
-    //     if (pathname == pathname) {
-    //         window.location.href = "https://www.bookwritingexperts.com/thank-you";
-    //     }
-    // };
+        const { pathname } = Router;
+        if (pathname == pathname) {
+            window.location.href = "https://www.bookwritingexperts.com/thank-you";
+        }
+    };
 
 
     return (
