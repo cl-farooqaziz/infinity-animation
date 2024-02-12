@@ -42,9 +42,7 @@ const Portfolio = ({ content }) => {
                                 <div className='grid grid-cols-3 justify-center items-center gap-3 md:gap-5'>
                                     {tabContents.map((video, index) => (
                                         <div key={index} className={`${styles.shadow} w-full h-[300px]`}>
-                                            {video.map((e, i) => (
-                                                <video className='w-full h-[300px]' controls autoPlay key={i} src={e.src}></video>
-                                            ))}
+                                            <video className='w-full h-[300px]' controls autoPlay src='https://player.vimeo.com/progressive_redirect/playback/875311008/rendition/1440p/file.mp4?loc=external&log_user=0&signature=865f73e9df22dde54e1385f4f782210d2bab7209a3367b1b5180106b15f7bb1b'></video>
                                         </div>
                                     ))}
                                 </div>

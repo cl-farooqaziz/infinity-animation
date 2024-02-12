@@ -118,7 +118,7 @@ export default function Page() {
     ];
     const tabContents = [
         [
-            { src: "https://vimeo.com/911729542" },
+            { src: "https://player.vimeo.com/progressive_redirect/playback/889205156/rendition/240p/file.mp4?loc=external&log_user=0&signature=ffd7c7fc15f2fcc7429148a046efda8716ffe5218b1c022d8fbd64f7d9f21538" },
             { src: "https://vimeo.com/911729542" },
             { src: "https://vimeo.com/911729542" },
             { src: "https://vimeo.com/911729542" },
