@@ -30,112 +30,159 @@ const socialLinks = [
 ]
 
 const Form = () => {
-    const [ip, setIP] = useState('');
+    // For Date
+    let newDate = new Date();
+    let date = newDate.getDate();
+    let month = newDate.getMonth() + 1;
+    let year = newDate.getFullYear();
+    // For Time
+    let today = new Date();
+    let setTime = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    let setDate = `${month < 10 ? `0${month}` : `${month}`}-${date}-${year}`;
+
+    const [ip, setIP] = useState("");
+    //creating function to load ip address from the API
     const getIPData = async () => {
-        const res = await Axios.get('https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8');
+        const res = await Axios.get(
+            "https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8"
+        );
         setIP(res.data);
-    }
+    };
     useEffect(() => {
-        getIPData()
-    }, [])
-
-    const [score, setScore] = useState('Submit');
-
-    const router = usePathname();
-    const currentRoute = router.pathname;
-    const [pagenewurl, setPagenewurl] = useState('');
-    useEffect(() => {
-        const pagenewurl = window.location.href;
-        setPagenewurl(pagenewurl);
+        getIPData();
     }, []);
-
-    const handleSubmit = async (e) => {
+    // For Page
+    let page = usePathname();
+    const [data, setData] = useState({
+        name: "",
+        phone: "",
+        email: "",
+        message: "",
+        botchecker: null,
+        pageURL: page
+    });
+    const handleDataChange = (e) => {
+        setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+    };
+    const [formStatus, setFormStatus] = useState("Submit");
+    const [errors, setErrors] = useState({});
+    const [isDisabled, setIsDisabled] = useState(false);
+    const formValidateHandle = () => {
+        let errors = {};
+        // Name validation
+        if (!data.name.trim()) {
+            errors.name = "Name is required";
+        }
+        // Email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!data.email.match(emailRegex)) {
+            errors.email = "Valid email is required";
+        }
+        // Phone validation
+        const phoneRegex = /[0-9]/i;
+        if (!data.phone.match(phoneRegex)) {
+            errors.phone = "Valid phone is required";
+        }
+        return errors;
+    };
+    const handleFormSubmit = async (e) => {
         e.preventDefault();
-        var currentdate = new Date().toLocaleString() + '';
+        setFormStatus("Processing...");
+        setIsDisabled(true);
 
-        const data = {
-            name: e.target.name.value,
-            phone: e.target.phone.value,
-            email: e.target.email.value,
-            message: e.target.message.value,
-            pageUrl: pagenewurl,
-            currentdate: currentdate,
-            IP: `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
-        };
+        const errors = formValidateHandle();
+        setErrors(errors);
 
-        const JSONdata = JSON.stringify(data);
-
-        setScore('Sending Data');
-
-        try {
-            const response = await fetch('api/email', {
-                method: 'POST',
-                headers: {
-                    'Accept': 'application/json, text/plain, */*',
-                    'Content-Type': 'application/json'
-                },
-                body: JSONdata
-            });
-
-            if (response.status === 200) {
-                console.log('Email sent successfully');
+        if (Object.keys(errors).length === 0) {
+            if (data.botchecker === null) {
                 let headersList = {
-                    "Accept": "*/*",
-                    "User-Agent": "Thunder Client (https://www.thunderclient.com)",
-                    "Authorization": "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
-                    "Content-Type": "application/json"
+                    Accept: "*/*",
+                    "Content-Type": "application/json",
+                };
+
+                let bodyContent = JSON.stringify(data);
+                let reqOptions = {
+                    url: "/api/email",
+                    method: "POST",
+                    headers: headersList,
+                    data: bodyContent,
+                };
+                await Axios.request(reqOptions);
+            } else {
+                setFormStatus("Failed...");
+                setIsDisabled(false);
+            }
+        } else {
+            setFormStatus("Failed...");
+            setIsDisabled(false);
+        }
+
+        if (Object.keys(errors).length === 0) {
+            if (data.botchecker === null) {
+
+
+                let headersList = {
+                    Accept: "*/*",
+                    Authorization: "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
+                    "Content-Type": "application/json",
                 };
 
                 let bodyContent = JSON.stringify({
-                    "IP": `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
-                    "Brand": "Infinity Animation",
-                    "Page": `${currentRoute}`,
-                    "Date": currentdate,
-                    "Time": currentdate,
-                    "JSON": JSONdata,
+                    IP: `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
+                    Brand: "Creative Logo Designs",
+                    Page: `${page}`,
+                    Date: setDate,
+                    Time: setTime,
+                    JSON: data,
                 });
-
-                await fetch("https://sheetdb.io/api/v1/1ownp6p7a9xpi", {
+                let reqOptions = {
+                    url: "https://sheetdb.io/api/v1/1ownp6p7a9xpi",
                     method: "POST",
-                    body: bodyContent,
-                    headers: headersList
-                });
-
-                const { pathname } = router;
-                if (pathname === pathname) {
-                    window.location.href = '/thank-you';
-                }
-            } else {
-                console.error('Failed to send email');
-                setScore('Submit'); // Reset the button text
+                    headers: headersList,
+                    data: bodyContent,
+                };
+                await Axios.request(reqOptions);
+                window.location.href = "/thank-you";
             }
-        } catch (error) {
-            console.error('Error sending email:', error);
-            setScore('Submit'); // Reset the button text
         }
     };
 
     return (
         <>
-            <form action="#" className="space-y-2 sm:space-y-4 md:space-y-8" onSubmit={handleSubmit}>
+            <form action="#" className="space-y-2 sm:space-y-4 md:space-y-8">
                 <div>
                     <label htmlFor="subject" className="block sm:mb-2 font-sans tracking-wide text-[16px] font-normal text-white">Full Name*</label>
-                    <input type="text" id="name" name="name" className="block p-3 w-full font-sans tracking-wide text-sm text-white border-0 border-b-2 focus:outline-none focus:border-primary-100 bg-transparent" placeholder="Type Full Name" required />
+                    <input type="text" id="name" name="name" className="block p-3 w-full font-sans tracking-wide text-sm text-white border-0 border-b-2 focus:outline-none focus:border-primary-100 bg-transparent" placeholder="Type Full Name" onChange={handleDataChange} required />
+                    {errors.name && (
+                        <span className="text-[12px] block p-2 font-medium text-white">
+                            {errors.name}
+                        </span>
+                    )}
                 </div>
                 <div>
                     <label htmlFor="subject" className="block sm:mb-2 font-sans tracking-wide text-[16px] font-normal text-white">Phone*</label>
-                    <input type="tel" id="phone" name="phone" minLength="10" maxLength="13" pattern="[0-9]*" className="block p-3 w-full font-sans tracking-wide text-sm text-white border-0 border-b-2 focus:outline-none focus:border-primary-100 bg-transparent" placeholder="(000) 000-0000" required />
+                    <input type="tel" id="phone" name="phone" minLength="10" maxLength="13" className="block p-3 w-full font-sans tracking-wide text-sm text-white border-0 border-b-2 focus:outline-none focus:border-primary-100 bg-transparent" placeholder="(000) 000-0000" required onChange={handleDataChange} />
+                    {errors.phone && (
+                        <span className="text-[12px] block p-2 font-medium text-white">
+                            {errors.phone}
+                        </span>
+                    )}
                 </div>
                 <div>
                     <label htmlFor="email" className="block sm:mb-2 font-sans tracking-wide text-[16px] font-normal text-white">Email Address*</label>
-                    <input type="email" id="email" name="email" className="block p-3 w-full font-sans tracking-wide text-sm text-white border-0 border-b-2 focus:outline-none focus:border-primary-100 bg-transparent" placeholder="Type Email" required />
+                    <input type="email" id="email" name="email" className="block p-3 w-full font-sans tracking-wide text-sm text-white border-0 border-b-2 focus:outline-none focus:border-primary-100 bg-transparent" placeholder="Type Email" required onChange={handleDataChange} />
+                    {errors.email && (
+                        <span className="text-[12px] block p-2 font-medium text-white">
+                            {errors.email}
+                        </span>
+                    )}
                 </div>
                 <div className="sm:col-span-2">
                     <label htmlFor="message" className="block sm:mb-2 font-sans tracking-wide text-[16px] font-normal text-white">Details*</label>
-                    <textarea id="message" name="message" rows="2" className="block p-3 w-full font-sans tracking-wide text-sm text-white border-0 border-b-2 focus:outline-none focus:border-primary-100 bg-transparent resize-none" placeholder="Type Full Details" required />
+                    <textarea id="message" name="message" rows="2" className="block p-3 w-full font-sans tracking-wide text-sm text-white border-0 border-b-2 focus:outline-none focus:border-primary-100 bg-transparent resize-none" placeholder="Type Full Details" required onChange={handleDataChange} />
                 </div>
                 <div className="flex flex-col md:flex-row gap-5 md:gap-0 items-center justify-between pt-5">
-                    <button type="submit" className="py-3 px-16 font-sans tracking-wide text-sm font-medium text-center text-white rounded-lg bg-prime w-full sm:w-fit hover:bg-primary-800 focus:outline-none">{score}</button>
+                    <button type="submit" className="py-3 px-16 font-sans tracking-wide text-sm font-medium text-center text-white rounded-lg bg-prime w-full sm:w-fit hover:bg-primary-800 focus:outline-none" onClick={handleFormSubmit} disabled={isDisabled}>{formStatus}</button>
                     <ul className="flex items-center justify-center sm:justify-start gap-4">
                         {
                             socialLinks.map((e, i) => {
