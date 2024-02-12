@@ -39,11 +39,12 @@ const Product = ({ content }) => {
                                 <CTA
                                     text="Book a Free Consultation"
                                     icon1={true}
-                                    href="#"
-                                    css="text-white hover:bg-transparent border-[#f5090b] hover:border-[#ffffff] w-[285px]"
                                     bg="bg-prime"
+                                    color={`text-white`}
+                                    border={`border-2 border-[#f5090b]`}
+                                    hover="hover:bg-transparent"
+                                    href="#"
                                 />
-
                             </div>
                         </div>
                         <div className={`w-full lg:w-[600px] ${lookinImage}`}>

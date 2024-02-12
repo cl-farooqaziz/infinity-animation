@@ -1,4 +1,3 @@
-import { Card } from 'flowbite-react';
 import Image from 'next/image';
 import React from 'react'
 import CTA from '../cta/CTA';
@@ -7,7 +6,7 @@ const Tech = ({ content }) => {
     const { title, card, desc, isBtn } = content;
     return (
         <>
-            <section className='py-8 lg:py-16'> 
+            <section className='py-8 lg:py-16'>
                 <div className="container">
                     <div className="grid grid-cols-12">
                         <div className="col-span-12">
@@ -37,16 +36,20 @@ const Tech = ({ content }) => {
                                     <CTA
                                         text="Get a Quote"
                                         icon1={true}
-                                        href="#"
-                                        css="text-white hover:bg-transparent border-[#f5090b] hover:border-[#ffffff] sm:w-max md:w-[160px]"
                                         bg="bg-prime"
+                                        color={`text-white`}
+                                        border={`border-2 border-[#f5090b]`}
+                                        hover="hover:bg-transparent"
+                                        href="#"
                                     />
                                     <CTA
                                         text="See Portfolio"
                                         icon1={true}
-                                        href="#"
-                                        css="text-white hover:bg-prime border-[#ffffff] hover:border-[#f5090b] sm:w-max md:w-[160px]"
-                                        bg="bg-transparent"
+                                        bg="bg-[#000]"
+                                        color={`text-white`}
+                                        border={`border-2 border-[#fff]`}
+                                        hover="hover:bg-prime"
+                                        href="javascript:$zopim.livechat.window.show();"
                                     />
                                 </div>
                             </div>
