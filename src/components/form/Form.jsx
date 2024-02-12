@@ -9,7 +9,6 @@ import facebook from "media/icons/fb.png";
 import twitter from "media/icons/x.png";
 import instagram from "media/icons/insta.png";
 import linkedin from "media/icons/linkedin.png";
-
 const socialLinks = [
     {
         icon: facebook,
@@ -28,7 +27,6 @@ const socialLinks = [
         link: "https://www.linkedin.com/"
     },
 ]
-
 const Form = () => {
     // For Date
     let newDate = new Date();
@@ -39,13 +37,14 @@ const Form = () => {
     let today = new Date();
     let setTime = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
     let setDate = `${month < 10 ? `0${month}` : `${month}`}-${date}-${year}`;
-
     const [ip, setIP] = useState("");
     //creating function to load ip address from the API
     const getIPData = async () => {
-        const res = await Axios.get('https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8');
-        setIP(res.data);
-    }
+        const res = await Axios.get(
+            "https://api.ip2location.io/?key=F9B01293761EF666EB54678698AC8682"
+        );
+        setIP(res);
+    };
     useEffect(() => {
         getIPData();
     }, []);
@@ -87,17 +86,14 @@ const Form = () => {
         e.preventDefault();
         setFormStatus("Processing...");
         setIsDisabled(true);
-
         const errors = formValidateHandle();
         setErrors(errors);
-
         if (Object.keys(errors).length === 0) {
             if (data.botchecker === null) {
                 let headersList = {
                     Accept: "*/*",
                     "Content-Type": "application/json",
                 };
-
                 let bodyContent = JSON.stringify(data);
                 let reqOptions = {
                     url: "/api/email",
@@ -114,24 +110,20 @@ const Form = () => {
             setFormStatus("Failed...");
             setIsDisabled(false);
         }
-
         if (Object.keys(errors).length === 0) {
             if (data.botchecker === null) {
-
-
                 let headersList = {
                     Accept: "*/*",
                     Authorization: "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
                     "Content-Type": "application/json",
                 };
-
                 let bodyContent = JSON.stringify({
-                    "IP": `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
-                    "Brand": "Infinity Animation",
-                    "Page": `${currentRoute}`,
-                    "Date": currentdate,
-                    "Time": currentdate,
-                    "JSON": JSONdata,
+                    IP: `${ip.ip} - ${ip.country_name} - ${ip.city_name}`,
+                    Brand: "Infinity Animations",
+                    Page: `${page}`,
+                    Date: setDate,
+                    Time: setTime,
+                    JSON: data,
                 });
                 let reqOptions = {
                     url: "https://sheetdb.io/api/v1/1ownp6p7a9xpi",
@@ -144,25 +136,39 @@ const Form = () => {
             }
         }
     };
-
     return (
         <>
             <form action="#" className="space-y-2 sm:space-y-4 md:space-y-8">
                 <div>
                     <label htmlFor="subject" className="block sm:mb-2 font-sans tracking-wide text-[16px] font-normal text-white">Full Name*</label>
-                    <input type="text" id="name" name="name" className="block p-3 w-full font-sans tracking-wide text-sm text-white border-0 border-b-2 focus:outline-none focus:border-primary-100 bg-transparent" placeholder="Type Full Name" required />
+                    <input type="text" id="name" name="name" className="block p-3 w-full font-sans tracking-wide text-sm text-white border-0 border-b-2 focus:outline-none focus:border-primary-100 bg-transparent" placeholder="Type Full Name" onChange={handleDataChange} />
+                    {errors.name && (
+                        <span className="text-[12px] block p-2 font-medium text-white">
+                            {errors.name}
+                        </span>
+                    )}
                 </div>
                 <div>
                     <label htmlFor="subject" className="block sm:mb-2 font-sans tracking-wide text-[16px] font-normal text-white">Phone*</label>
-                    <input type="tel" id="phone" name="phone" minLength="10" maxLength="13" pattern="[0-9]*" className="block p-3 w-full font-sans tracking-wide text-sm text-white border-0 border-b-2 focus:outline-none focus:border-primary-100 bg-transparent" placeholder="(000) 000-0000" required />
+                    <input type="tel" id="phone" name="phone" minLength="10" maxLength="13" className="block p-3 w-full font-sans tracking-wide text-sm text-white border-0 border-b-2 focus:outline-none focus:border-primary-100 bg-transparent" placeholder="(000) 000-0000" onChange={handleDataChange} />
+                    {errors.phone && (
+                        <span className="text-[12px] block p-2 font-medium text-white">
+                            {errors.phone}
+                        </span>
+                    )}
                 </div>
                 <div>
                     <label htmlFor="email" className="block sm:mb-2 font-sans tracking-wide text-[16px] font-normal text-white">Email Address*</label>
-                    <input type="email" id="email" name="email" className="block p-3 w-full font-sans tracking-wide text-sm text-white border-0 border-b-2 focus:outline-none focus:border-primary-100 bg-transparent" placeholder="Type Email" required />
+                    <input type="email" id="email" name="email" className="block p-3 w-full font-sans tracking-wide text-sm text-white border-0 border-b-2 focus:outline-none focus:border-primary-100 bg-transparent" placeholder="Type Email" onChange={handleDataChange} />
+                    {errors.email && (
+                        <span className="text-[12px] block p-2 font-medium text-white">
+                            {errors.email}
+                        </span>
+                    )}
                 </div>
                 <div className="sm:col-span-2">
                     <label htmlFor="message" className="block sm:mb-2 font-sans tracking-wide text-[16px] font-normal text-white">Details*</label>
-                    <textarea id="message" name="message" rows="2" className="block p-3 w-full font-sans tracking-wide text-sm text-white border-0 border-b-2 focus:outline-none focus:border-primary-100 bg-transparent resize-none" placeholder="Type Full Details" required />
+                    <textarea id="message" name="message" rows="2" className="block p-3 w-full font-sans tracking-wide text-sm text-white border-0 border-b-2 focus:outline-none focus:border-primary-100 bg-transparent resize-none" placeholder="Type Full Details" onChange={handleDataChange} />
                 </div>
                 <div className="flex flex-col md:flex-row gap-5 md:gap-0 items-center justify-between pt-5">
                     <button type="submit" className="py-3 px-16 font-sans tracking-wide text-sm font-medium text-center text-white rounded-lg bg-prime w-full sm:w-fit hover:bg-primary-800 focus:outline-none" onClick={handleFormSubmit} disabled={isDisabled}>{formStatus}</button>
