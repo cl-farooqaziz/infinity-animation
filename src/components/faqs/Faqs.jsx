@@ -25,7 +25,7 @@ const faqs = ({ content }) => {
                             </h1>
                         </div>
                     </div>
-                    <div className={`max-w-7xl mx-auto mt-7 sm:mt-12`}>
+                    <div className={`px-4 sm:px-8 lg:max-w-7xl mx-auto mt-7 sm:mt-12`}>
                         <div className="grid">
                             {accordionData.map((item, index) => (
                                 <div key={index} className={`py-1 ${activeIndex === index ? 'border-primary-100' : ' border-white'} border-b-2`}>
