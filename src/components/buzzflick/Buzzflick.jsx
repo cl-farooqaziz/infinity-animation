@@ -75,7 +75,8 @@ const BuzzFlick = ({ content }) => {
                         <div className="btn mt-8">
                             <CTA
                                 text="Get a Quote"
-                                icon1={true}
+                                 icon="/icons/arrow-red.png"
+                                    iconCss="flex items-center justify-center w-[25px] h-[25px] xl:w-[30px] xl:h-[30px] bg-white rounded-full p-2 ms-4"
                                 bg="bg-prime"
                                 color={`text-white`}
                                 border={`border-2 border-[#f5090b]`}
