@@ -53,7 +53,8 @@ const Portfolio = ({ content }) => {
                             <div className='flex items-center justify-center lg:mt-8 mt-4'>
                                 <CTA
                                     text="View All"
-                                    icon1={true}
+                                     icon="/icons/arrow-red.png"
+                                    iconCss="flex items-center justify-center w-[25px] h-[25px] xl:w-[30px] xl:h-[30px] bg-white rounded-full p-2 ms-4"
                                     href="#"
                                     css="text-white hover:bg-transparent border-[#f5090b] hover:border-[#ffffff] sm:w-max md:w-[160px]"
                                     bg="bg-prime"
