@@ -1,10 +1,11 @@
 "use client"
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 // Import Components
 import CTA from "@/components/cta/CTA";
 import {
-    Navbar, Collapse, Typography, List, ListItem, Menu, MenuHandler, MenuList, MenuItem,
+    Navbar, Collapse, List, Menu, MenuHandler, MenuList, MenuItem,
 } from "@material-tailwind/react";
 import {
     ChevronDownIcon, Bars3Icon, XMarkIcon, ChevronRightIcon,
@@ -73,7 +74,7 @@ function MegaMenu() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
     const renderItems = megaMenuItems.map(
         ({ icon, title, href }, key) => (
-            <a href={href} key={key}>
+            <div key={key}>
                 <MenuItem className="flex items-center gap-3 rounded-lg mb-1 lg:mb-0">
                     <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2">
                         {" "}
@@ -83,16 +84,17 @@ function MegaMenu() {
                         })}
                     </div>
                     <div>
-                        <Typography
+                        <Link
+                            href={href}
                             variant="h6"
                             color="blue-gray"
                             className="flex items-center font-sans text-[16px] font-normal text-black h-full"
                         >
                             {title}
-                        </Typography>
+                        </Link>
                     </div>
                 </MenuItem>
-            </a>
+            </div>
         ),
     );
     // Mobile Mega Menu 
@@ -110,8 +112,8 @@ function MegaMenu() {
                 allowHover={true}
             >
                 <MenuHandler>
-                    <Typography as="div" variant="small" className="font-medium">
-                        <ListItem
+                    <Link href="#" variant="small" className="font-medium">
+                        <span
                             className="flex items-center px-2 gap-2 py-2 font-sans text-[14px] xl:text-[16px] font-normal leading-[20px]"
                             selected={isMenuOpen || isMobileMenuOpen}
                             onClick={() => {
@@ -133,8 +135,8 @@ function MegaMenu() {
                                 className={`block h-3 w-3 mt-1 transition-transform lg:hidden ${isMobileMenuOpen ? "rotate-180" : ""
                                     }`}
                             />
-                        </ListItem>
-                    </Typography>
+                        </span>
+                    </Link>
                 </MenuHandler>
                 <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
                     <ul className="grid grid-cols-3 gap-y-2 outline-none outline-0">
@@ -158,72 +160,63 @@ function MegaMenu() {
 function NavList() {
     return (
         <List className="mt-4 lg:mt-0 mb-0 p-0 pb-4 lg:pb-0 lg:flex-row lg:p-1 gap-3 bg-black lg:bg-transparent border-b-2 border-[prime/100] lg:border-0">
-            <Typography
-                as="a"
+            <Link
                 href="/"
                 variant="small"
                 color="white"
                 className="font-sans text-[14px] xl:text-[16px] font-normal"
             >
-                <ListItem className="flex items-center gap-2 p-2 xl:px-4 py-2">Home</ListItem>
-            </Typography>
-            <Typography
-                as="a"
+                <span className="flex items-center gap-2 p-2 xl:px-4 py-2">Home</span>
+            </Link>
+            <Link
                 href="/why-us"
                 variant="small"
                 color="white"
                 className="font-sans text-[14px] xl:text-[16px] font-normal"
             >
-                <ListItem className="flex items-center gap-2 p-2 xl:px-4 py-2">Why Us</ListItem>
-            </Typography>
+                <span className="flex items-center gap-2 p-2 xl:px-4 py-2">Why Us</span>
+            </Link>
             <MegaMenu />
-            <Typography
-                as="a"
+            <Link
                 href="/portfolio"
                 variant="small"
                 color="white"
                 className="font-sans text-[14px] xl:text-[16px] font-normal"
             >
-                <ListItem className="flex items-center gap-2 p-2 xl:px-4 py-2">Portfilio</ListItem>
-            </Typography>
-            <Typography
-                as="a"
+                <span className="flex items-center gap-2 p-2 xl:px-4 py-2">Portfolio</span>
+            </Link>
+            <Link
                 href="/process"
                 variant="small"
                 color="white"
                 className="font-sans text-[14px] xl:text-[16px] font-normal"
             >
-                <ListItem className="flex items-center gap-2 p-2 xl:px-4 py-2">Process</ListItem>
-            </Typography>
-            <Typography
-                as="a"
+                <span className="flex items-center gap-2 p-2 xl:px-4 py-2">Process</span>
+            </Link>
+            <Link
                 href="/pricing"
                 variant="small"
                 color="white"
                 className="font-sans text-[14px] xl:text-[16px] font-normal"
             >
-                <ListItem className="flex items-center gap-2 p-2 xl:px-4 py-2">Pricing</ListItem>
-            </Typography>
-            <Typography
-                as="a"
+                <span className="flex items-center gap-2 p-2 xl:px-4 py-2">Pricing</span>
+            </Link>
+            <Link
                 href="/blog"
                 variant="small"
                 color="white"
                 className="font-sans text-[14px] xl:text-[16px] font-normal"
             >
-                <ListItem className="flex items-center gap-2 p-2 xl:px-4 py-2">Blog</ListItem>
-            </Typography>
-            <Typography
-                as="a"
+                <span className="flex items-center gap-2 p-2 xl:px-4 py-2">Blog</span>
+            </Link>
+            <Link
                 href="/contact-us"
                 variant="small"
                 color="white"
                 className="font-sans text-[14px] xl:text-[16px] font-normal"
             >
-                <ListItem className="flex items-center gap-2 p-2 xl:px-4 py-2">
-                    Contact Us
-                </ListItem>
-            </Typography>
+                <span className="flex items-center gap-2 p-2 xl:px-4 py-2">Contact Us</span>
+            </Link>
         </List>
     );
 }
@@ -243,28 +236,28 @@ const Header = () => {
             <div className="container">
                 <Navbar className="max-w-none px-0 py-2 rounded-none bg-transparent shadow-none backdrop-saturate-100 backdrop-blur-none border-none">
                     <div className="flex items-center justify-between text-white relative">
-                        <Typography
-                            as="a"
+                        <Link
                             href="/"
                             variant="h6"
                             className="mr-4 cursor-pointer py-1.5 lg:ml-2 lg:w-[315px]"
                         >
                             <Image src={logo} className="w-[45%] xl:w-[60%]" alt="Infinity Animation" />
-                        </Typography>
+                        </Link>
                         <div className="hidden lg:flex gap-5">
                             <NavList />
                             <CTA
                                 text="Get Started"
-                                icon1={true}
+                                icon="/icons/arrow-red.png"
+                                iconCss="flex items-center justify-center w-[25px] h-[25px] xl:w-[30px] xl:h-[30px] bg-white rounded-full p-2 ms-4"
                                 bg="bg-prime"
                                 color={`text-white`}
-                                border={`border-2 border-[#f5090b]`}
+                                border={`border-2 border-[#F5090B]`}
                                 hover="hover:bg-transparent"
                                 href="#"
                             />
                         </div>
                         <button onClick={() => setOpenNav(!openNav)} className="block lg:hidden">
-                        {openNav ? (
+                            {openNav ? (
                                 <XMarkIcon className="h-[40px] w-[40px]" strokeWidth={2} />
                             ) : (
                                 <Bars3Icon className="h-[40px] w-[40px]" strokeWidth={2} />
