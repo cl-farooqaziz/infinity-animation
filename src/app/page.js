@@ -13,11 +13,6 @@ import LookingFlodImg from "media/home/looking-img.png";
 //==== StoryLine Images
 import StoryLine1 from "media/home/storyline1.png";
 import StoryLine2 from "media/home/storyline2.png";
-//==== Portfolio Images
-import polio1 from "media/home/portfolio1.png"
-import polio2 from "media/home/portfolio2.png"
-import polio3 from "media/home/portfolio3.png"
-import polio4 from "media/home/portfolio4.png"
 //==== Boost Images
 import BoostFlodImg from "media/images/boost-img.png";
 import boosticon1 from "media/icons/boost-icon1.png"
@@ -26,8 +21,6 @@ import boosticon3 from "media/icons/boost-icon3.png"
 //==== Testimonial Images
 import icon1 from "media/images/client.png"
 import icon2 from "media/icons/stars.png"
-import Header from "@/components/header/Header";
-import Footer from "@/components/footer/Footer";
 
 export default function Page() {
     //=====Banner Fold=====//
@@ -228,7 +221,6 @@ export default function Page() {
 
     return (
         <>
-            <Header />
             <Hero content={hero} />
             <Review />
             <Looking content={looking} />
@@ -238,7 +230,6 @@ export default function Page() {
             <Boost content={boost} />
             <Testimonial content={testimonial} />
             <Contact />
-            <Footer />
         </>
     )
 }

@@ -32,8 +32,6 @@ import conceptIcon4 from "media/icons/concept-icon4.png"
 //==== Testimonial Images
 import icon1 from "media/images/client.png"
 import icon2 from "media/icons/stars.png"
-import Header from "@/components/header/Header";
-import Footer from "@/components/footer/Footer";
 
 export default function Page() {
     //=====Banner Fold=====//
@@ -182,7 +180,6 @@ export default function Page() {
 
     return (
         <>
-            <Header />
             <Hero content={hero} />
             <Review />
             <Looking content={looking} />
@@ -193,7 +190,6 @@ export default function Page() {
             <Want content={want} />
             <Testimonial content={testimonial} />
             <Contact />
-            <Footer />
         </>
     )
 }

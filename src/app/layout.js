@@ -1,8 +1,7 @@
 // Import Fonts
 import { primary } from "./configs/fonts";
 // Import Components
-import Header from "@/components/header/Header";
-import Footer from "@/components/footer/Footer";
+import ConditionalLayout from "./ConditionalLayout";
 // Import Css
 import "./global.css";
 // Meta Data
@@ -27,8 +26,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${primary.variable}`}>
-        <main>{children}</main>
+        <ConditionalLayout>
+          {children}
+        </ConditionalLayout>
       </body>
     </html>
   );
-}
+} 
