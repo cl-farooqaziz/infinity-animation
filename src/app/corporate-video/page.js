@@ -14,11 +14,6 @@ import Contact from '@/components/contact/Contact';
 // Import Images
 import LookingFlodImg from "media/images/boost-img.png";
 import ProductImg from "media/tech-videos/product-img.png";
-//==== Portfolio Images
-import polio1 from "media/home/portfolio1.png"
-import polio2 from "media/home/portfolio2.png"
-import polio3 from "media/home/portfolio3.png"
-import polio4 from "media/home/portfolio4.png"
 //==== Boost Images
 import BoostFlodImg from "media/corporate-video/company-Image.png";
 //===== Tech Type Images
