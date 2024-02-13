@@ -15,6 +15,7 @@ import Faqs from './components/faqs/Faqs'
 import ClientThinking from './components/client/ClientThinking'
 import Clients from './components/OurClients/Clients'
 import Contact from './components/Contact/Contact'
+import Popup from './components/popup/Popup'
 
 const Video = () => {
 
@@ -88,6 +89,7 @@ const Video = () => {
         <ClientThinking />
         <Clients />
         <Contact />
+        <Popup />
       </div>
     </>
   )

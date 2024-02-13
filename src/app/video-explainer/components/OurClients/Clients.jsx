@@ -13,7 +13,7 @@ const Clients = () => {
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-col-1">
                         <div className="txt">
-                            <h2 className='text-[#231f20] text-center font-[700] montserrat text-[30px] pb-[30px] lg:pb--[60px]'>Our Clients</h2>
+                            <h2 className='text-[#231f20] text-center font-[700] montserrat text-[20px] md:text-[25px] lg:text-[30px] pb-[30px] lg:pb--[60px]'>Our Clients</h2>
                         </div>
                         <div className="image">
                             <Image src={ClientLogo} alt='client-logo ' className='w-8/12 mx-auto' />

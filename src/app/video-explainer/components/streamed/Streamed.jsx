@@ -41,31 +41,31 @@ const Streamed = () => {
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12">
                         <div className="col-span-12">
-                            <h2 className='text-[#231f20] text-center font-[700] montserrat text-[30px]'>Our Streamlined Projects</h2>
-                            <ul className='flex items-center justify-center pt-10'>
+                            <h2 className='text-[#231f20] text-center font-[700] montserrat text-[20px] md:text-[25px] lg:text-[30px]'>Our Streamlined Projects</h2>
+                            <ul className='flex-wrap flex items-center justify-center gap-y-4 pt-10'>
                                 <li
-                                    className={`inline-block px-8 md:px-16 py-3 text-[16px] lg:text-[20px] font-[300] montserrat cursor-pointer ${activeTab1 === "tab1" ? "text-primary-100 border-b-2 border-primary-100 " : "text-[#000]"}`}>
+                                    className={`inline-block px-5 md:px-8 xl:px-16 py-3 text-[15px] lg:text-[20px] font-[300] montserrat cursor-pointer ${activeTab1 === "tab1" ? "text-primary-100 border-b-2 border-primary-100 " : "text-[#000]"}`}>
                                     <Link onClick={() => fun1("tab1")}
                                         href="javascript:;">
                                         2D ANIMATION
                                     </Link>
                                 </li>
                                 <li
-                                    className={`inline-block px-8 md:px-16 py-3 text-[16px] lg:text-[20px] font-[300] montserrat cursor-pointer ${activeTab1 === "tab2" ? "text-primary-100 border-b-2 border-primary-100" : "text-[#000]"}`}>
+                                    className={`inline-block px-5 md:px-8 xl:px-16 py-3 text-[15px] lg:text-[20px] font-[300] montserrat cursor-pointer ${activeTab1 === "tab2" ? "text-primary-100 border-b-2 border-primary-100" : "text-[#000]"}`}>
                                     <Link onClick={() => fun1("tab2")}
                                         href="javascript:;">
                                         2D ANIMATION
                                     </Link>
                                 </li>
                                 <li
-                                    className={`inline-block px-8 md:px-16 py-3 text-[16px] lg:text-[20px] font-[300] montserrat cursor-pointer ${activeTab1 === "tab3" ? "text-primary-100 border-b-2 border-primary-100" : "text-[#000]"}`}>
+                                    className={`inline-block px-5 md:px-8 xl:px-16 py-3 text-[15px] lg:text-[20px] font-[300] montserrat cursor-pointer ${activeTab1 === "tab3" ? "text-primary-100 border-b-2 border-primary-100" : "text-[#000]"}`}>
                                     <Link onClick={() => fun1("tab3")}
                                         href="javascript:;">
                                         2D ANIMATION
                                     </Link>
                                 </li>
                                 <li
-                                    className={`inline-block px-8 md:px-16 py-3 text-[16px] lg:text-[20px] font-[300] montserrat cursor-pointer ${activeTab1 === "tab4" ? "text-primary-100 border-b-2 border-primary-100" : "text-[#000]"}`}>
+                                    className={`inline-block px-5 md:px-8 xl:px-16 py-3 text-[15px] lg:text-[20px] font-[300] montserrat cursor-pointer ${activeTab1 === "tab4" ? "text-primary-100 border-b-2 border-primary-100" : "text-[#000]"}`}>
                                     <Link onClick={() => fun1("tab4")}
                                         href="javascript:;">
                                         MOTION GRAPHICS
@@ -76,54 +76,54 @@ const Streamed = () => {
                             <div className='mt-10'>
                                 {activeTab1 == "tab1" && (
                                     <div className="grid grid-cols-12 gap-5">
-                                        <div className="col-span-4">
+                                        <div className="col-span-12 md:col-span-6 lg:col-span-4">
                                             <div className="card relative group">
-                                                <Image src={Image1} alt='tab-Image' />
+                                                <Image src={Image1} alt='tab-Image' className='w-full mx-auto' />
                                                 <div className="text absolute bottom-0 top-0 left-0 right-0 z-50 flex items-center justify-center duration-700 transition-all opacity-0 group-hover:opacity-100">
                                                     <h2 className='text-white text-[20px] font-sans font-[700] uppercase'>Play Video</h2>
                                                 </div>
                                                 <span className='absolute top-0 bottom-0 left-0 right-0 w-full h-full bg-[#000000ba] duration-700 transition-all opacity-0 group-hover:opacity-100'></span>
                                             </div>
                                         </div>
-                                        <div className="col-span-4">
+                                        <div className="col-span-12 md:col-span-6 lg:col-span-4">
                                             <div className="card relative group">
-                                                <Image src={Image2} alt='tab-Image' />
+                                                <Image src={Image2} alt='tab-Image' className='w-full mx-auto' />
                                                 <div className="text absolute bottom-0 top-0 left-0 right-0 z-50 flex items-center justify-center duration-700 transition-all opacity-0 group-hover:opacity-100">
                                                     <h2 className='text-white text-[20px] font-sans font-[700] uppercase'>Play Video</h2>
                                                 </div>
                                                 <span className='absolute top-0 bottom-0 left-0 right-0 w-full h-full bg-[#000000ba] duration-700 transition-all opacity-0 group-hover:opacity-100'></span>
                                             </div>
                                         </div>
-                                        <div className="col-span-4">
+                                        <div className="col-span-12 md:col-span-6 lg:col-span-4">
                                             <div className="card relative group">
-                                                <Image src={Image3} alt='tab-Image' />
+                                                <Image src={Image3} alt='tab-Image' className='w-full mx-auto' />
                                                 <div className="text absolute bottom-0 top-0 left-0 right-0 z-50 flex items-center justify-center duration-700 transition-all opacity-0 group-hover:opacity-100">
                                                     <h2 className='text-white text-[20px] font-sans font-[700] uppercase'>Play Video</h2>
                                                 </div>
                                                 <span className='absolute top-0 bottom-0 left-0 right-0 w-full h-full bg-[#000000ba] duration-700 transition-all opacity-0 group-hover:opacity-100'></span>
                                             </div>
                                         </div>
-                                        <div className="col-span-4">
+                                        <div className="col-span-12 md:col-span-6 lg:col-span-4">
                                             <div className="card relative group">
-                                                <Image src={Image4} alt='tab-Image' />
+                                                <Image src={Image4} alt='tab-Image' className='w-full mx-auto' />
                                                 <div className="text absolute bottom-0 top-0 left-0 right-0 z-50 flex items-center justify-center duration-700 transition-all opacity-0 group-hover:opacity-100">
                                                     <h2 className='text-white text-[20px] font-sans font-[700] uppercase'>Play Video</h2>
                                                 </div>
                                                 <span className='absolute top-0 bottom-0 left-0 right-0 w-full h-full bg-[#000000ba] duration-700 transition-all opacity-0 group-hover:opacity-100'></span>
                                             </div>
                                         </div>
-                                        <div className="col-span-4">
+                                        <div className="col-span-12 md:col-span-6 lg:col-span-4">
                                             <div className="card relative group">
-                                                <Image src={Image5} alt='tab-Image' />
+                                                <Image src={Image5} alt='tab-Image' className='w-full mx-auto' />
                                                 <div className="text absolute bottom-0 top-0 left-0 right-0 z-50 flex items-center justify-center duration-700 transition-all opacity-0 group-hover:opacity-100">
                                                     <h2 className='text-white text-[20px] font-sans font-[700] uppercase'>Play Video</h2>
                                                 </div>
                                                 <span className='absolute top-0 bottom-0 left-0 right-0 w-full h-full bg-[#000000ba] duration-700 transition-all opacity-0 group-hover:opacity-100'></span>
                                             </div>
                                         </div>
-                                        <div className="col-span-4">
+                                        <div className="col-span-12 md:col-span-6 lg:col-span-4">
                                             <div className="card relative group">
-                                                <Image src={Image6} alt='tab-Image' />
+                                                <Image src={Image6} alt='tab-Image' className='w-full mx-auto' />
                                                 <div className="text absolute bottom-0 top-0 left-0 right-0 z-50 flex items-center justify-center duration-700 transition-all opacity-0 group-hover:opacity-100">
                                                     <h2 className='text-white text-[20px] font-sans font-[700] uppercase'>Play Video</h2>
                                                 </div>
@@ -134,54 +134,54 @@ const Streamed = () => {
                                 )}
                                 {activeTab1 == "tab2" && (
                                     <div className="grid grid-cols-12 gap-5">
-                                        <div className="col-span-4">
+                                        <div className="col-span-12 md:col-span-6 lg:col-span-4">
                                             <div className="card relative group">
-                                                <Image src={Image7} alt='tab-Image' />
+                                                <Image src={Image7} alt='tab-Image' className='w-full mx-auto' />
                                                 <div className="text absolute bottom-0 top-0 left-0 right-0 z-50 flex items-center justify-center duration-700 transition-all opacity-0 group-hover:opacity-100">
                                                     <h2 className='text-white text-[20px] font-sans font-[700] uppercase'>Play Video</h2>
                                                 </div>
                                                 <span className='absolute top-0 bottom-0 left-0 right-0 w-full h-full bg-[#000000ba] duration-700 transition-all opacity-0 group-hover:opacity-100'></span>
                                             </div>
                                         </div>
-                                        <div className="col-span-4">
+                                        <div className="col-span-12 md:col-span-6 lg:col-span-4">
                                             <div className="card relative group">
-                                                <Image src={Image8} alt='tab-Image' />
+                                                <Image src={Image8} alt='tab-Image' className='w-full mx-auto' />
                                                 <div className="text absolute bottom-0 top-0 left-0 right-0 z-50 flex items-center justify-center duration-700 transition-all opacity-0 group-hover:opacity-100">
                                                     <h2 className='text-white text-[20px] font-sans font-[700] uppercase'>Play Video</h2>
                                                 </div>
                                                 <span className='absolute top-0 bottom-0 left-0 right-0 w-full h-full bg-[#000000ba] duration-700 transition-all opacity-0 group-hover:opacity-100'></span>
                                             </div>
                                         </div>
-                                        <div className="col-span-4">
+                                        <div className="col-span-12 md:col-span-6 lg:col-span-4">
                                             <div className="card relative group">
-                                                <Image src={Image9} alt='tab-Image' />
+                                                <Image src={Image9} alt='tab-Image' className='w-full mx-auto' />
                                                 <div className="text absolute bottom-0 top-0 left-0 right-0 z-50 flex items-center justify-center duration-700 transition-all opacity-0 group-hover:opacity-100">
                                                     <h2 className='text-white text-[20px] font-sans font-[700] uppercase'>Play Video</h2>
                                                 </div>
                                                 <span className='absolute top-0 bottom-0 left-0 right-0 w-full h-full bg-[#000000ba] duration-700 transition-all opacity-0 group-hover:opacity-100'></span>
                                             </div>
                                         </div>
-                                        <div className="col-span-4">
+                                        <div className="col-span-12 md:col-span-6 lg:col-span-4">
                                             <div className="card relative group">
-                                                <Image src={Image10} alt='tab-Image' />
+                                                <Image src={Image10} alt='tab-Image' className='w-full mx-auto' />
                                                 <div className="text absolute bottom-0 top-0 left-0 right-0 z-50 flex items-center justify-center duration-700 transition-all opacity-0 group-hover:opacity-100">
                                                     <h2 className='text-white text-[20px] font-sans font-[700] uppercase'>Play Video</h2>
                                                 </div>
                                                 <span className='absolute top-0 bottom-0 left-0 right-0 w-full h-full bg-[#000000ba] duration-700 transition-all opacity-0 group-hover:opacity-100'></span>
                                             </div>
                                         </div>
-                                        <div className="col-span-4">
+                                        <div className="col-span-12 md:col-span-6 lg:col-span-4">
                                             <div className="card relative group">
-                                                <Image src={Image11} alt='tab-Image' />
+                                                <Image src={Image11} alt='tab-Image' className='w-full mx-auto' />
                                                 <div className="text absolute bottom-0 top-0 left-0 right-0 z-50 flex items-center justify-center duration-700 transition-all opacity-0 group-hover:opacity-100">
                                                     <h2 className='text-white text-[20px] font-sans font-[700] uppercase'>Play Video</h2>
                                                 </div>
                                                 <span className='absolute top-0 bottom-0 left-0 right-0 w-full h-full bg-[#000000ba] duration-700 transition-all opacity-0 group-hover:opacity-100'></span>
                                             </div>
                                         </div>
-                                        <div className="col-span-4">
+                                        <div className="col-span-12 md:col-span-6 lg:col-span-4">
                                             <div className="card relative group">
-                                                <Image src={Image12} alt='tab-Image' />
+                                                <Image src={Image12} alt='tab-Image' className='w-full mx-auto' />
                                                 <div className="text absolute bottom-0 top-0 left-0 right-0 z-50 flex items-center justify-center duration-700 transition-all opacity-0 group-hover:opacity-100">
                                                     <h2 className='text-white text-[20px] font-sans font-[700] uppercase'>Play Video</h2>
                                                 </div>
@@ -192,54 +192,54 @@ const Streamed = () => {
                                 )}
                                 {activeTab1 == "tab3" && (
                                     <div className="grid grid-cols-12 gap-5">
-                                        <div className="col-span-4">
+                                        <div className="col-span-12 md:col-span-6 lg:col-span-4">
                                             <div className="card relative group">
-                                                <Image src={Image13} alt='tab-Image' />
+                                                <Image src={Image13} alt='tab-Image' className='w-full mx-auto' />
                                                 <div className="text absolute bottom-0 top-0 left-0 right-0 z-50 flex items-center justify-center duration-700 transition-all opacity-0 group-hover:opacity-100">
                                                     <h2 className='text-white text-[20px] font-sans font-[700] uppercase'>Play Video</h2>
                                                 </div>
                                                 <span className='absolute top-0 bottom-0 left-0 right-0 w-full h-full bg-[#000000ba] duration-700 transition-all opacity-0 group-hover:opacity-100'></span>
                                             </div>
                                         </div>
-                                        <div className="col-span-4">
+                                        <div className="col-span-12 md:col-span-6 lg:col-span-4">
                                             <div className="card relative group">
-                                                <Image src={Image14} alt='tab-Image' />
+                                                <Image src={Image14} alt='tab-Image' className='w-full mx-auto' />
                                                 <div className="text absolute bottom-0 top-0 left-0 right-0 z-50 flex items-center justify-center duration-700 transition-all opacity-0 group-hover:opacity-100">
                                                     <h2 className='text-white text-[20px] font-sans font-[700] uppercase'>Play Video</h2>
                                                 </div>
                                                 <span className='absolute top-0 bottom-0 left-0 right-0 w-full h-full bg-[#000000ba] duration-700 transition-all opacity-0 group-hover:opacity-100'></span>
                                             </div>
                                         </div>
-                                        <div className="col-span-4">
+                                        <div className="col-span-12 md:col-span-6 lg:col-span-4">
                                             <div className="card relative group">
-                                                <Image src={Image15} alt='tab-Image' />
+                                                <Image src={Image15} alt='tab-Image' className='w-full mx-auto' />
                                                 <div className="text absolute bottom-0 top-0 left-0 right-0 z-50 flex items-center justify-center duration-700 transition-all opacity-0 group-hover:opacity-100">
                                                     <h2 className='text-white text-[20px] font-sans font-[700] uppercase'>Play Video</h2>
                                                 </div>
                                                 <span className='absolute top-0 bottom-0 left-0 right-0 w-full h-full bg-[#000000ba] duration-700 transition-all opacity-0 group-hover:opacity-100'></span>
                                             </div>
                                         </div>
-                                        <div className="col-span-4">
+                                        <div className="col-span-12 md:col-span-6 lg:col-span-4">
                                             <div className="card relative group">
-                                                <Image src={Image16} alt='tab-Image' />
+                                                <Image src={Image16} alt='tab-Image' className='w-full mx-auto' />
                                                 <div className="text absolute bottom-0 top-0 left-0 right-0 z-50 flex items-center justify-center duration-700 transition-all opacity-0 group-hover:opacity-100">
                                                     <h2 className='text-white text-[20px] font-sans font-[700] uppercase'>Play Video</h2>
                                                 </div>
                                                 <span className='absolute top-0 bottom-0 left-0 right-0 w-full h-full bg-[#000000ba] duration-700 transition-all opacity-0 group-hover:opacity-100'></span>
                                             </div>
                                         </div>
-                                        <div className="col-span-4">
+                                        <div className="col-span-12 md:col-span-6 lg:col-span-4">
                                             <div className="card relative group">
-                                                <Image src={Image17} alt='tab-Image' />
+                                                <Image src={Image17} alt='tab-Image' className='w-full mx-auto' />
                                                 <div className="text absolute bottom-0 top-0 left-0 right-0 z-50 flex items-center justify-center duration-700 transition-all opacity-0 group-hover:opacity-100">
                                                     <h2 className='text-white text-[20px] font-sans font-[700] uppercase'>Play Video</h2>
                                                 </div>
                                                 <span className='absolute top-0 bottom-0 left-0 right-0 w-full h-full bg-[#000000ba] duration-700 transition-all opacity-0 group-hover:opacity-100'></span>
                                             </div>
                                         </div>
-                                        <div className="col-span-4">
+                                        <div className="col-span-12 md:col-span-6 lg:col-span-4">
                                             <div className="card relative group">
-                                                <Image src={Image18} alt='tab-Image' />
+                                                <Image src={Image18} alt='tab-Image' className='w-full mx-auto' />
                                                 <div className="text absolute bottom-0 top-0 left-0 right-0 z-50 flex items-center justify-center duration-700 transition-all opacity-0 group-hover:opacity-100">
                                                     <h2 className='text-white text-[20px] font-sans font-[700] uppercase'>Play Video</h2>
                                                 </div>
@@ -250,54 +250,54 @@ const Streamed = () => {
                                 )}
                                 {activeTab1 == "tab4" && (
                                     <div className="grid grid-cols-12 gap-5">
-                                        <div className="col-span-4">
+                                        <div className="col-span-12 md:col-span-6 lg:col-span-4">
                                             <div className="card relative group">
-                                                <Image src={Image19} alt='tab-Image' />
+                                                <Image src={Image19} alt='tab-Image' className='w-full mx-auto' />
                                                 <div className="text absolute bottom-0 top-0 left-0 right-0 z-50 flex items-center justify-center duration-700 transition-all opacity-0 group-hover:opacity-100">
                                                     <h2 className='text-white text-[20px] font-sans font-[700] uppercase'>Play Video</h2>
                                                 </div>
                                                 <span className='absolute top-0 bottom-0 left-0 right-0 w-full h-full bg-[#000000ba] duration-700 transition-all opacity-0 group-hover:opacity-100'></span>
                                             </div>
                                         </div>
-                                        <div className="col-span-4">
+                                        <div className="col-span-12 md:col-span-6 lg:col-span-4">
                                             <div className="card relative group">
-                                                <Image src={Image20} alt='tab-Image' />
+                                                <Image src={Image20} alt='tab-Image' className='w-full mx-auto' />
                                                 <div className="text absolute bottom-0 top-0 left-0 right-0 z-50 flex items-center justify-center duration-700 transition-all opacity-0 group-hover:opacity-100">
                                                     <h2 className='text-white text-[20px] font-sans font-[700] uppercase'>Play Video</h2>
                                                 </div>
                                                 <span className='absolute top-0 bottom-0 left-0 right-0 w-full h-full bg-[#000000ba] duration-700 transition-all opacity-0 group-hover:opacity-100'></span>
                                             </div>
                                         </div>
-                                        <div className="col-span-4">
+                                        <div className="col-span-12 md:col-span-6 lg:col-span-4">
                                             <div className="card relative group">
-                                                <Image src={Image21} alt='tab-Image' />
+                                                <Image src={Image21} alt='tab-Image' className='w-full mx-auto' />
                                                 <div className="text absolute bottom-0 top-0 left-0 right-0 z-50 flex items-center justify-center duration-700 transition-all opacity-0 group-hover:opacity-100">
                                                     <h2 className='text-white text-[20px] font-sans font-[700] uppercase'>Play Video</h2>
                                                 </div>
                                                 <span className='absolute top-0 bottom-0 left-0 right-0 w-full h-full bg-[#000000ba] duration-700 transition-all opacity-0 group-hover:opacity-100'></span>
                                             </div>
                                         </div>
-                                        <div className="col-span-4">
+                                        <div className="col-span-12 md:col-span-6 lg:col-span-4">
                                             <div className="card relative group">
-                                                <Image src={Image22} alt='tab-Image' />
+                                                <Image src={Image22} alt='tab-Image' className='w-full mx-auto' />
                                                 <div className="text absolute bottom-0 top-0 left-0 right-0 z-50 flex items-center justify-center duration-700 transition-all opacity-0 group-hover:opacity-100">
                                                     <h2 className='text-white text-[20px] font-sans font-[700] uppercase'>Play Video</h2>
                                                 </div>
                                                 <span className='absolute top-0 bottom-0 left-0 right-0 w-full h-full bg-[#000000ba] duration-700 transition-all opacity-0 group-hover:opacity-100'></span>
                                             </div>
                                         </div>
-                                        <div className="col-span-4">
+                                        <div className="col-span-12 md:col-span-6 lg:col-span-4">
                                             <div className="card relative group">
-                                                <Image src={Image23} alt='tab-Image' />
+                                                <Image src={Image23} alt='tab-Image' className='w-full mx-auto' />
                                                 <div className="text absolute bottom-0 top-0 left-0 right-0 z-50 flex items-center justify-center duration-700 transition-all opacity-0 group-hover:opacity-100">
                                                     <h2 className='text-white text-[20px] font-sans font-[700] uppercase'>Play Video</h2>
                                                 </div>
                                                 <span className='absolute top-0 bottom-0 left-0 right-0 w-full h-full bg-[#000000ba] duration-700 transition-all opacity-0 group-hover:opacity-100'></span>
                                             </div>
                                         </div>
-                                        <div className="col-span-4">
+                                        <div className="col-span-12 md:col-span-6 lg:col-span-4">
                                             <div className="card relative group">
-                                                <Image src={Image24} alt='tab-Image' />
+                                                <Image src={Image24} alt='tab-Image' className='w-full mx-auto' />
                                                 <div className="text absolute bottom-0 top-0 left-0 right-0 z-50 flex items-center justify-center duration-700 transition-all opacity-0 group-hover:opacity-100">
                                                     <h2 className='text-white text-[20px] font-sans font-[700] uppercase'>Play Video</h2>
                                                 </div>

@@ -20,6 +20,10 @@ body {
   background-color: #000;
 }
 
+.borderinset {
+  border: inset 3px black;
+}
+
 .montserrat {
   font-family: montserrat, sans-serif;
 }
@@ -29,27 +33,21 @@ body {
 }
 
 .bg-prime {
-  background: linear-gradient(
-    90deg,
-    rgba(245, 9, 11, 1) 0%,
-    rgba(255, 45, 75, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(245, 9, 11, 1) 0%,
+      rgba(255, 45, 75, 1) 100%);
 }
 
 .bg-second {
-  background: linear-gradient(
-    0deg,
-    rgba(245, 9, 11, 1) 0%,
-    rgba(255, 45, 75, 1) 100%
-  );
+  background: linear-gradient(0deg,
+      rgba(245, 9, 11, 1) 0%,
+      rgba(255, 45, 75, 1) 100%);
 }
 
 .bg-third {
-  background: linear-gradient(
-    0deg,
-    rgba(245, 9, 11, 1) 0%,
-    rgba(255, 45, 75, 1) 40%
-  );
+  background: linear-gradient(0deg,
+      rgba(245, 9, 11, 1) 0%,
+      rgba(255, 45, 75, 1) 40%);
 }
 
 .rotateY {
@@ -70,11 +68,9 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(
-    0deg,
-    rgba(245, 9, 11, 1) 0%,
-    rgba(255, 45, 75, 1) 100%
-  );
+  background: linear-gradient(0deg,
+      rgba(245, 9, 11, 1) 0%,
+      rgba(255, 45, 75, 1) 100%);
 }
 
 /* ================================== */
@@ -211,6 +207,48 @@ body {
 
 /* Brands Slider End */
 
+.grid.place-items-center.fixed.w-screen.h-screen.bg-black.bg-opacity-60.backdrop-blur-sm {
+  height: 100% !important;
+  background: transparent !important;
+  position: fixed;
+  width: 100% !important;
+}
+
+/* popup end */
+
+
+/* Video Explainer Animation Start */
+
+.animation {
+  animation: animated 1.5s infinite ease-in-out alternate
+}
+
+@keyframes animated {
+  0% {
+    transform: translateY(0)
+  }
+
+  100% {
+    transform: translateY(-20px)
+  }
+}
+
+.testi {
+  animation: testi 1.5s infinite ease-in-out alternate
+}
+
+@keyframes testi {
+  0% {
+    transform: translateX(0)
+  }
+
+  100% {
+    transform: translateX(-20px)
+  }
+}
+
+/* Video Explainer Animation End */
+
 /*=============== Media Query Start ===============*/
 
 @media only screen and (max-width: 1920px) {
@@ -242,6 +280,11 @@ body {
 }
 
 @media only screen and (max-width: 991px) {
+
+  .popupBg {
+    background: #260868;
+  }
+
   .servicesConcept .slick-next {
     right: 50px;
   }
@@ -273,11 +316,9 @@ body {
 
 @media only screen and (max-width: 567px) {
   .wantbg {
-    background: linear-gradient(
-      0deg,
-      rgba(245, 9, 11, 1) 0%,
-      rgba(255, 45, 75, 1) 40%
-    );
+    background: linear-gradient(0deg,
+        rgba(245, 9, 11, 1) 0%,
+        rgba(255, 45, 75, 1) 40%);
   }
 
   .blogsSlider .slick-next {
