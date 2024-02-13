@@ -11,16 +11,16 @@ import Contact from '@/components/contact/Contact';
 //==== Looking Images
 import LookingFlodImg from "media/home/looking-img.png";
 //==== StoryLine Images
-import StoryLine1 from "media/storyline/storyline1.jpg";
-import StoryLine2 from "media/storyline/storyline2.jpg";
-import StoryLine3 from "media/storyline/storyline3.jpg";
-import StoryLine4 from "media/storyline/storyline4.jpg";
-import StoryLine5 from "media/storyline/storyline5.jpg";
-import StoryLine6 from "media/storyline/storyline6.jpg";
-import StoryLine7 from "media/storyline/storyline7.jpg";
-import StoryLine8 from "media/storyline/storyline8.jpg";
-import StoryLine9 from "media/storyline/storyline9.jpg";
-import StoryLine10 from "media/storyline/storyline10.jpg";
+import StoryLine1 from "media/storyline/storyLine1.jpg";
+import StoryLine2 from "media/storyline/storyLine2.jpg";
+import StoryLine3 from "media/storyline/storyLine3.jpg";
+import StoryLine4 from "media/storyline/storyLine4.jpg";
+import StoryLine5 from "media/storyline/storyLine5.jpg";
+import StoryLine6 from "media/storyline/storyLine6.jpg";
+import StoryLine7 from "media/storyline/storyLine7.jpg";
+import StoryLine8 from "media/storyline/storyLine8.jpg";
+import StoryLine9 from "media/storyline/storyLine9.jpg";
+import StoryLine10 from "media/storyline/storyLine10.jpg";
 //==== Boost Images
 import BoostFlodImg from "media/images/boost-img.png";
 import boosticon1 from "media/icons/boost-icon1.png"
