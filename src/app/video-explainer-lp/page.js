@@ -63,7 +63,6 @@ const Video = () => {
   const faqs = {
     accordionData: accordionData,
   }
-
   // ===== Brands Content ===== //
   const brandsTwo = {
     title: "Start Displaying Your Brand with Amazing Animated Videos",

@@ -1,37 +1,9 @@
 "use client"
-import React, { useRef, useEffect } from "react"
-import Link from 'next/link';
-import Image from 'next/image';
 import { useState } from 'react';
-import { Fancybox as NativeFancybox } from "@fancyapps/ui"
-import "@fancyapps/ui/dist/fancybox/fancybox.css"
 // Import Components
 import CTA from '../cta/CTA';
 // Import Css
 import styles from "./PortFolio.module.css"
-// Import Image
-import Play from 'media/icons/play.png';
-
-
-function Fancybox(props) {
-    const containerRef = useRef(null);
-
-    useEffect(() => {
-        const container = containerRef.current;
-
-        const delegate = props.delegate || "[datafancybox]";
-        const options = props.options || {};
-
-        NativeFancybox.bind(container, delegate, options);
-
-        return () => {
-            NativeFancybox.unbind(container);
-            NativeFancybox.close();
-        };
-    });
-
-    return <div ref={containerRef}>{props.children}</div>;
-}
 
 
 const Portfolio = ({ content }) => {
@@ -71,15 +43,7 @@ const Portfolio = ({ content }) => {
                                 <div className='grid grid-cols-3 gap-3 md:gap-8'>
                                     {tabContents[activeTab].map((item, index) => (
                                         <div key={index}>
-                                            {/* <Fancybox>
-                                                <Link href={item} datafancybox="gallery">
-                                                    <Image src={Play} alt="Infinity Animation" className={`${styles.shadow} w-full h-full`} />
-                                                    <div className="absolute top-[45%] transition-all duration-500 ease-linear scale-0 group-hover:delay-300 group-hover:scale-100 left-[44%] z-10">
-                                                        <Image src={Play} alt="Icons" />
-                                                    </div>
-                                                </Link>
-                                            </Fancybox> */}
-                                            <video className={`${styles.shadow} w-full h-full`} autoPlay src={item}></video>
+                                            <video className={`${styles.shadow} w-full h-full`} muted="muted" autoPlay src={item}></video>
                                         </div>
                                     ))}
                                 </div>

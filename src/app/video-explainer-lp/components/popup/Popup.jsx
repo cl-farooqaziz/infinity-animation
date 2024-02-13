@@ -155,7 +155,7 @@ const Popup = () => {
                                 <h3 className='text-[20px] md:text-[26px] text-white font-[500] text-center p-0 montserrat'>Fill This Form to Avail</h3>
                                 <h2 className='text-[28px] md:text-[40px] text-white text-center font-[700] montserrat'>Amazing Discounts</h2>
                                 <h4 className='text-[20px] md:text-[26px] text-white text-center font-[700] montserrat'>on Video Animation Services</h4>
-                                <form action="javascript:;" className='mx-auto px-5 lg:w-4/12 mt-5 h-full'>
+                                <form action="javascript:;" className='mx-auto px-5 lg:w-6/12 mt-5 h-full'>
                                     <div className="name relative w-full">
                                         <input type="text" name="name" placeholder='Enter your name' className='text-[14px] text-black placeholder:text-black montserrat py-[10px] lg:py-[15px] px-[18px] w-full mb-[10px] font-[500] rounded-[6px]' onChange={handleDataChange} required />
                                         {errors.name && (
