@@ -131,14 +131,13 @@ const Banner = () => {
         }
     };
 
-
     return (
         <>
-            <section className='bg-cover bg-center bg-[url("../../public/video-explainer/banner.jpg")] h-[100%] lg:pt-[190px] lg:pb-[100px] mt-[-75px]'>
+            <section className='bg-cover bg-center bg-[url("../../public/video-explainer/banner.jpg")] h-[100%] pt-[150px] lg:pt-[190px] pb-[60px] md:pb-[100px] mt-[-85px] xl:mt-[-75px]'>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
-                    <div className="grid grid-cols-12">
-                        <div className="col-span-6">
-                            <h1 className='text-white text-[30px] font-[700] uppercase montserrat lg:w-10/12 leading-[35px] '>EXPAND YOUR BRAND’S REACH WITH AN ENGAGING CUSTOM EXPLAINER VIDEO</h1>
+                    <div className="grid grid-cols-12 gap-y-12">
+                        <div className="col-span-12 lg:col-span-6">
+                            <h1 className='text-white text-[20px] md:text-[25px] lg:text-[30px] font-[700] uppercase montserrat lg:w-10/12 md:leading-[35px] '>EXPAND YOUR BRAND’S REACH WITH AN ENGAGING CUSTOM EXPLAINER VIDEO</h1>
                             <p className='text-white text-[18px] font-[400] montserrat lg:w-11/12 leading-[25px] py-[25px]'>We are a leading video animation company in the USA that has helped thousands of brands to broaden their product reach via fascinating explainer videos.</p>
                             <ul>
                                 <li className='flex items-start gap-x-2'>
@@ -159,7 +158,7 @@ const Banner = () => {
                                 </li>
                             </ul>
                             <Image src={BannerLogos} alt='banner-logos' className='object-contain mt-4 mb-6' />
-                            <div className="flex gap-x-2">
+                            <div className="flex-wrap flex gap-4 md:gap-2">
                                 <div className="btn">
                                     <Link href="javascript:;" className='flex items-center text-[16px] text-black font-[700] montserrat bg-[#f6c501] py-[12px] px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
                                         Get Started
@@ -174,10 +173,10 @@ const Banner = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-span-6">
-                            <form action="javascript:;" className='bg-[#003465] pt-[20px] mr-[98px] ml-[40px] relative border-[6px] border-white lg:w-8/12 h-full'>
-                                <h3 className='text-white text-[25px] leading-[30px] montserrat font-[700] text-left py-[10px] px-[20px]'>Share Your <br />
-                                    <strong className='text-[30px] text-[#f6c501] ml-[2rem] font-extrabold '>
+                        <div className="col-span-12 lg:col-span-6">
+                            <form action="javascript:;" className='bg-[#003465] pt-[20px] md:mr-[98px] md:ml-[40px] relative border-[6px] border-white lg:w-8/12 h-full'>
+                                <h3 className='text-white text-[20px] md:text-[25px] leading-[30px] montserrat font-[700] text-left py-[10px] px-[20px]'>Share Your <br className='block'/>
+                                    <strong className='text-[30px] text-[#f6c501] md:ml-[2rem] font-extrabold '>
                                         Animation Idea
                                     </strong>
                                 </h3>
@@ -212,7 +211,7 @@ const Banner = () => {
                                     <button type='submit' className='bg-[#231f20] hover:bg-[#1c2a49] text-white text-[16px] font-[700] montserrat uppercase mt-[10px] py-[13px] px-[8px] shadow-lg w-full duration-700 transition-all hover:duration-700 hover:transition-all' onClick={handleFormSubmit} disabled={isDisabled}>{formStatus}</button>
                                 </div>
 
-                                <div className={`form_partical absolute top-[-7px] right-[12px] ${styles.discountbg}`}>
+                                <div className={`form_partical absolute top-[-7px] right-[42px] md:right-[12px] ${styles.discountbg}`}>
                                     <h6 className={`absolute font-[700] text-right uppercase left-[-33px] m-auto text-white top-[-20px] z-[1] text-[13px] rotate-[-8deg] right-[-58px] montserrat before:content-[''] before:absolute before:w-[135px] before:h-[52px] before:top-[-15px] before:left-[-17px] before:right-0 ${styles.headingParticle} before:rotate-[10deg] before:bg-cover before:bg-center before:z-[-1] w-[110px]`}>Special Offer</h6>
                                     <h4 className={`text-black relative m-0 top-[-2px] text-[30px] font-[700] right-[-32px] rotate-[-18deg] montserrat`}>50%</h4>
                                     <h5 className='m-0 text-black relative z-1 top-[-13px] text-[11px] montserrat font-[700] right-[-42px] rotate-[-18deg]'>Discount</h5>

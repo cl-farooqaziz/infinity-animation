@@ -12,10 +12,10 @@ const Packages = () => {
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 gap-6">
                         <div className="col-span-12">
-                            <h2 className='text-white text-center font-[700] montserrat text-[30px]'>Our Packages</h2>
-                            <p className='text-white text-[18px] montserrat font-[400] py-[17px] text-center pb-[30px]'>You've visited the right website if you're looking for top-of-the-line video animation experts in the US.</p>
+                            <h2 className='text-white text-center font-[700] montserrat text-[20px] md:text-[25px] lg:text-[30px]'>Our Packages</h2>
+                            <p className='text-white text-[16px] lg:text-[18px] montserrat font-[400] py-[17px] text-center pb-[30px]'>You've visited the right website if you're looking for top-of-the-line video animation experts in the US.</p>
                         </div>
-                        <div className="col-span-4">
+                        <div className="col-span-12 lg:col-span-4">
                             <div className="card bg-[#c4df9b] rounded-[10px] py-[10px] overflow-hidden duration-700 relative z-1 cursor-pointer shadow-2xl before:absolute before:left-0 before:right-0 before:top-0 before:bottom-0 before:m-auto before:content-[''] before:rounded-[10px] before:translate-y-[-690px] before:duration-700 before:bg-[#b5ce8f] before:z-0 hover:before:translate-y-[0px] ">
                                 <div className="card_top text-center py-[15px] relative z-1">
                                     <h3 className='text-[#231f20] montserrat text-[25px] font-[700] uppercase'>STARTUP PACKAGE</h3>
@@ -46,7 +46,7 @@ const Packages = () => {
                                     </ul>
                                 </div>
                                 <div className="card_bottom relative z-1 pt-[12px] px-[25px]">
-                                    <div className="flex items-center justify-between">
+                                    <div className="flex-wrap gap-y-3 flex items-center justify-between">
                                         <Link href="tel:+1-716-300-1135" className='text-left m-0 text-[14px] leading-[20px] text-[#f61253] montserrat flex flex-col justify-center font-[700]'>
                                             speak with us
                                             <span className='text-[#231f20] text-[16px]'>+1-716-300-1135</span>
@@ -56,7 +56,7 @@ const Packages = () => {
                                             <span className='text-[#231f20] text-[16px]'>Live Chat Now</span>
                                         </Link>
                                     </div>
-                                    <div className="flex items-center justify-between mt-[35px] mb-[20px]">
+                                    <div className="flex-wrap gap-y-3 flex items-center justify-center md:justify-between mt-[35px] mb-[20px]">
                                         <Link href="javascript:;" className='flex items-center text-[16px] text-white font-[700] poppins bg-black py-[12px] px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
                                             Get Started
                                         </Link>
@@ -67,7 +67,7 @@ const Packages = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-span-4">
+                        <div className="col-span-12 lg:col-span-4">
                             <div className="card bg-[#ffc88d] rounded-[10px] py-[10px] overflow-hidden duration-700 relative z-1 cursor-pointer shadow-2xl before:absolute before:left-0 before:right-0 before:top-0 before:bottom-0 before:m-auto before:content-[''] before:rounded-[10px] before:translate-y-[-690px] before:duration-700 before:bg-[#ebb882] before:z-0 hover:before:translate-y-[0px] ">
                                 <div className="card_top text-center py-[15px] relative z-1">
                                     <h3 className='text-[#231f20] montserrat text-[25px] font-[700] uppercase'>CLASSIC PACKAGE</h3>
@@ -101,7 +101,7 @@ const Packages = () => {
                                     </ul>
                                 </div>
                                 <div className="card_bottom relative z-1 pt-[12px] px-[25px]">
-                                    <div className="flex items-center justify-between">
+                                    <div className="flex-wrap gap-y-3 flex items-center justify-between">
                                         <Link href="tel:+1-716-300-1135" className='text-left m-0 text-[14px] leading-[20px] text-[#f61253] montserrat flex flex-col justify-center font-[700]'>
                                             speak with us
                                             <span className='text-[#231f20] text-[16px]'>+1-716-300-1135</span>
@@ -111,7 +111,7 @@ const Packages = () => {
                                             <span className='text-[#231f20] text-[16px]'>Live Chat Now</span>
                                         </Link>
                                     </div>
-                                    <div className="flex items-center justify-between mt-[35px] mb-[20px]">
+                                    <div className="flex-wrap gap-y-3 flex items-center justify-center md:justify-between mt-[35px] mb-[20px]">
                                         <Link href="javascript:;" className='flex items-center text-[16px] text-white font-[700] poppins bg-black py-[12px] px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
                                             Get Started
                                         </Link>
@@ -122,7 +122,7 @@ const Packages = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-span-4">
+                        <div className="col-span-12 lg:col-span-4">
                             <div className="card bg-[#ffd100] rounded-[10px] py-[10px] overflow-hidden duration-700 relative z-1 cursor-pointer shadow-2xl before:absolute before:left-0 before:right-0 before:top-0 before:bottom-0 before:m-auto before:content-[''] before:rounded-[10px] before:translate-y-[-690px] before:duration-700 before:bg-[#ebc100] before:z-0 hover:before:translate-y-[0px] ">
                                 <div className="card_top text-center py-[15px] relative z-1">
                                     <h3 className='text-[#231f20] montserrat text-[25px] font-[700] uppercase'>PREMIUM PACKAGE</h3>
@@ -156,7 +156,7 @@ const Packages = () => {
                                     </ul>
                                 </div>
                                 <div className="card_bottom relative z-1 pt-[12px] px-[25px]">
-                                    <div className="flex items-center justify-between">
+                                    <div className="flex-wrap gap-y-3 flex items-center justify-between">
                                         <Link href="tel:+1-716-300-1135" className='text-left m-0 text-[14px] leading-[20px] text-[#f61253] montserrat flex flex-col justify-center font-[700]'>
                                             speak with us
                                             <span className='text-[#231f20] text-[16px]'>+1-716-300-1135</span>
@@ -166,7 +166,7 @@ const Packages = () => {
                                             <span className='text-[#231f20] text-[16px]'>Live Chat Now</span>
                                         </Link>
                                     </div>
-                                    <div className="flex items-center justify-between mt-[35px] mb-[20px]">
+                                    <div className="flex-wrap gap-y-3 flex items-center justify-center md:justify-between mt-[35px] mb-[20px]">
                                         <Link href="javascript:;" className='flex items-center text-[16px] text-white font-[700] poppins bg-black py-[12px] px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
                                             Get Started
                                         </Link>

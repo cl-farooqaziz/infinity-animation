@@ -15,14 +15,14 @@ const HeaderLP = () => {
             <header className='pt-5 '>
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12">
-                        <div className="col-span-5">
+                        <div className="col-span-12 lg:col-span-4 xl:col-span-5">
                             <div className="logo">
-                                <Image src={Logo} alt='logo' width={150} />
+                                <Image src={Logo} alt='logo' width={150} className='ml-auto lg:ml-0 mr-auto' />
                             </div>
                         </div>
-                        <div className="col-span-7">
+                        <div className="col-span-12 lg:col-span-8 xl:col-span-7 lg:block hidden">
                             <div className="nav_lists">
-                                <ul className='flex items-center lg:gap-x-7'>
+                                <ul className='flex items-center gap-x-4 xl:gap-x-7'>
                                     <li>
                                         <Link href="mailto:queries@infinityanimations.com" className='flex items-center'>
                                             <EnvelopeIcon className='w-[25px] h-[25px]' />

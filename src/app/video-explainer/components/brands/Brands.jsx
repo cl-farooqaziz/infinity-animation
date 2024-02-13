@@ -18,15 +18,15 @@ const Brands = ({ content }) => {
                 <div className="px-4 sm:px-8 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-1">
                         <div className="content">
-                            <h2 className='text-[#231f20] font-[700] montserrat text-[30px] leading-[35px]'>
+                            <h2 className='text-[#231f20] font-[700] montserrat text-[20px] md:text-[25px] lg:text-[30px] leading-[28px] lg:leading-[35px]'>
                                 {title} <br />
                                 <span>{subTitle}</span>
                             </h2>
-                            <p className='text-[#231f20] text-[18px] montserrat font-[400] py-[20px] leading-[20px]'>
+                            <p className='text-[#231f20] text-[16px] lg:text-[18px] montserrat font-[400] py-[20px] leading-[20px]'>
                                 {desc}
                             </p>
                         </div>
-                        <div className="btns flex items-center gap-5 mt-6">
+                        <div className="btns flex-wrap flex items-center justify-center md:justify-start gap-5 mt-6">
                             <div className="btn">
                                 <Link href="javascript:;" className='flex items-center text-[16px] text-white font-[600] montserrat bg-[#003466] py-[12px] px-[35px] tracking-[.3px] rounded-[5px] leading-[20px] shadow-2xl'>
                                     Get Started
@@ -48,7 +48,7 @@ const Brands = ({ content }) => {
                         </div>
                     </div>
                 </div>
-                <div className="partical absolute right-[30px] top-[-75px] animation">
+                <div className="partical absolute right-[30px] top-[-75px] animation lg:block hidden">
                     <Image src={CTAPart} alt='particale-Image' />
                 </div>
             </section>
