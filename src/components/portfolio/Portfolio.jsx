@@ -1,12 +1,41 @@
 "use client"
+import React, { useRef, useEffect } from "react"
+import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
-import Image from "next/image";
+import { Fancybox as NativeFancybox } from "@fancyapps/ui"
+import "@fancyapps/ui/dist/fancybox/fancybox.css"
+// Import Components
+import CTA from '../cta/CTA';
 // Import Css
 import styles from "./PortFolio.module.css"
-import CTA from '../cta/CTA';
+// Import Image
+import Play from 'media/icons/play.png';
+
+
+function Fancybox(props) {
+    const containerRef = useRef(null);
+
+    useEffect(() => {
+        const container = containerRef.current;
+
+        const delegate = props.delegate || "[datafancybox]";
+        const options = props.options || {};
+
+        NativeFancybox.bind(container, delegate, options);
+
+        return () => {
+            NativeFancybox.unbind(container);
+            NativeFancybox.close();
+        };
+    });
+
+    return <div ref={containerRef}>{props.children}</div>;
+}
+
 
 const Portfolio = ({ content }) => {
-    const { title, para, tabInfo, tabContents, tabsInfo, video } = content;
+    const { title, para, tabInfo, tabContents, tabsInfo } = content;
     //Tabs
     const [activeTab, setActiveTab] = useState(0);
     const handleTabClick = (index) => {
@@ -31,7 +60,7 @@ const Portfolio = ({ content }) => {
                             <ul className="flex flex-wrap justify-center text-sm font-medium text-center gap-3 md:gap-5 lg:w-11/12 mx-auto">
                                 {tabInfo.map((tab, index) => (
                                     <li key={index}
-                                        className={`inline-block px-8 md:px-16 py-3 text-[16px] lg:text-[20px] font-normal font-sans text-white border rounded-[27px] cursor-pointer hover:border-primary-100 ${activeTab === index ? 'border-primary-100' : 'border-[#646464]'}`}
+                                        className={`inline-block w-[180px] xl:w-[220px] py-3 text-[16px] lg:text-[20px] font-normal font-sans text-white border rounded-[27px] cursor-pointer hover:border-primary-100 ${activeTab === index ? 'border-primary-100' : 'border-[#646464]'}`}
                                         onClick={() => handleTabClick(index)}>
                                         {tab.label}
                                     </li>
@@ -39,10 +68,18 @@ const Portfolio = ({ content }) => {
                             </ul> : null}
                         <div className="tabs-content pt-7 md:pt-12">
                             {tabContents[activeTab] && (
-                                <div className='grid grid-cols-3 justify-center items-center gap-3 md:gap-5'>
-                                    {tabContents.map((video, index) => (
-                                        <div key={index} className={`${styles.shadow} w-full h-[300px]`}>
-                                            <video className='w-full h-[300px]' controls autoPlay src='https://player.vimeo.com/progressive_redirect/playback/875311008/rendition/1440p/file.mp4?loc=external&log_user=0&signature=865f73e9df22dde54e1385f4f782210d2bab7209a3367b1b5180106b15f7bb1b'></video>
+                                <div className='grid grid-cols-3 gap-3 md:gap-8'>
+                                    {tabContents[activeTab].map((item, index) => (
+                                        <div key={index}>
+                                            {/* <Fancybox>
+                                                <Link href={item} datafancybox="gallery">
+                                                    <Image src={Play} alt="Infinity Animation" className={`${styles.shadow} w-full h-full`} />
+                                                    <div className="absolute top-[45%] transition-all duration-500 ease-linear scale-0 group-hover:delay-300 group-hover:scale-100 left-[44%] z-10">
+                                                        <Image src={Play} alt="Icons" />
+                                                    </div>
+                                                </Link>
+                                            </Fancybox> */}
+                                            <video className={`${styles.shadow} w-full h-full`} autoPlay src={item}></video>
                                         </div>
                                     ))}
                                 </div>
