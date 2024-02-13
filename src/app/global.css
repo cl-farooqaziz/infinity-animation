@@ -216,6 +216,39 @@ body {
 
 /* popup end */
 
+
+/* Video Explainer Animation Start */
+
+.animation {
+  animation: animated 1.5s infinite ease-in-out alternate
+}
+
+@keyframes animated {
+  0% {
+    transform: translateY(0)
+  }
+
+  100% {
+    transform: translateY(-20px)
+  }
+}
+
+.testi {
+  animation: testi 1.5s infinite ease-in-out alternate
+}
+
+@keyframes testi {
+  0% {
+    transform: translateX(0)
+  }
+
+  100% {
+    transform: translateX(-20px)
+  }
+}
+
+/* Video Explainer Animation End */
+
 /*=============== Media Query Start ===============*/
 
 @media only screen and (max-width: 1920px) {
