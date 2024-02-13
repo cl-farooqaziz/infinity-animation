@@ -4,7 +4,7 @@ import Image from "next/image";
 // Import Components
 import CTA from "@/components/cta/CTA";
 import {
-    Navbar, Collapse, Typography, IconButton, List, ListItem, Menu, MenuHandler, MenuList, MenuItem,
+    Navbar, Collapse, Typography, List, ListItem, Menu, MenuHandler, MenuList, MenuItem,
 } from "@material-tailwind/react";
 import {
     ChevronDownIcon, Bars3Icon, XMarkIcon, ChevronRightIcon,
@@ -86,7 +86,7 @@ function MegaMenu() {
                         <Typography
                             variant="h6"
                             color="blue-gray"
-                            className="flex items-center font-sans text-[16px] font-normal text-black"
+                            className="flex items-center font-sans text-[16px] font-normal text-black h-full"
                         >
                             {title}
                         </Typography>
@@ -143,7 +143,7 @@ function MegaMenu() {
                 </MenuList>
             </Menu>
             <div className={megamenu ? `absolute left-[0%] top-0 pt-5 bg-white w-full h-full transition-all duration-300 ease-in-out` : `lg:hidden absolute left-[-130%] top-0 pt-5 bg-white w-full h-full transition-all duration-300 ease-in-out`}>
-                <Collapse open={isMobileMenuOpen}>{renderItems}</Collapse>
+                <Collapse open={isMobileMenuOpen} className="h-full overflow-visible">{renderItems}</Collapse>
                 <div className="absolute top-[10px] right-[10px] bg-black rounded-full p-1" onClick={() => handleMegaMenu()}>
                     <XMarkIcon
                         strokeWidth={2.5}
@@ -263,18 +263,13 @@ const Header = () => {
                                 href="#"
                             />
                         </div>
-                        <IconButton
-                            variant="text"
-                            color="blue-gray"
-                            className="lg:hidden flex items-center justify-center pr-5"
-                            onClick={() => setOpenNav(!openNav)}
-                        >
-                            {openNav ? (
+                        <button onClick={() => setOpenNav(!openNav)} className="block lg:hidden">
+                        {openNav ? (
                                 <XMarkIcon className="h-[40px] w-[40px]" strokeWidth={2} />
                             ) : (
                                 <Bars3Icon className="h-[40px] w-[40px]" strokeWidth={2} />
                             )}
-                        </IconButton>
+                        </button>
                     </div>
                     {openNav && (
                         <Collapse open={openNav} className="block lg:hidden">

@@ -6,7 +6,7 @@ import styles from "./PortFolio.module.css"
 import CTA from '../cta/CTA';
 
 const Portfolio = ({ content }) => {
-    const { title, para, tabInfo, tabContents, tabsInfo } = content;
+    const { title, para, tabInfo, tabContents, tabsInfo, video } = content;
     //Tabs
     const [activeTab, setActiveTab] = useState(0);
     const handleTabClick = (index) => {
@@ -39,16 +39,10 @@ const Portfolio = ({ content }) => {
                             </ul> : null}
                         <div className="tabs-content pt-7 md:pt-12">
                             {tabContents[activeTab] && (
-                                <div className='flex flex-col sm:flex-row justify-center items-center gap-3 md:gap-10'>
-                                    {tabContents[activeTab].map((item, index) => (
-                                        <div key={index}>
-                                            {Array.isArray(item) ? (
-                                                item.map((innerImage, innerIndex) => (
-                                                    <Image key={innerIndex} src={innerImage} className={`my-4 w-full ${styles.shadow}`} alt='Infinity Animation' />
-                                                ))
-                                            ) : (
-                                                <Image src={item} className={`${styles.shadow} w-full`} alt='Infinity Animation' />
-                                            )}
+                                <div className='grid grid-cols-3 justify-center items-center gap-3 md:gap-5'>
+                                    {tabContents.map((video, index) => (
+                                        <div key={index} className={`${styles.shadow} w-full h-[300px]`}>
+                                            <video className='w-full h-[300px]' controls autoPlay src='https://player.vimeo.com/progressive_redirect/playback/875311008/rendition/1440p/file.mp4?loc=external&log_user=0&signature=865f73e9df22dde54e1385f4f782210d2bab7209a3367b1b5180106b15f7bb1b'></video>
                                         </div>
                                     ))}
                                 </div>
