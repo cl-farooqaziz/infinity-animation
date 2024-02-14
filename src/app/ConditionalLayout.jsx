@@ -8,7 +8,10 @@ const ConditionalLayout = ({ children }) => {
     const pathname = usePathname();
     return (
         <>
-            {pathname !== '/video-explainer-lp' && <Header />}
+            {/* {pathname !== '/video-explainer-lp' && <Header />}  */}
+            {pathname !== "/video-explainer-lp" && pathname !== "/animating-studio-lp" && (
+                <Header />
+            )}
             {children}
             {pathname !== '/video-explainer-lp' && <Footer />}
         </>

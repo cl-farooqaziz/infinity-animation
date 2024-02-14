@@ -249,6 +249,15 @@ body {
 
 /* Video Explainer Animation End */
 
+
+/* Animating Studio Start */
+
+.dropShadow {
+  box-shadow: 0 0 10px #FF2D4B;
+}
+
+/* Animating Studio End */
+
 /*=============== Media Query Start ===============*/
 
 @media only screen and (max-width: 1920px) {
