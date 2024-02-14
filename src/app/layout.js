@@ -16,7 +16,7 @@ export const metadata = {
     title: "Your Vision Coupled with Creative Excellence",
     description: "Explore our animation studio's diverse services, where creativity meets precision, bringing your ideas to life in captivating motion.",
     url: 'https://infinity-animation.vercel.app/',
-    siteName: 'InFinity Animation',
+    siteName: 'Infinity Animation',
     locale: 'en_US',
     type: 'website',
   },

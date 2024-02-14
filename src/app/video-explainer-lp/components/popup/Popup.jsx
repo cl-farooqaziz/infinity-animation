@@ -1,26 +1,19 @@
 "use client"
-
 import React, { useEffect, useState } from 'react'
 import Axios from "axios";
 import { usePathname } from 'next/navigation'
-import Link from 'next/link';
-
 // pupup
-import {
-    Button,
-    Dialog,
-    DialogHeader,
-    DialogBody,
-    DialogFooter,
-} from "@material-tailwind/react";
+import { Dialog } from "@material-tailwind/react";
+import usePopup from '@/app/configs/store/Popup';
 
-const Popup = () => {
-
+const Popup = ({ }) => {
     // popup start
-    const [open, setOpen] = React.useState(true);
-
-    const handleOpen = () => setOpen(!open);
-
+    // const [open, setOpen] = React.useState(true);
+    // const handleOpen = () => setOpen(!open);
+    const { popup, togglePopup } = usePopup()
+    const popupHandle = () => {
+        togglePopup(popup)
+    }
     // form Start 
     let newDate = new Date();
     let date = newDate.getDate();
@@ -140,12 +133,12 @@ const Popup = () => {
 
     return (
         <>
-            <Dialog open={open} handler={handleOpen} className='popup h-full w-full' style={{ background: 'rgba(0, 0, 0, 0.4)', backdropFilter: 'blur(8px)' }}>
+            <Dialog open={popup} handler={popupHandle} className='popup h-full w-full' style={{ background: 'rgba(0, 0, 0, 0.4)', backdropFilter: 'blur(8px)' }}>
                 <section className='h-full lg:w-full py-12 px-6'>
                     <div className='bg-cover bg-center popupBg lg:bg-[url("../../public/video-explainer/popup-bg2.png")] max-w-5xl mx-auto relative top-0 bottom-0 left-0 right-0 pt-[40px] lg:pt-[90px] h-full w-full'>
                         <button
                             variant="text"
-                            onClick={handleOpen}
+                            onClick={popupHandle}
                             className='w-[45px] h-[45px] absolute top-[-17px] lg:top-[80px] right-[-8px] lg:right-[120px] text-[18px] text-black bg-[#e9e9e9] text-center montserrat rounded-[50%] flex items-center justify-center borderinset'
                         >
                             <span>X</span>
@@ -199,4 +192,3 @@ const Popup = () => {
 }
 
 export default Popup
-// bg-black/40 backdrop-blur-lg 
