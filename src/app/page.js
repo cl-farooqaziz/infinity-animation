@@ -165,7 +165,7 @@ export default function Page() {
        tabContents: tabContents,
     tabsInfo: true,
     tabInfo: tabInfo,
-    css: "bg-[#F3F3F3] text-white"
+    css: "bg-[#F3F3F3] text-white",
     maxWidth: "container"
     };
     //=====Concept Fold=====//
