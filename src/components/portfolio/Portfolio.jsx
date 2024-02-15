@@ -7,7 +7,7 @@ import styles from "./PortFolio.module.css"
 
 
 const Portfolio = ({ content }) => {
-    const { title, para, tabInfo, tabContents, tabsInfo } = content;
+    const { title, para, tabInfo, tabContents, tabsInfo, css, maxWidth } = content;
     //Tabs
     const [activeTab, setActiveTab] = useState(0);
     const handleTabClick = (index) => {
@@ -15,14 +15,14 @@ const Portfolio = ({ content }) => {
     };
     return (
         <>
-            <section className={`w-full flex items-center justify-start py-6 md:py-8 lg:py-16`}>
-                <div className="container">
+            <section className={`w-full flex items-center justify-start py-6 md:py-8 lg:py-16 ${css}`}>
+                <div className={`${maxWidth}`}>
                     <div className='flex items-center justify-around'>
                         <div className='w-full text-center'>
-                            <h1 className="text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight my-2">
+                            <h1 className={`text-[35px] sm:text-[40px] lg:text-[50px] xl:text-[60px] font-semibold font-sans leading-tight my-2 ${css}`}>
                                 {title}
                             </h1>
-                            <p className="w-full md:w-[80%] mx-auto text-[14px] sm:text-[16px] font-normal font-sans leading-snug tracking-wider text-center mb-5">
+                            <p className={`w-full md:w-[80%] mx-auto text-[14px] sm:text-[16px] font-normal font-sans leading-snug tracking-wider text-center mb-5 ${css}`}>
                                 {para}
                             </p>
                         </div>
@@ -32,7 +32,7 @@ const Portfolio = ({ content }) => {
                             <ul className="flex flex-wrap justify-center text-sm font-medium text-center gap-3 md:gap-5 lg:w-11/12 mx-auto">
                                 {tabInfo.map((tab, index) => (
                                     <li key={index}
-                                        className={`inline-block w-[180px] xl:w-[220px] py-3 text-[16px] lg:text-[20px] font-normal font-sans text-white border rounded-[27px] cursor-pointer hover:border-primary-100 ${activeTab === index ? 'border-primary-100' : 'border-[#646464]'}`}
+                                        className={`inline-block w-[180px] xl:w-[220px] py-3 text-[16px] lg:text-[20px] font-normal font-sans ${css} border rounded-[27px] cursor-pointer hover:border-primary-100 ${activeTab === index ? 'border-primary-100' : 'border-[#646464]'}`}
                                         onClick={() => handleTabClick(index)}>
                                         {tab.label}
                                     </li>
@@ -53,7 +53,7 @@ const Portfolio = ({ content }) => {
                             <div className='flex items-center justify-center lg:mt-8 mt-4'>
                                 <CTA
                                     text="View All"
-                                     icon="/icons/arrow-red.png"
+                                    icon="/icons/arrow-red.png"
                                     iconCss="flex items-center justify-center w-[25px] h-[25px] xl:w-[30px] xl:h-[30px] bg-white rounded-full p-2 ms-4"
                                     href="#"
                                     css="text-white hover:bg-transparent border-[#f5090b] hover:border-[#ffffff] sm:w-max md:w-[160px]"

@@ -141,9 +141,11 @@ const tabContents = [
     const portfolio = {
         title: (<> Our Portfolio </>),
         para: (<> Explore Our Captivating Creations </>),
-         tabContents: tabContents,
-        tabsInfo: true,
-        tabInfo: tabInfo
+        tabContents: tabContents,
+    tabsInfo: true,
+    tabInfo: tabInfo,
+    css: "bg-[#F3F3F3] text-white"
+    maxWidth: "container"
     };
     //===== buzzflick Fold=====//
     const buzzflickContent = [

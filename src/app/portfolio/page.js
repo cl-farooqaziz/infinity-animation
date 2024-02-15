@@ -69,9 +69,11 @@ const tabContents = [
     const portfolio = {
         title: (<> Our Exceptional Portfolio for Video Animation </>),
         para: (<> A visual journey through a kaleidoscope of creativity, where each project tells a unique story of brand elevation and visual excellence. </>),
-         tabContents: tabContents,
-        tabsInfo: true,
-        tabInfo: tabInfo
+        tabContents: tabContents,
+    tabsInfo: true,
+    tabInfo: tabInfo,
+    css: "bg-[#F3F3F3] text-white"
+    maxWidth: "container"
     };
     //=====Want Fold=====//
     const want = {

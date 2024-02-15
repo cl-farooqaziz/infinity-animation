@@ -256,6 +256,101 @@ body {
   box-shadow: 0 0 10px #FF2D4B;
 }
 
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: inherit !important;
+}
+
+.slider {
+  position: relative;
+  height: 100%;
+}
+
+.swiper-slide {
+  overflow: hidden;
+}
+
+.swiper-slide img {
+  object-fit: cover;
+}
+
+.arrow.arrow-left {
+  left: 0;
+}
+
+.arrow.arrow-right {
+  right: 0;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  position: absolute !important;
+  bottom: -58px !important;
+  top: inherit !important;
+  left: 50% !important;
+  right: 0 !important;
+  transform: translateX(-50%) !important;
+}
+
+.swiper {
+  overflow: visible !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #f5090b !important;
+  width: 30px !important;
+  border-radius: 30px !important;
+}
+
+.swiper-button-prev {
+  left: 45% !important;
+  right: inherit !important;
+}
+
+.swiper-button-next {
+  left: inherit !important;
+  right: 40% !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: inherit !important;
+  bottom: -75px !important;
+}
+
+
+.swiper-button-prev:after {
+  content: url(../../public/icons/swiper-left-arr.png) !important;
+}
+
+.swiper-button-next:after {
+  content: url(../../public/icons/swiper-right-arrow.png) !important;
+}
+
+.clientSlider {
+  position: absolute !important;
+}
+
+
+.clientSlider .slick-prev {
+  left: 46% !important;
+  bottom: -26% !important;
+  top: inherit !important;
+}
+
+.clientSlider .slick-next {
+  left: 70% !important;
+  bottom: -26% !important;
+  top: inherit !important;
+}
+
+.clientSlider .slick-next:before {
+  content: url(../../public/icons/nextslide.png) !important;
+}
+
+.clientSlider .slick-prev:before {
+  content: url(../../public/icons/prevslide.png) !important;
+}
+
 /* Animating Studio End */
 
 /*=============== Media Query Start ===============*/

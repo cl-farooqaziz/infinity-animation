@@ -134,9 +134,11 @@ export default function Page() {
     const portfolio = {
         title: (<> Corporate Video Production Company That Buzz </>),
         para: (<> We are corporate video production company with a diverse portfolio. From corporate and business explainer videos to corporate demo videos we have done it all. Go through our splendid work here: </>),
-         tabContents: tabContents,
-        tabsInfo: true,
-        tabInfo: tabInfo
+        tabContents: tabContents,
+    tabsInfo: true,
+    tabInfo: tabInfo,
+    css: "bg-[#F3F3F3] text-white"
+    maxWidth: "container"
     };
     //======Tech Type Fold======//
     const techCard = [

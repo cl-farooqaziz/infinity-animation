@@ -59,7 +59,7 @@ export default function Page() {
         { label: "Explainer Videos", index: 3 },
         { label: "Typographic", index: 4 },
     ];
-const tabContents = [
+    const tabContents = [
         [
             "https://player.vimeo.com/progressive_redirect/playback/907828567/rendition/1080p/file.mp4?loc=external&signature=2cb0c1bd0ce7278cfcc88931f949d2a4df4a28555c8e3a5dd73de49eeb9934e9",
             "https://player.vimeo.com/progressive_redirect/playback/907828734/rendition/1080p/file.mp4?loc=external&signature=c6da013ddb686dfc7be1b15b94eda413bc5fa963be1fd91775347155025326ee",
@@ -104,9 +104,11 @@ const tabContents = [
     const portfolio = {
         title: (<> Our Exceptional Portfolio for Video Animation </>),
         para: (<> A visual journey through a kaleidoscope of creativity, where each project tells a unique story of brand elevation and visual excellence. </>),
-         tabContents: tabContents,
+        tabContents: tabContents,
         tabsInfo: true,
-        tabInfo: tabInfo
+        tabInfo: tabInfo,
+        css: "bg-[#F3F3F3] text-white",
+        maxWidth: "container"
     };
     //=====Boost Fold=====//
     const boostContent = [
