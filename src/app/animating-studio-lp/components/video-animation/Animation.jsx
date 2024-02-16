@@ -46,7 +46,7 @@ const Animation = () => {
                         centeredSlides={true}
                         loop={true}
                         arrows={true}
-                        slidesPerView={window.innerWidth >= 1200 ? 2 : 1}
+                        slidesPerView={typeof window !== 'undefined' && window.innerWidth >= 1200 ? 2 : 1}
                         navigation={true}
                         autoHeight={true}
                         pagination={{ clickable: true, dynamicBullets: true }}
