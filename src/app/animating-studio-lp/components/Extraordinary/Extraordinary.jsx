@@ -1,5 +1,8 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+
+import Animation from "media/animating-studio/animation.png"
 
 const Extraordinary = () => {
     return (
@@ -17,6 +20,7 @@ const Extraordinary = () => {
                                 <div className="btns">
                                     <Link class="text-[16px] font-semibold leading-[25px] text-white bg-black rounded-[5px] w-[318px] md:w-[214px] h-[44px] shadow-2xl poppins flex items-center justify-center" href="javascript:;">Live Chat</Link>
                                 </div>
+                                <Image src={Animation} alt='Animation Studio' className='w-11/12 mx-auto' />
                             </div>
                         </div>
                     </div>
