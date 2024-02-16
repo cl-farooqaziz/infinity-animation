@@ -81,7 +81,7 @@ const Remarkable = () => {
                                 <div className="card bg-gradient-to-t from-[#FFAB4A] to-[#FF8E0A] rounded-[15px] px-7 py-10 relative h-full">
                                     <h4 className='text-[25px] font-bold font-sans text-white leading-tight lg:leading-[60px]'>Compositing and Special VFX</h4>
                                     <p className='text-[16px] text-white font-sans leading-[21px] mb-4'>From editing to touch-ups and adding special effects, everything comes in composting.</p>
-                                    <Image src={Remark6} alt='remark' className='w-full absolute right-0 lg:right-[-25px] max-h-[350px] min-w-[100%] lg:min-w-[585px]' />
+                                    <Image src={Remark6} alt='remark' className='w-full absolute right-0 lg:right-[-17px] xl:right-[-25px] max-h-[350px] min-w-[100%] lg:min-w-[570px] xl:min-w-[585px]' />
                                 </div>
                             </div>
                             <div className="col-span-4">

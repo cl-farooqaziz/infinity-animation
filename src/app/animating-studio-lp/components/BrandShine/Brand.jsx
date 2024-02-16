@@ -32,12 +32,12 @@ const Brand = ({ content }) => {
                         {isBranImage ?
                             <div className="col-span-5">
                                 <div className="img absolute top-[-110px] right-[57px] md:block hidden">
-                                    <Image src={branImage} alt='brandShine' height={622} width={389} className='w-full lg:w-10/12 h-full' quality={85} />
+                                    <Image src={branImage} alt='brandShine' height={622} width={389} className='w-full lg:min-h-[550px] xl:w-10/12 h-full' quality={85} />
                                 </div>
                             </div> :
                             <div className="col-span-6">
-                                <div className="img absolute bottom-0 right-0 xl:right-[-27px] md:block hidden">
-                                    <Image src={branImage} alt='brandShine' height={622} width={389} className='w-full h-full' quality={85} />
+                                <div className="img absolute bottom-0 right-0 lg:right-[-5px] xl:right-[-27px] md:block hidden">
+                                    <Image src={branImage} alt='brandShine' height={622} width={389} className='w-full lg:min-h-[400px] xl:h-full ' quality={85} />
                                 </div>
                             </div>}
                     </div>

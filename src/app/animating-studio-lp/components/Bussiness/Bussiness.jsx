@@ -109,55 +109,55 @@ const Bussiness = () => {
                 {/* slider start */}
                 <Slider {...testiSlider} className="bussinessSlider my-[20px]">
                     <div className="slide px-4 max-h-[180px] min-h-[180px]">
-                        <Image src={Slide1} alt='Slide' className='max-h-[150px] min-h-[150px]' />
+                        <Image src={Slide1} alt='Slide' className='max-h-[126px] min-h-[126px] xl:max-h-[150px] xl:min-h-[150px]' />
                         <div className="content">
                             <p className='text-[18px] font-bold font-sans text-center text-black pt-2'>Interface Animations</p>
                         </div>
                     </div>
                     <div className="slide px-4 max-h-[180px] min-h-[180px]">
-                        <Image src={Slide2} alt='Slide' className='max-h-[150px] min-h-[150px]' />
+                        <Image src={Slide2} alt='Slide' className='max-h-[126px] min-h-[126px] xl:max-h-[150px] xl:min-h-[150px]' />
                         <div className="content">
                             <p className='text-[18px] font-bold font-sans text-center text-black pt-2'>YouTube Content</p>
                         </div>
                     </div>
                     <div className="slide px-4 max-h-[180px] min-h-[180px]">
-                        <Image src={Slide3} alt='Slide' className='max-h-[150px] min-h-[150px]' />
+                        <Image src={Slide3} alt='Slide' className='max-h-[126px] min-h-[126px] xl:max-h-[150px] xl:min-h-[150px]' />
                         <div className="content">
                             <p className='text-[18px] font-bold font-sans text-center text-black pt-2'>Picture-in-Picture</p>
                         </div>
                     </div>
                     <div className="slide px-4 max-h-[180px] min-h-[180px]">
-                        <Image src={Slide4} alt='Slide' className='max-h-[150px] min-h-[150px]' />
+                        <Image src={Slide4} alt='Slide' className='max-h-[126px] min-h-[126px] xl:max-h-[150px] xl:min-h-[150px]' />
                         <div className="content">
                             <p className='text-[18px] font-bold font-sans text-center text-black pt-2'>Lower Thirds</p>
                         </div>
                     </div>
                     <div className="slide px-4 max-h-[180px] min-h-[180px]">
-                        <Image src={Slide5} alt='Slide' className='max-h-[150px] min-h-[150px]' />
+                        <Image src={Slide5} alt='Slide' className='max-h-[126px] min-h-[126px] xl:max-h-[150px] xl:min-h-[150px]' />
                         <div className="content">
                             <p className='text-[18px] font-bold font-sans text-center text-black pt-2'>Explainers</p>
                         </div>
                     </div>
                     <div className="slide px-4 max-h-[180px] min-h-[180px]">
-                        <Image src={Slide6} alt='Slide' className='max-h-[150px] min-h-[150px]' />
+                        <Image src={Slide6} alt='Slide' className='max-h-[126px] min-h-[126px] xl:max-h-[150px] xl:min-h-[150px]' />
                         <div className="content">
                             <p className='text-[18px] font-bold font-sans text-center text-black pt-2'>Doodles</p>
                         </div>
                     </div>
                     <div className="slide px-4 max-h-[180px] min-h-[180px]">
-                        <Image src={Slide7} alt='Slide' className='max-h-[150px] min-h-[150px]' />
+                        <Image src={Slide7} alt='Slide' className='max-h-[126px] min-h-[126px] xl:max-h-[150px] xl:min-h-[150px]' />
                         <div className="content">
                             <p className='text-[18px] font-bold font-sans text-center text-black pt-2'>Endcards</p>
                         </div>
                     </div>
                     <div className="slide px-4 max-h-[180px] min-h-[180px]">
-                        <Image src={Slide8} alt='Slide' className='max-h-[150px] min-h-[150px]' />
+                        <Image src={Slide8} alt='Slide' className='max-h-[126px] min-h-[126px] xl:max-h-[150px] xl:min-h-[150px]' />
                         <div className="content">
                             <p className='text-[18px] font-bold font-sans text-center text-black pt-2'>Scroll Stoppers</p>
                         </div>
                     </div>
                     <div className="slide px-4 max-h-[180px] min-h-[180px]">
-                        <Image src={Slide9} alt='Slide' className='max-h-[150px] min-h-[150px]' />
+                        <Image src={Slide9} alt='Slide' className='max-h-[126px] min-h-[126px] xl:max-h-[150px] xl:min-h-[150px]' />
                         <div className="content">
                             <p className='text-[18px] font-bold font-sans text-center text-black pt-2'>Logo Reveals</p>
                         </div>
