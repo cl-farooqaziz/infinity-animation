@@ -18,7 +18,10 @@ const ConditionalLayout = ({ children }) => {
                 <Header />
             )}
             {children}
-            {pathname !== '/video-explainer-lp' && <Footer />}
+            {pathname !== "/video-explainer-lp" && pathname !== "/animating-studio-lp" && (
+                <Footer />
+            )}
+            {/* {pathname !== '/video-explainer-lp' && <Footer />} */}
         </PopupProvider>
     )
 }

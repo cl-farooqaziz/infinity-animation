@@ -26,13 +26,19 @@ const OurClient = () => {
         speed: 3000,
         slidesToShow: 1.3,
         slidesToScroll: 1,
-        adaptiveHeight: true,
         responsive: [
             {
-                breakpoint: 600,
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1.3,
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 567,
                 settings: {
                     slidesToShow: 1,
-                    arrows: true,
+                    arrows: false,
                 }
             }
         ]
@@ -40,18 +46,18 @@ const OurClient = () => {
 
     return (
         <>
-            <section className="py-[70px] bg-[#FF2D4B] relative before:absolute before:content-[''] before:h-full before:w-[111px] before:right-0 before:top-0 before:bg-[#ff2d4c73] before:z-50">
-                <div className="max-w-7xl mx-auto">
+            <section className="py-[30px] md:py-[70px] bg-[#FF2D4B] relative sm:before:absolute sm:before:content-[''] sm:before:h-full sm:before:w-[111px] 3xl:before:w-[145px] sm:before:right-0 sm:before:top-0 sm:before:bg-[#ff2d4c73] sm:before:z-50 md:h-[70vh] lg:h-full">
+                <div className="px-5 lg:max-w-7xl mx-auto">
                     <div className="grid grid-cols-12 items-center">
                         <div className="col-span-12">
-                            <h2 className='text-[55px] font-bold font-sans text-center text-white mb-3'>Words from Our Clients.</h2>
-                            <p className='text-[16px] leading-[21px] font-sans text-center text-white mx-auto mb-10'>Hear What Our Clients Have to Say</p>
+                            <h2 className='text-[35px] sm:text-[45px] md:text-[55px] font-bold font-sans text-center text-white mb-3'>Words from Our Clients.</h2>
+                            <p className='text-[13px] lg:text-[16px] leading-[21px] font-sans text-center text-white mx-auto mb-10'>Hear What Our Clients Have to Say</p>
                         </div>
-                        <div className="col-span-8">
-                            <Image src={ClientImage} alt='Clients' className='mb-[-70px]' />
+                        <div className="col-span-4 lg:col-span-8">
+                            <Image src={ClientImage} alt='Clients' className='mt-[-57px] lg:mt-0 lg:mb-[-70px] md:block hidden' />
                         </div>
-                        <div className="col-span-4">
-                            <Slider {...ClientSlider} className='clientSlider w-5/12 bottom-[19%] right-0'>
+                        <div className="col-span-12 md:col-span-8 lg:col-span-4">
+                            <Slider {...ClientSlider} className='clientSlider w-12/12 md:w-7/12 lg:w-5/12 bottom-[7%] lg:bottom-[19%] right-0'>
                                 <div className="slide px-4 lg:px-12">
                                     <div className="client">
                                         <Image src={Client1} width={69} height={69} alt='Clients' />
@@ -64,7 +70,7 @@ const OurClient = () => {
                                         <Star className='text-[15px] text-[#EE8526] w-[20px] h-[20px]' />
                                         <Star className='text-[15px] text-[#EE8526] w-[20px] h-[20px]' />
                                     </div>
-                                    <p className='text-[16px] text-white font-sans leading-[30px] pt-2'>Choosing Animating Studio for our interactive project was the best decision we made. Their commitment to quality and innovation is truly commendable. The animations and experiences they crafted for us not only engaged our audience but also elevated our brand presence. A talented team that turns ideas into animated brilliance!</p>
+                                    <p className='text-[13px] lg:text-[16px] text-white font-sans leading-tight lg:leading-[30px] pt-2'>Choosing Animating Studio for our interactive project was the best decision we made. Their commitment to quality and innovation is truly commendable. The animations and experiences they crafted for us not only engaged our audience but also elevated our brand presence. A talented team that turns ideas into animated brilliance!</p>
                                 </div>
                                 <div className="slide px-4 lg:px-12">
                                     <div className="client">
@@ -78,7 +84,7 @@ const OurClient = () => {
                                         <Star className='text-[15px] text-[#EE8526] w-[20px] h-[20px]' />
                                         <Star className='text-[15px] text-[#EE8526] w-[20px] h-[20px]' />
                                     </div>
-                                    <p className='text-[16px] text-white font-sans leading-[30px] pt-2'>Working with Animating Studio was an absolute delight! Their creativity knows no bounds, and the animations they produced for our brand surpassed all expectations. From concept to execution, their team's professionalism and dedication were evident. We're proud to have collaborated with true visionaries in the animation realm.</p>
+                                    <p className='text-[13px] lg:text-[16px] text-white font-sans leading-tight lg:leading-[30px] pt-2'>Working with Animating Studio was an absolute delight! Their creativity knows no bounds, and the animations they produced for our brand surpassed all expectations. From concept to execution, their team's professionalism and dedication were evident. We're proud to have collaborated with true visionaries in the animation realm.</p>
                                 </div>
                                 <div className="slide px-4 lg:px-12">
                                     <div className="client">
@@ -92,7 +98,7 @@ const OurClient = () => {
                                         <Star className='text-[15px] text-[#EE8526] w-[20px] h-[20px]' />
                                         <Star className='text-[15px] text-[#EE8526] w-[20px] h-[20px]' />
                                     </div>
-                                    <p className='text-[16px] text-white font-sans leading-[30px] pt-2'>Choosing Animating Studio for our interactive project was the best decision we made. Their commitment to quality and innovation is truly commendable. The animations and experiences they crafted for us not only engaged our audience but also elevated our brand presence. A talented team that turns ideas into animated brilliance!</p>
+                                    <p className='text-[13px] lg:text-[16px] text-white font-sans leading-tight lg:leading-[30px] pt-2'>Choosing Animating Studio for our interactive project was the best decision we made. Their commitment to quality and innovation is truly commendable. The animations and experiences they crafted for us not only engaged our audience but also elevated our brand presence. A talented team that turns ideas into animated brilliance!</p>
                                 </div>
                             </Slider>
                         </div>

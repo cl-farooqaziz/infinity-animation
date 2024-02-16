@@ -15,6 +15,7 @@ import Extraordinary from './components/Extraordinary/Extraordinary'
 // ===== Images 
 import BranShine from "media/animating-studio/brandshine.png"
 import SaleShine from "media/animating-studio/salesimage.png"
+import Footer from './components/Footer/Footer'
 
 
 const page = () => {
@@ -76,7 +77,7 @@ const page = () => {
     tabsInfo: true,
     tabInfo: tabInfo,
     css: "bg-[#F3F3F3] text-black",
-    maxWidth: "max-w-7xl mx-auto"
+    maxWidth: "px-5 lg:max-w-7xl mx-auto"
   };
 
   // ==== brands Start
@@ -112,6 +113,7 @@ const page = () => {
         <Brand content={sales} />
         <OurClient />
         <Extraordinary />
+        <Footer />
       </div>
     </>
   )

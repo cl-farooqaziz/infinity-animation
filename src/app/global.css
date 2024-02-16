@@ -351,6 +351,17 @@ body {
   content: url(../../public/icons/prevslide.png) !important;
 }
 
+.bussinessSlider .slide {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bussinessSlider {
+  margin: 60px 0;
+}
+
 /* Animating Studio End */
 
 /*=============== Media Query Start ===============*/
@@ -380,6 +391,13 @@ body {
 @media only screen and (max-width: 1440px) {
   .blogsSlider .slick-dots {
     width: 11%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .swiper {
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
   }
 }
 
@@ -415,6 +433,13 @@ body {
 
   .slideBg {
     background-size: 550px;
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  .clientSlider {
+    position: unset !important;
   }
 }
 

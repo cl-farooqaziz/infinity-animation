@@ -29,7 +29,7 @@ const Portfolio = ({ content }) => {
                     </div>
                     <div className={`${tabsInfo ? "mt-8 md:mt-12" : "mt-0"}`}>
                         {tabsInfo ?
-                            <ul className="flex flex-wrap justify-center text-sm font-medium text-center gap-3 md:gap-5 lg:w-11/12 mx-auto">
+                            <ul className="flex flex-wrap justify-center text-sm font-medium text-center gap-3 md:gap-4 mx-auto">
                                 {tabInfo.map((tab, index) => (
                                     <li key={index}
                                         className={`inline-block w-[180px] xl:w-[220px] py-3 text-[16px] lg:text-[20px] font-normal font-sans ${css} border rounded-[27px] cursor-pointer hover:border-primary-100 ${activeTab === index ? 'border-primary-100' : 'border-[#646464]'}`}
