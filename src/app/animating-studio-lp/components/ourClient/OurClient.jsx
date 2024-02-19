@@ -54,10 +54,10 @@ const OurClient = () => {
                             <p className='text-[13px] lg:text-[16px] leading-[21px] font-sans text-center text-white mx-auto mb-10'>Hear What Our Clients Have to Say</p>
                         </div>
                         <div className="col-span-4 lg:col-span-8">
-                            <Image src={ClientImage} alt='Clients' className='mt-[-57px] lg:mt-0 lg:mb-[-70px] md:block hidden' />
+                            <Image src={ClientImage} alt='Clients' className='mt-[-57px] lg:mt-0 lg:mb-[-70px] lg:block hidden' />
                         </div>
                         <div className="col-span-12 md:col-span-8 lg:col-span-4">
-                            <Slider {...ClientSlider} className='clientSlider w-12/12 md:w-7/12 lg:w-5/12 bottom-[7%] lg:bottom-[19%] right-0'>
+                            <Slider {...ClientSlider} className='clientSlider md:w-10/12 lg:w-7/12 xl:w-5/12 bottom-[7%] md:bottom-[33%] lg:bottom-[19%] right-0'>
                                 <div className="slide px-4 lg:px-12">
                                     <div className="client">
                                         <Image src={Client1} width={69} height={69} alt='Clients' />

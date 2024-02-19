@@ -1,10 +1,66 @@
+"use client"
+
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+//
+import { useEffect, useRef } from "react";
+
+import lottie from 'lottie-web';
 
 import Animation from "media/animating-studio/animation.png"
+import AnimationOne from "media/extraordinary-one.json"
+import AnimationTwo from "media/extraordinary-two.json"
 
 const Extraordinary = () => {
+    const animeOne = useRef(null);
+    const animeTwo = useRef(null);
+
+    useEffect(() => {
+        console.log("Inside useEffect");
+
+        const containerOne = document.getElementById('animationOne');
+        const containerTwo = document.getElementById('animationTwo');
+
+        if (animeOne.current) {
+            animeOne.current.destroy();
+        }
+
+        if (animeTwo.current) {
+            animeTwo.current.destroy();
+        }
+
+        console.log("Container One:", containerOne);
+        console.log("Container Two:", containerTwo);
+
+        animeOne.current = lottie.loadAnimation({
+            container: containerOne,
+            animationData: AnimationOne,
+            loop: true,
+            autoplay: true,
+            renderer: "svg",
+        });
+
+        animeTwo.current = lottie.loadAnimation({
+            container: containerTwo,
+            animationData: AnimationTwo,
+            loop: true,
+            autoplay: true,
+            renderer: "svg",
+        });
+
+        return () => {
+            if (animeOne.current) {
+                animeOne.current.destroy();
+            }
+            if (animeTwo.current) {
+                animeTwo.current.destroy();
+            }
+        };
+
+    }, []);
+
+
     return (
         <>
             <section className='py-[30px] md:py-[70px]'>
@@ -20,7 +76,11 @@ const Extraordinary = () => {
                                 <div className="btns">
                                     <Link class="text-[16px] font-semibold leading-[25px] text-white bg-black rounded-[5px] w-[318px] md:w-[214px] h-[44px] shadow-2xl poppins flex items-center justify-center" href="javascript:;">Live Chat</Link>
                                 </div>
-                                <Image src={Animation} alt='Animation Studio' className='w-11/12 mx-auto' />
+                                <div className="flex items-center gap-x-4">
+                                    <div id="animationTwo" className='max-w-[170px] md:max-w-[400px] lg:max-w-[700px]'></div>
+                                    <div id="animationOne"></div>
+                                </div>
+                                {/* <Image src={Animation} alt='Animation Studio' className='w-11/12 mx-auto' /> */}
                             </div>
                         </div>
                     </div>

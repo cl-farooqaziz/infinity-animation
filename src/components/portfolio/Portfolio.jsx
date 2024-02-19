@@ -6,6 +6,7 @@ import CTA from '../cta/CTA';
 import styles from "./PortFolio.module.css"
 
 
+
 const Portfolio = ({ content }) => {
     const { title, para, tabInfo, tabContents, tabsInfo, css, maxWidth } = content;
     //Tabs
